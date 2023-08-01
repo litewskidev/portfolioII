@@ -13,7 +13,7 @@ const App = () => {
     dispatch(fetchLangPl());
   }, [dispatch]);
 
-  const data = useSelector(getFetchedLang);
+  //const data = useSelector(getFetchedLang);
 
   return(
     <main id="app">
