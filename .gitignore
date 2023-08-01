@@ -10,6 +10,11 @@
 
 # production
 /build
+/public/assets
+/.vscode
+alyrak.woff
+alyrak.woff2
+alyrak.ttf
 
 # misc
 .DS_Store
