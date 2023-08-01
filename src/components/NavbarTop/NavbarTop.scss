@@ -1,3 +1,85 @@
+@import '../../styles/settings.scss';
+
 .navbar__top__wrapper {
+  position: fixed;
+  top: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+.navbar__top__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  img {
+    filter: invert(100);
+    width: 2rem;
+    height: 1.5rem;
+  }
+}
+
+.navbar__top__language__switch {
+  width: 4.5rem;
+  height: 2rem;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.15rem;
+  color: $platinum;
+  cursor: pointer;
+  border: 1px dotted $platinum;
+  padding: 0.1rem;
+}
+
+.navbar__top__language__pl {
+  width: 50%;
+  text-align: center;
+}
+
+.navbar__top__language__eng {
+  width: 50%;
+  text-align: center;
+}
+
+.clickedPl, .clickedEng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $jasper;
+  border-top-left-radius: 0.15rem;
+  border-bottom-left-radius: 0.15rem;
+  width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 540px) {
+
+  .navbar__top__wrapper {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar__top__logo {
+    gap: 0.1rem;
+
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 1.5rem;
+      height: 1rem;
+    }
+  }
+
+  .navbar__top__language__switch {
+    height: 1.7rem;
+  }
 }
