@@ -2,7 +2,7 @@ import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
 import Skills from '../Skills/Skills.jsx';
 import Projects from '../Projects/Projects.jsx';
-import NavbarBottom from '../NavbarBottom/NavbarBottom.jsx';
+import How from '../How/How.jsx';
 import './Main.scss';
 
 const Main = () => {
@@ -11,8 +11,8 @@ const Main = () => {
       <Home />
       <About />
       <Skills />
+      <How />
       <Projects />
-      <NavbarBottom />
     </div>
   )
 };

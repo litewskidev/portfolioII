@@ -1,0 +1,115 @@
+@import '../../styles/settings.scss';
+
+#how {
+  z-index: 6;
+  background-color: $eerie-black;
+}
+
+.how__wrapper {
+  display: flex;
+  min-height: 0;
+  position: relative;
+}
+
+.how__overlay {
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.1;
+
+  a {
+    cursor: default;
+  }
+
+  img {
+    max-height: 60vh;
+  }
+}
+
+.how__info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5%;
+
+  p {
+    font-family: $font-text;
+    color: $jasper;
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    filter: brightness(1.2);
+  }
+}
+
+.how__qr {
+  padding: 0.1rem;
+  background-color: $tan;
+  width: 26%;
+  opacity: 0.9;
+  position: relative;
+
+  img {
+    width: 100%;
+    z-index: 1;
+  }
+
+  img:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    filter: invert(1);
+  }
+}
+
+.how__image {
+  position: relative;
+  border-top-left-radius: 25rem;
+  border-bottom-left-radius: 25rem;
+  width: 100%;
+  flex: 2;
+
+  img {
+    aspect-ratio: 16/10;
+    border-top-left-radius: 25rem;
+    border-bottom-left-radius: 25rem;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1) saturate(0.5);
+  }
+
+  img:last-of-type {
+    opacity: 0.3;
+    filter: invert(1);
+  }
+}
+
+@media (max-width: 540px) {
+  .how__wrapper {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+
+  .how__info {
+    gap: 3rem;
+    margin-bottom: -2rem;
+
+    p {
+      text-align: center;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      filter: brightness(1.2);
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+
+  .how__image {
+    img:last-of-type {
+      opacity: 0.3;
+    }
+  }
+}
