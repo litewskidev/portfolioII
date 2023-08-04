@@ -5,28 +5,30 @@ import './Skills.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
+  const skillsTriggerRef = useRef(null);
   const skillsContainerRef = useRef(null);
   const skillsDrippingRef = useRef(null);
   const skillsTitleRef = useRef(null);
 
   useEffect(() => {
+    const skillsTrigger = skillsTriggerRef.current;
     const skillsContainer = skillsContainerRef.current;
     const skillsDripping = skillsDrippingRef.current;
     const skillsTitle = skillsTitleRef.current;
 
     gsap.fromTo(skillsDripping, {y: "-=90%"}, {y: 0, scrollTrigger: {
       markers: false,
-      trigger: "#skills",
-      start: "20% bottom",
-      end: "30% center",
+      trigger: skillsTrigger,
+      start: "20% 99%",
+      end: "30% 50%",
       scrub: 0.2,
     }})
 
     gsap.fromTo(skillsTitle, {y: 0}, {y: "100%", scrollTrigger: {
       markers: false,
       trigger: skillsContainer,
-      start: "top 50%",
-      end: "center 30%",
+      start: "1% 50%",
+      end: "50% 30%",
       scrub: 0.2,
     }})
 
@@ -39,15 +41,15 @@ const Skills = () => {
       scrollTrigger: {
         trigger: skillsContainer,
         scrub: 0.2,
-        start: "top 45%",
-        end: "bottom 60%",
+        start: "1% 45%",
+        end: "99% 60%",
         markers: false,
       }
     });
   }, [])
 
   return(
-    <div id='skills'>
+    <div id='skills' ref={skillsTriggerRef}>
       <div className='skills__dripping' ref={skillsDrippingRef}>
         <img src={process.env.PUBLIC_URL + '/assets/images/dripping3.webp'} alt='paint drip'/>
       </div>

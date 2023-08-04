@@ -14,8 +14,8 @@ const How = () => {
       scrollTrigger: {
         trigger: qrCode,
         scrub: 0.2,
-        start: "top 95%",
-        end: "top 55%",
+        start: "1% 95%",
+        end: "1% 55%",
         ease:Linear.easeNone
       }
     });
