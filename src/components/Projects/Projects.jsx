@@ -29,7 +29,7 @@ const Projects = () => {
         <img src={process.env.PUBLIC_URL + "/assets/images/hand2_1920_z2.webp"} alt='metal hand' />
       </div>
       <div className='projects__underlay'>
-        <img src={process.env.PUBLIC_URL + '/assets/test/peeling-red-wall.jpg'}/>
+        <img src={process.env.PUBLIC_URL + '/assets/images/wall1920.webp'}/>
       </div>
     </div>
   )

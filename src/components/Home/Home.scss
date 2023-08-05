@@ -99,14 +99,6 @@
   }
 }
 
-.hero__image__one, .hero__image__five {
-  transform: rotate(5deg);
-}
-
-.hero__image__two, .hero__image__four {
-  transform: rotate(-5deg);
-}
-
 .hero__image__three {
   transform: scale(1.4) rotate(10deg);
   z-index: 1;

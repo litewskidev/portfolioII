@@ -29,7 +29,7 @@ const Contact = () => {
         <input className='contact__form__text' type='text' placeholder='NAME'></input>
         <input className='contact__form__text' type='email' placeholder='E-MAIL'></input>
         <input className='contact__form__message' type='text' placeholder='MESSAGE' ref={contactFrameTriggerRef}></input>
-        <img src={process.env.PUBLIC_URL + '/assets/test/frame1.png'} ref={contactFrameRef}/>
+        <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
         <button type='submit'>SEND</button>
       </form>
     </div>

@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </div>
         <div className='about__underlay'>
-          <img src={process.env.PUBLIC_URL + '/assets/test/grid-png-43575.png'}/>
+          <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid background'/>
         </div>
       </div>
     </div>

@@ -79,7 +79,7 @@ const Home = () => {
             </div>
           </div>
           <div className='hero__underlay'>
-            <img src={process.env.PUBLIC_URL + '/assets/test/dust-overlay-2.png'}/>
+            <img src={process.env.PUBLIC_URL + '/assets/images/dust2-1920.webp'} alt='overlay dust'/>
           </div>
         </div>
       </div>

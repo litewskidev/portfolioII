@@ -34,7 +34,7 @@ const How = () => {
         <img src={process.env.PUBLIC_URL + '/assets/images/overlay.webp'} alt='old overlay' />
       </div>
       <div className='how__underlay'>
-        <img src={process.env.PUBLIC_URL + 'assets/test/dust-overlay-1.png'}/>
+        <img src={process.env.PUBLIC_URL + 'assets/images/dust1-1920.webp'} alt='overlay dust'/>
       </div>
     </div>
   )
