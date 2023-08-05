@@ -12,7 +12,7 @@
 .home__hero {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background-color: black;
   position: relative;
   gap: 8%;
@@ -24,30 +24,42 @@
   filter: invert(1) brightness(0.2) sepia(1);
 }
 
+.home__arrows {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+
+  img {
+    width: 25%;
+    transform: rotate(90deg);
+    opacity: 0.9;
+  }
+}
+
 .home__hero__title {
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   position: relative;
   z-index: 2;
-  gap: 0.1rem;
   font-family: 'Alyrak';
 
   h1 {
     color: $persian-red;
     font-weight: 100;
     font-size: 13vw;
-    line-height: 9.35vw;
+    line-height: 9.5vw;
     opacity: 1;
   }
 
   h2 {
+    margin-top: -0.5rem;
     color: $platinum;
     font-weight: 100;
     font-size: 4.15vw;
     letter-spacing: 0.24vw;
-    line-height: 2.4vw;
+    line-height: 3.2vw;
     opacity: 1;
     text-align: end;
   }
@@ -118,6 +130,14 @@
     min-height: 100vh;
   }
 
+  .home__arrows {
+    left: -3%;
+
+    img {
+      width: 20%;
+    }
+  }
+
   .home__hero__title {
     max-width: 100%;
     align-items: center;
@@ -128,6 +148,7 @@
     }
 
     h2 {
+      margin-top: 0;
       font-size: 1.7rem;
       line-height: 1.2rem;
       letter-spacing: 0.05rem;

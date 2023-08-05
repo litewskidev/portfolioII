@@ -20,7 +20,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  cursor: pointer;
 
   img {
     filter: invert(100);
@@ -37,6 +36,7 @@
 .navbar__top__contact {
   border: 1px dotted $platinum-2;
   padding: 0.1rem 1rem;
+  cursor: pointer;
 
   p {
     font-family: $font-text;

@@ -66,15 +66,16 @@
 
   .projects__title__box {
     h1 {
-      top: 19.6rem;
-      left: 18.5%;
+      top: 15.6rem;
+      left: 20%;
       font-size: 31vw;
     }
 
     img {
-      top: 23.2rem;
+      top: 16.5rem;
       left: 15%;
-      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
   }
 }

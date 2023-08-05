@@ -18,6 +18,10 @@
   }
 }
 
+.cursor__nav {
+  cursor: pointer;
+}
+
 @media (max-width: 540px) {
 
   .navbar__bottom__wrapper {

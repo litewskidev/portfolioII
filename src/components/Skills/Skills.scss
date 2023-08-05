@@ -13,24 +13,26 @@
 
   h1 {
     font-family: 'Alyrak';
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 100;
     color: $platinum-2;
     position: absolute;
     top: 10%;
     z-index: 9;
   }
+}
 
-  h1:last-of-type {
-    font-family: 'Alyrak';
-    font-size: 10rem;
-    font-weight: 600;
-    color: $night;
-    position: absolute;
-    top: 10%;
-    z-index: 9;
-    background-color: black;
-    color: black;
+.skills__underlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 13;
+
+  img {
+    width: 100%;
+    opacity: 0.4;
+    transform: rotate(90deg);
   }
 }
 
@@ -39,7 +41,6 @@
   display: grid;
   grid-template-columns: 12rem 12rem 12rem 12rem 12rem 12rem 12rem 12rem;
   background-color: black;
-  z-index: 11;
 }
 
 .skills__box {
@@ -50,6 +51,7 @@
   height: 13rem;
   margin-bottom: 5rem;
   gap: 1rem;
+  z-index: 14;
 
   img {
     width: 7rem;
@@ -76,15 +78,19 @@
       font-size: 5rem;
     }
 
-    h1:last-of-type {
-      font-size: 5rem;
-      color: black;
-    }
-
     p {
       text-align: center;
       font-size: 1rem;
       width: 90%;
+    }
+  }
+
+  .skills__underlay {
+    top: 43%;
+    left: -35%;
+
+    img {
+      width: 180%;
     }
   }
 

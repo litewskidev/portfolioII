@@ -15,6 +15,7 @@
 alyrak.woff
 alyrak.woff2
 alyrak.ttf
+.env
 
 # misc
 .DS_Store

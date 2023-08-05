@@ -28,13 +28,13 @@ const NavbarBottom = ({ data }) => {
   return(
     <div id='navbar-bottom'>
       <div className='navbar__bottom__wrapper'>
-        <p onClick={handleHomeScroll}>{data.navbar?.home}</p>
+        <p className='cursor__nav' onClick={handleHomeScroll}>{data.navbar?.home}</p>
         <p>/</p>
-        <p onClick={handleAboutScroll}>{data.navbar?.about}</p>
+        <p className='cursor__nav' onClick={handleAboutScroll}>{data.navbar?.about}</p>
         <p>/</p>
-        <p onClick={handleSkillsScroll}>{data.navbar?.skills}</p>
+        <p className='cursor__nav' onClick={handleSkillsScroll}>{data.navbar?.skills}</p>
         <p>/</p>
-        <p onClick={handleProjectsScroll}>{data.navbar?.projects}</p>
+        <p className='cursor__nav' onClick={handleProjectsScroll}>{data.navbar?.projects}</p>
       </div>
     </div>
   )

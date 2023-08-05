@@ -6,19 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ data }) => {
   const skillsTriggerRef = useRef(null);
-  const skillsTitleRef = useRef(null);
 
   useEffect(() => {
     const skillsTrigger = skillsTriggerRef.current;
-    const skillsTitle = skillsTitleRef.current;
-
-    gsap.fromTo(skillsTitle, {y: 0}, {y: "100%", scrollTrigger: {
-      markers: false,
-      trigger: skillsTrigger,
-      start: "1% 50%",
-      end: "50% 30%",
-      scrub: 0.3,
-    }})
 
     gsap.fromTo(".skills__box", {scale: 0, opacity: 0}, { scale: 1, opacity: 1, duration: 1,
       stagger: {
@@ -39,7 +29,6 @@ const Skills = ({ data }) => {
   return(
     <div id='skills' ref={skillsTriggerRef}>
       <h1>{data.skills?.title}</h1>
-      <h1 ref={skillsTitleRef}>{data.skills?.title}</h1>
       <div className='skills__container'>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/js.svg'} alt="JavaScript" />
@@ -104,6 +93,9 @@ const Skills = ({ data }) => {
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/greensock.svg'} alt="GSAP" />
           <p>GSAP</p>
+        </div>
+        <div className='skills__underlay'>
+          <img src={process.env.PUBLIC_URL + '/assets/shapes/wave.webp'} alt='wave shape' />
         </div>
       </div>
     </div>

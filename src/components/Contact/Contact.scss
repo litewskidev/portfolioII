@@ -37,6 +37,7 @@
     padding: 0.5rem 4rem;
     cursor: pointer;
     text-transform: uppercase;
+    margin-top: 17%;
   }
 
   img {
@@ -49,13 +50,13 @@
 
 .contact__form__text, .contact__form__message {
   font-family: $font-text;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 200;
   width: 70%;
   border: 1px dotted $tan-2;
   border-bottom: 1px dotted $platinum-2;
   outline: none;
-  padding: 0.1rem 0.5rem;
+  padding: 0.15rem 0.8rem;
   background: inherit;
   color: $platinum-2;
 
@@ -66,10 +67,10 @@
 }
 
 .contact__form__message {
-  margin-top: 23%;
+  margin-top: 20%;
   margin-bottom: 3rem;
   width: 65%;
-  padding-bottom: 50%;
+  padding-bottom: 30%;
   z-index: 1;
   border: none;
 }
@@ -77,6 +78,7 @@
 @media (max-width: 540px) {
   .contact__wrapper {
     gap: 2rem;
+    padding-top: 3rem;
 
     p {
       font-size: 5rem;
@@ -89,8 +91,10 @@
   .contact__form {
     gap: 1rem;
     width: 100%;
+    padding-bottom: 2rem;
 
     button {
+      margin-top: 15%;
       font-size: 1rem;
       padding: 0.5rem 3.5rem;
     }
@@ -110,6 +114,6 @@
     margin-top: 20%;
     margin-bottom: 3rem;
     width: 60%;
-    padding-bottom: 50%;
+    padding-bottom: 25%;
   }
 }
