@@ -1,26 +1,20 @@
 @import '../../styles/settings.scss';
 
 .about__wrapper {
-  background-color: white;
+  background-color: $platinum-2;
   overflow: hidden;
   min-height: 75vh;
   position: relative;
 }
 
-.about__dripping {
+.about__underlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 
   img {
     width: 100%;
-  }
-}
-
-.about__underlay {
-  position: absolute;
-  top: 0;
-
-  img {
-    width: 150%;
     opacity: 0.8;
   }
 }
@@ -29,7 +23,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   position: relative;
   margin-top: -25%;
   z-index: 30;
@@ -40,13 +33,12 @@
   min-width: 30%;
   max-width: 30%;
   position: absolute;
-  top: 0;
-  left: 36%;
+  top: 20%;
   z-index: 2;
 }
 
 .about__title__info {
-    margin-top: 51.5%;
+    margin-top: 65.6%;
     transform: rotate(90deg);
     font-family: 'Alyrak';
     font-weight: 100;
@@ -54,19 +46,17 @@
     z-index: 1;
     color: $jasper;
     font-size: 17vw;
-    height: 100%;
 }
 
 .about__info__container {
   display: flex;
-  width: 100%;
   gap: 5%;
   padding-bottom: 10%;
 
   p {
     font-family: $font-text;
     font-weight: 100;
-    color: white;
+    color: $platinum-2;
     font-size: 2rem;
   }
 }
@@ -75,8 +65,6 @@
   text-align: center;
   width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10%;
   padding-left: 2%;
   background-color: $feldgrau;
@@ -90,8 +78,6 @@
   text-align: center;
   width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10%;
   padding-right: 2%;
   background-color: $feldgrau;
@@ -103,28 +89,31 @@
 
 @media (max-width: 540px) {
 
+  .about__underlay {
+    width: 100%;
+
+    img {
+      width: 140%;
+    }
+  }
+
   .about__title__hand {
     min-width: 40%;
     max-width: 40%;
     top: 4rem;
-    left: 31%;
   }
 
   .about__title__info {
-      margin-top: 91.3%;
-      font-size: 30vw;
+      margin-top: 92%;
+      font-size: 31vw;
   }
+
   .about__info__container {
-    display: flex;
-    width: 100%;
-    gap: 5%;
-    padding-bottom: 10%;
-    margin-top: -10%;
+    margin-top: -1%;
 
     p {
-      color: white;
+      color: $platinum-2;
       font-size: 1rem;
     }
   }
 }
-

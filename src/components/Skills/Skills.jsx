@@ -4,29 +4,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Skills.scss';
 gsap.registerPlugin(ScrollTrigger);
 
-const Skills = () => {
+const Skills = ({ data }) => {
   const skillsTriggerRef = useRef(null);
-  const skillsContainerRef = useRef(null);
-  const skillsDrippingRef = useRef(null);
   const skillsTitleRef = useRef(null);
 
   useEffect(() => {
     const skillsTrigger = skillsTriggerRef.current;
-    const skillsContainer = skillsContainerRef.current;
-    const skillsDripping = skillsDrippingRef.current;
     const skillsTitle = skillsTitleRef.current;
-
-    gsap.fromTo(skillsDripping, {y: "-=90%"}, {y: 0, scrollTrigger: {
-      markers: false,
-      trigger: skillsTrigger,
-      start: "20% 99%",
-      end: "30% 50%",
-      scrub: 0.3,
-    }})
 
     gsap.fromTo(skillsTitle, {y: 0}, {y: "100%", scrollTrigger: {
       markers: false,
-      trigger: skillsContainer,
+      trigger: skillsTrigger,
       start: "1% 50%",
       end: "50% 30%",
       scrub: 0.3,
@@ -39,10 +27,10 @@ const Skills = () => {
         amount: 1.5,
       },
       scrollTrigger: {
-        trigger: skillsContainer,
+        trigger: skillsTrigger,
         scrub: 0.3,
-        start: "1% 45%",
-        end: "99% 70%",
+        start: "1% 50%",
+        end: "70% 70%",
         markers: false,
       }
     });
@@ -50,12 +38,9 @@ const Skills = () => {
 
   return(
     <div id='skills' ref={skillsTriggerRef}>
-      <div className='skills__dripping' ref={skillsDrippingRef}>
-        <img src={process.env.PUBLIC_URL + '/assets/images/dripping3.webp'} alt='paint drip'/>
-      </div>
-      <h1>HOW?</h1>
-      <h1 ref={skillsTitleRef}>HOW?</h1>
-      <div className='skills__container' ref={skillsContainerRef}>
+      <h1>{data.skills?.title}</h1>
+      <h1 ref={skillsTitleRef}>{data.skills?.title}</h1>
+      <div className='skills__container'>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/js.svg'} alt="JavaScript" />
           <p>JavaScript</p>

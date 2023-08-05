@@ -4,26 +4,29 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './How.scss';
 gsap.registerPlugin(ScrollTrigger);
 
-const How = () => {
+const How = ({ data }) => {
   const qrCodeRef = useRef(null);
+  const howTriggerRef = useRef(null);
 
   useEffect(() => {
+    const howTrigger = howTriggerRef.current;
     const qrCode = qrCodeRef.current;
 
     gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease:Linear.easeNone,
       scrollTrigger: {
-        trigger: qrCode,
+        trigger: howTrigger,
         scrub: 0.3,
-        start: "1% 95%",
-        end: "1% 55%"
+        start: "30% 95%",
+        end: "1% 25%",
+        markers: false
       }
     });
   }, []);
 
   return(
     <div id='how' className='how__wrapper'>
-      <div className='how__info'>
-        <p>I create web applications using React and JSES6. Always care about clear code, cool design, responsiveness and user experience.</p>
+      <div className='how__info' ref={howTriggerRef}>
+        <p>{data.how?.info}</p>
         <div className='how__qr' ref={qrCodeRef}>
           <img src={process.env.PUBLIC_URL + '/assets/icons/githubqr.svg'} alt='github'/>
           <img src={process.env.PUBLIC_URL + '/assets/images/overlay.webp'} alt='old overlay'/>

@@ -1,37 +1,5 @@
 @import '../../styles/settings.scss';
 
-
-.navbar__left__wrapper {
-  position: fixed;
-  top: 30%;
-  left: 0;
-  width: 5rem;
-  height: 40%;
-  background-color: $tan-3;
-  z-index: 999;
-}
-
-.navbar__left__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-  padding: 2rem 1rem;
-  width: 100%;
-  gap: 1rem;
-  margin: 0;
-
-  li {
-    font-family: $font-text;
-    font-size: 1.2rem;
-    font-weight: 800;
-    letter-spacing: 0.1rem;
-    color: $eerie-black;
-    list-style: none;
-  }
-}
-
 .navbar__top__wrapper {
   position: fixed;
   top: 0;
@@ -67,12 +35,12 @@
 }
 
 .navbar__top__contact {
-  border: 1px dotted white;
+  border: 1px dotted $platinum-2;
   padding: 0.1rem 1rem;
 
   p {
     font-family: $font-text;
-    color: white;
+    color: $platinum-2;
     font-size: 1rem;
   }
 }
@@ -85,9 +53,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.15rem;
-  color: $platinum;
+  color: $platinum-2;
   cursor: pointer;
-  border: 1px dotted $platinum;
+  border: 1px dotted $platinum-2;
   padding: 0.1rem;
 }
 
@@ -113,32 +81,6 @@
 }
 
 @media (max-width: 540px) {
-
-  .navbar__left__wrapper {
-    position: fixed;
-    top: 97%;
-    left: 0;
-    width: 100%;
-    height: 3%;
-    background-color: $tan-3;
-    z-index: 999;
-  }
-
-  .navbar__left__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    padding: 0;
-    gap: 0.1rem;
-
-    li {
-      color: black;
-      font-size: 1rem;
-      font-weight: 800;
-    }
-  }
 
   .navbar__top__wrapper {
     padding: 0.5rem 1rem;

@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './About.scss';
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+const About = ({ data }) => {
   const aboutTitleRef = useRef(null);
   const aboutInfoLeftRef = useRef(null);
   const aboutInfoRightRef = useRef(null);
@@ -48,14 +48,14 @@ const About = () => {
       <div className='about__wrapper'>
         <div className='about__title' ref={aboutTitleRef}>
           <img className='about__title__hand' src={process.env.PUBLIC_URL + '/assets/images/hand1920.webp'} alt='metal hand' />
-          <p className='about__title__info'>WHO?</p>
+          <p className='about__title__info'>{data.about?.title}</p>
         </div>
         <div className='about__info__container'>
           <div className='about__info__left' ref={aboutInfoLeftRef}>
             <p>I create web applications using React and JSES6. Always care about clear code, cool design, responsiveness and user experience</p>
           </div>
           <div className='about__info__right' ref={aboutInfoRightRef}>
-            <p>My adventure with programming began about a year ago. Over time, it turned into a real passion. I love writing code and I strive to be able to devote as much time to it as possible</p>
+            <p>{data.about?.one}</p>
           </div>
         </div>
         <div className='about__underlay'>

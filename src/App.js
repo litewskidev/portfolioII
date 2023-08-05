@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { fetchLangPl, getFetchedLang } from "./redux/languageRedux";
+import { fetchLangEng, getFetchedLang } from "./redux/languageRedux";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import NavbarTop from './components/NavbarTop/NavbarTop.jsx';
@@ -10,16 +10,16 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchLangPl());
+    dispatch(fetchLangEng());
   }, [dispatch]);
 
-  //const data = useSelector(getFetchedLang);
+  const data = useSelector(getFetchedLang);
 
   return(
     <main id="app">
-      <NavbarTop />
+      <NavbarTop data={data}/>
       <Routes>
-        <Route exact path="/" element={ <Main /> } />
+        <Route exact path="/" element={ <Main data={data} /> } />
         <Route path="*" element={ <E404 /> } />
       </Routes>
     </main>

@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Contact.scss';
 gsap.registerPlugin(ScrollTrigger);
 
-const Contact = () => {
+const Contact = ({ data }) => {
   const contactFrameRef = useRef(null);
   const contactFrameTriggerRef = useRef(null);
 
@@ -24,13 +24,13 @@ const Contact = () => {
 
   return(
     <div id='contact' className='contact__wrapper'>
-      <p>WHERE?</p>
+      <p>{data.contact?.title}</p>
       <form className='contact__form'>
-        <input className='contact__form__text' type='text' placeholder='NAME'></input>
-        <input className='contact__form__text' type='email' placeholder='E-MAIL'></input>
-        <input className='contact__form__message' type='text' placeholder='MESSAGE' ref={contactFrameTriggerRef}></input>
+        <input className='contact__form__text' type='text' placeholder={data.contact?.placeholders?.name}></input>
+        <input className='contact__form__text' type='email' placeholder='EMAIL'></input>
+        <input className='contact__form__message' type='text' placeholder={data.contact?.placeholders?.msg} ref={contactFrameTriggerRef}></input>
         <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
-        <button type='submit'>SEND</button>
+        <button type='submit'>{data.contact?.button}</button>
       </form>
     </div>
   )

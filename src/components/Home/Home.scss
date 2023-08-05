@@ -15,24 +15,13 @@
   justify-content: end;
   background-color: black;
   position: relative;
-  gap: 6%;
+  gap: 8%;
   padding-right: 3rem;
 }
 
 .hero__underlay {
   position: absolute;
   filter: invert(1) brightness(0.2) sepia(1);
-}
-
-.home__overlay {
-  position: absolute;
-
-  img {
-    max-width: 100%;
-    filter: invert(1);
-    opacity: 0.8;
-    border-radius: 20rem;
-  }
 }
 
 .home__hero__title {
@@ -48,18 +37,19 @@
   h1 {
     color: $persian-red;
     font-weight: 100;
-    font-size: 16rem;
-    line-height: 11.5rem;
+    font-size: 13vw;
+    line-height: 9.35vw;
     opacity: 1;
   }
 
   h2 {
     color: $platinum;
     font-weight: 100;
-    font-size: 4.75rem;
-    letter-spacing: 0.4rem;
-    line-height: 2.6rem;
+    font-size: 4.15vw;
+    letter-spacing: 0.24vw;
+    line-height: 2.4vw;
     opacity: 1;
+    text-align: end;
   }
 }
 
@@ -67,7 +57,7 @@
   display: flex;
   gap: 1rem;
   margin-right: 0.5rem;
-  margin-top: 0.1rem;
+  margin-top: 1%;
   opacity: 1;
 
   img {
@@ -84,7 +74,7 @@
   align-items: center;
   z-index: 40;
   margin-top: -3%;
-  border: 1px solid $persian-red;
+  border: 1px solid $tan-2;
 }
 
 .home__hero__image__box {
@@ -97,6 +87,14 @@
     width: 100%;
     border-radius: 20rem;
   }
+}
+
+.hero__image__one, .hero__image__five {
+  transform: rotate(5deg);
+}
+
+.hero__image__two, .hero__image__four {
+  transform: rotate(-5deg);
 }
 
 .hero__image__three {
