@@ -4,9 +4,9 @@
   min-height: 100vh;
   display: flex;
   position: relative;
-  z-index: 1;
-  opacity: 1;
   overflow: hidden;
+  opacity: 1;
+  z-index: 40;
 }
 
 .home__hero {
@@ -15,21 +15,23 @@
   justify-content: end;
   background-color: black;
   position: relative;
-  gap: 5%;
-  z-index: 3;
+  gap: 6%;
+  padding-right: 3rem;
+}
+
+.hero__underlay {
+  position: absolute;
+  filter: invert(1) brightness(0.2) sepia(1);
 }
 
 .home__overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
 
   img {
-    width: 100%;
+    max-width: 100%;
     filter: invert(1);
-    opacity: 0.2;
-    border-bottom-left-radius: 15rem;
+    opacity: 0.8;
+    border-radius: 20rem;
   }
 }
 
@@ -41,32 +43,22 @@
   position: relative;
   z-index: 2;
   gap: 0.1rem;
+  font-family: 'Alyrak';
 
   h1 {
     color: $persian-red;
-    font-family: 'Alyrak';
     font-weight: 100;
-    font-size: 14rem;
-    line-height: 10.15rem;
+    font-size: 16rem;
+    line-height: 11.5rem;
     opacity: 1;
   }
 
   h2 {
     color: $platinum;
-    font-family: 'Alyrak';
     font-weight: 100;
-    font-size: 4rem;
+    font-size: 4.75rem;
     letter-spacing: 0.4rem;
-    line-height: 2.3rem;
-    opacity: 1;
-  }
-}
-
-.overlay__title {
-  z-index: 5;
-
-  img {
-    filter: invert(0);
+    line-height: 2.6rem;
     opacity: 1;
   }
 }
@@ -75,7 +67,6 @@
   display: flex;
   gap: 1rem;
   margin-right: 0.5rem;
-  z-index: 1;
   margin-top: 0.1rem;
   opacity: 1;
 
@@ -87,11 +78,13 @@
 
 .home__hero__image {
   max-width: 50%;
+  min-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
+  z-index: 40;
   margin-top: -3%;
+  border: 1px solid $persian-red;
 }
 
 .home__hero__image__box {
@@ -106,9 +99,17 @@
   }
 }
 
+.hero__image__one, .hero__image__five {
+  transform: rotate(5deg);
+}
+
+.hero__image__two, .hero__image__four {
+  transform: rotate(-5deg);
+}
+
 .hero__image__three {
-  scale: 1.4;
-  z-index: 2;
+  transform: scale(1.4) rotate(10deg);
+  z-index: 1;
 }
 
 @media (max-width: 540px) {
@@ -117,34 +118,28 @@
     align-items: center;
   }
 
-  .home__underlay {
-    display: none;
-  }
-
   .home__hero {
     flex-direction: column;
     justify-content: start;
-    gap: 5rem;
-    margin-left: 0;
-    margin-bottom: 0;
+    gap: 4rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
     padding-top: 7rem;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .home__hero__title {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
     align-items: center;
 
     h1 {
       font-size: 5rem;
-      line-height: 3.6rem;
+      line-height: 3.65rem;
     }
 
     h2 {
       font-size: 1.7rem;
-      line-height: 1.3rem;
+      line-height: 1.2rem;
       letter-spacing: 0.05rem;
     }
   }
@@ -160,14 +155,10 @@
 
   .home__hero__image {
     align-items: center;
-    max-width: 100%;
-  }
-
-  .home__hero__image__box {
-    width: 65%;
+    min-width: 100%;
   }
 
   .hero__image__three {
-    scale: 1.3;
+    transform: scale(1.3) rotate(10deg)
   }
 }

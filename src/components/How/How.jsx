@@ -13,10 +13,9 @@ const How = () => {
     gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease:Linear.easeNone,
       scrollTrigger: {
         trigger: qrCode,
-        scrub: 0.2,
+        scrub: 0.3,
         start: "1% 95%",
-        end: "1% 55%",
-        ease:Linear.easeNone
+        end: "1% 55%"
       }
     });
   }, []);
@@ -33,6 +32,9 @@ const How = () => {
       <div className='how__image'>
         <img src={process.env.PUBLIC_URL + '/assets/images/persona1920.webp'} alt='persona art'/>
         <img src={process.env.PUBLIC_URL + '/assets/images/overlay.webp'} alt='old overlay' />
+      </div>
+      <div className='how__underlay'>
+        <img src={process.env.PUBLIC_URL + 'assets/test/dust-overlay-1.png'}/>
       </div>
     </div>
   )

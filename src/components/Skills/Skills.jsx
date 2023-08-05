@@ -21,7 +21,7 @@ const Skills = () => {
       trigger: skillsTrigger,
       start: "20% 99%",
       end: "30% 50%",
-      scrub: 0.2,
+      scrub: 0.3,
     }})
 
     gsap.fromTo(skillsTitle, {y: 0}, {y: "100%", scrollTrigger: {
@@ -29,7 +29,7 @@ const Skills = () => {
       trigger: skillsContainer,
       start: "1% 50%",
       end: "50% 30%",
-      scrub: 0.2,
+      scrub: 0.3,
     }})
 
     gsap.fromTo(".skills__box", {scale: 0, opacity: 0}, { scale: 1, opacity: 1, duration: 1,
@@ -40,9 +40,9 @@ const Skills = () => {
       },
       scrollTrigger: {
         trigger: skillsContainer,
-        scrub: 0.2,
+        scrub: 0.3,
         start: "1% 45%",
-        end: "99% 60%",
+        end: "99% 70%",
         markers: false,
       }
     });

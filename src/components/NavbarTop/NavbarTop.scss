@@ -3,14 +3,12 @@
 
 .navbar__left__wrapper {
   position: fixed;
-  top: 10%;
+  top: 30%;
   left: 0;
   width: 5rem;
-  height: 35%;
+  height: 40%;
   background-color: $tan-3;
   z-index: 999;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
 }
 
 .navbar__left__list {
@@ -33,7 +31,6 @@
     list-style: none;
   }
 }
-
 
 .navbar__top__wrapper {
   position: fixed;
@@ -72,6 +69,7 @@
 .navbar__top__contact {
   border: 1px dotted white;
   padding: 0.1rem 1rem;
+
   p {
     font-family: $font-text;
     color: white;
@@ -124,8 +122,6 @@
     height: 3%;
     background-color: $tan-3;
     z-index: 999;
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
   }
 
   .navbar__left__list {

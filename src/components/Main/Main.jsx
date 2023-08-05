@@ -1,8 +1,9 @@
 import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
 import Skills from '../Skills/Skills.jsx';
-import Projects from '../Projects/Projects.jsx';
 import How from '../How/How.jsx';
+import Projects from '../Projects/Projects.jsx';
+import Contact from '../Contact/Contact.jsx';
 import './Main.scss';
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
       <Skills />
       <How />
       <Projects />
+      <Contact />
     </div>
   )
 };
