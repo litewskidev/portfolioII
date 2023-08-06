@@ -1,33 +1,11 @@
-import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Skills.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ data }) => {
-  const skillsTriggerRef = useRef(null);
-
-  useEffect(() => {
-    const skillsTrigger = skillsTriggerRef.current;
-
-    gsap.fromTo(".skills__box", {scale: 0, opacity: 0}, { scale: 1, opacity: 1, duration: 1,
-      stagger: {
-        from: 0,
-        axis: "x",
-        amount: 2,
-        ease: "power1"
-      },
-      scrollTrigger: {
-        trigger: skillsTrigger,
-        scrub: 1,
-        start: "1% 50%",
-        end: "75% 70%"
-      }
-    });
-  }, [])
-
   return(
-    <div id='skills' ref={skillsTriggerRef}>
+    <div id='skills'>
       <h1>{data.skills?.title}</h1>
       <div className='skills__container'>
         <div className='skills__box'>

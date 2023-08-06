@@ -2,6 +2,7 @@
 
 .home__wrapper {
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -16,7 +17,7 @@
   background-color: black;
   position: relative;
   gap: 8%;
-  padding-right: 3rem;
+  padding: 10%;
 }
 
 .hero__underlay {
@@ -49,7 +50,7 @@
     color: $persian-red;
     font-weight: 100;
     font-size: 13vw;
-    line-height: 9.5vw;
+    line-height: 9.3vw;
     opacity: 1;
   }
 
@@ -87,7 +88,7 @@
   z-index: 40;
   margin-top: -3%;
   border: 2px solid $tan-2;
-  transform: rotate(4deg);
+  transform: rotate(5deg);
 }
 
 .home__hero__image__box {
@@ -102,8 +103,16 @@
   }
 }
 
-.hero__image__one, .hero__image__five {
-  transform: rotate(5deg);
+.hero__image__one {
+  transform: rotate(-5deg);
+  margin-right: 4%;
+  margin-bottom: -0.2%;
+}
+
+.hero__image__five {
+  transform: rotate(-5deg);
+  margin-left: 4%;
+  margin-top: -0.2%;
 }
 
 .hero__image__two, .hero__image__four {
@@ -111,7 +120,7 @@
 }
 
 .hero__image__three {
-  transform: scale(1.4) rotate(8deg);
+  transform: scale(1.4) rotate(5deg);
   z-index: 1;
 }
 
@@ -119,14 +128,15 @@
 
   .home__wrapper {
     align-items: center;
+    max-height: none;
   }
 
   .home__hero {
     flex-direction: column;
     justify-content: start;
     gap: 4rem;
-    padding: 0.5rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
     padding-top: 7rem;
     min-height: 100vh;
   }
@@ -171,6 +181,6 @@
   }
 
   .hero__image__three {
-    transform: scale(1.3) rotate(10deg)
+    transform: scale(1.3) rotate(5deg)
   }
 }

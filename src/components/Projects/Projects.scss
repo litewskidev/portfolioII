@@ -1,82 +1,38 @@
-@import '../../styles/settings.scss';
-
-#projects {
-  min-height: 120vh;
+.projects__outer {
   overflow: hidden;
-  background-color: black;
+  min-height: 100vh;
+}
+
+.projects__inner {
+  min-height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
-.projects__underlay {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
+.scroll__section {
+  min-width: 100vw;
+  padding: 2%;
 
-  img {
-    z-index: 1;
-    width: 160%;
-    filter: brightness(0.9);
+  h3 {
+    font-size: 4rem;
+    color: white;
   }
 }
 
-.projects__title__box {
-  position: relative;
-  z-index: 30;
-  height: 100%;
-
-  h1 {
-    font-family: 'Alyrak';
-    font-weight: 100;
-    position: absolute;
-    margin-top: 15%;
-    left: 34%;
-    font-size: 17vw;
-    color: $copper;
-    z-index: 4;
-    text-shadow: 0px 0px 200px black;
-  }
-
-  img {
-    position: absolute;
-    margin-top: 19%;
-    left: 20%;
-    min-width: 60%;
-    max-width: 60%;
-    z-index: 5;
-    opacity: 0.9;
-  }
-
-  img:last-of-type {
-    z-index: 3;
-  }
+.one {
+  background-color: green;
 }
 
-@media (max-width: 540px) {
+.two {
+  background-color: red;
+}
 
-  #projects {
-    min-height: 120vh;
-  }
+.three {
+  background-color: yellow;
+}
 
-  .projects__underlay {
-    width: 100%;
-
-    img {
-      width: 400%;
-    }
-  }
-
-  .projects__title__box {
-    h1 {
-      top: 15.6rem;
-      left: 20%;
-      font-size: 31vw;
-    }
-
-    img {
-      top: 16.5rem;
-      left: 15%;
-      min-width: 100%;
-      max-width: 100%;
-    }
-  }
+.four {
+  background-color: blue;
 }

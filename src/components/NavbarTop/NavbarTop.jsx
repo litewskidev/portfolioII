@@ -26,7 +26,7 @@ const NavbarTop = ({ data }) => {
 
   const handleContactScroll = e => {
     e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#contact", ease: "power1"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#contact", ease: "power1"});
   };
 
   return(

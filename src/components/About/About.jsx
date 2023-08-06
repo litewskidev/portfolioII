@@ -6,33 +6,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = ({ data }) => {
   const aboutTitleRef = useRef(null);
-  const aboutInfoLeftRef = useRef(null);
-  const aboutInfoRightRef = useRef(null);
   const aboutTriggerRef = useRef(null)
 
   useEffect(() => {
     const aboutTrigger =  aboutTriggerRef.current
     const aboutTitle = aboutTitleRef.current;
-    const aboutInfoLeft = aboutInfoLeftRef.current;
-    const aboutInfoRight = aboutInfoRightRef.current;
-    const tl = gsap.timeline();
 
-    tl.fromTo(aboutTitle, {y: "-=150%"}, {y: 0, scrollTrigger: {
+    gsap.fromTo(aboutTitle, {y: "-=150%"}, {y: 0, scrollTrigger: {
       trigger: aboutTrigger,
       start: "1% 90%",
       end: "10% 20%",
-      scrub: 1,
-    }})
-    .fromTo(aboutInfoLeft, {x: "-=100%"}, {x: 0, scrollTrigger: {
-      trigger: aboutTrigger,
-      start: "15% 60%",
-      end: "30% 30%",
-      scrub: 1,
-    }})
-    .fromTo(aboutInfoRight, {x: "100%"}, {x: 0, scrollTrigger: {
-      trigger: aboutTrigger,
-      start: "15% 60%",
-      end: "30% 30%",
       scrub: 1,
     }})
   }, [])
@@ -45,10 +28,10 @@ const About = ({ data }) => {
           <p className='about__title__info'>{data.about?.title}</p>
         </div>
         <div className='about__info__container'>
-          <div className='about__info__left' ref={aboutInfoLeftRef}>
+          <div className='about__info__left'>
             <p>I create web applications using React and JSES6. Always care about clear code, cool design, responsiveness and user experience</p>
           </div>
-          <div className='about__info__right' ref={aboutInfoRightRef}>
+          <div className='about__info__right'>
             <p>{data.about?.one}</p>
           </div>
         </div>

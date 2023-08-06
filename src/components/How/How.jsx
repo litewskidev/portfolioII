@@ -1,4 +1,4 @@
-import { Linear, gsap } from 'gsap';
+import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './How.scss';
@@ -12,7 +12,7 @@ const How = ({ data }) => {
     const howTrigger = howTriggerRef.current;
     const qrCode = qrCodeRef.current;
 
-    gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease:Linear.easeNone,
+    gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease: "power1",
       scrollTrigger: {
         trigger: howTrigger,
         scrub: 1,

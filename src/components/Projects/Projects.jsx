@@ -1,36 +1,59 @@
-import { Linear, gsap } from 'gsap';
-import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react';
 import './Projects.scss';
 gsap.registerPlugin(ScrollTrigger);
 
-const Projects = ({ data }) => {
-  const projectsTitleRef = useRef(null);
+const Projects = () => {
+  const sectionRef = useRef(null);
+  const triggerRef = useRef(null);
 
-  useEffect(() =>{
-    const projectsTitle = projectsTitleRef.current;
+  useEffect(() => {
+      const section = sectionRef.current;
+      const trigger = triggerRef.current;
 
-    gsap.fromTo(projectsTitle, {x: '100%'}, {x: 0, ease:Linear.easeNone,
-      scrollTrigger: {
-        trigger: projectsTitle,
-        scrub: 1,
-        start: "1% 50%",
-        end: "1% 15%"
-      }
-    });
+      gsap.fromTo(section, {x: 0}, {x: "-300vw", ease: "power0",
+        scrollTrigger: {
+          trigger: trigger,
+          start: "1% 1%",
+          end: "400% 1%",
+          scrub: 0.1,
+          pin: true
+        }
+      })
   }, []);
 
   return(
-    <div id='projects' className='projects__wrapper'>
-      <div className='projects__title__box' ref={projectsTitleRef}>
-        <h1>{data.projects?.title}</h1>
-        <img src={process.env.PUBLIC_URL + "/assets/images/hand2_1920_z1.webp"} alt='metal hand' />
-        <img src={process.env.PUBLIC_URL + "/assets/images/hand2_1920_z2.webp"} alt='metal hand' />
+    <section id='projects' className='projects__outer'>
+      <div ref={triggerRef}>
+        <div className='projects__inner' ref={sectionRef}>
+          <div className='scroll__section one'>
+            <h3>Section 1</h3>
+            <h3>Section 1</h3>
+            <h3>Section 1</h3>
+            <h3>Section 1</h3>
+          </div>
+          <div className='scroll__section two'>
+            <h3>Section 2</h3>
+            <h3>Section 2</h3>
+            <h3>Section 2</h3>
+            <h3>Section 2</h3>
+          </div>
+          <div className='scroll__section three'>
+            <h3>Section 3</h3>
+            <h3>Section 3</h3>
+            <h3>Section 3</h3>
+            <h3>Section 3</h3>
+          </div>
+          <div className='scroll__section four'>
+            <h3>Section 4</h3>
+            <h3>Section 4</h3>
+            <h3>Section 4</h3>
+            <h3>Section 4</h3>
+          </div>
+        </div>
       </div>
-      <div className='projects__underlay'>
-        <img src={process.env.PUBLIC_URL + '/assets/images/wall1920.webp'} alt='red wall background'/>
-      </div>
-    </div>
+    </section>
   )
 };
 

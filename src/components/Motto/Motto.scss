@@ -1,0 +1,83 @@
+@import '../../styles/settings.scss';
+
+#motto {
+  min-height: 120vh;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.motto__underlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+
+  img {
+    z-index: 1;
+    width: 160%;
+    filter: brightness(0.9);
+  }
+}
+
+.motto__title__box {
+  position: relative;
+  z-index: 30;
+  height: 100%;
+
+  h1 {
+    font-family: 'Alyrak';
+    font-weight: 100;
+    position: absolute;
+    margin-top: 15%;
+    left: 34%;
+    font-size: 17vw;
+    color: $copper;
+    z-index: 4;
+    text-shadow: 0px 0px 200px black;
+  }
+
+  img {
+    position: absolute;
+    margin-top: 19%;
+    left: 20%;
+    min-width: 60%;
+    max-width: 60%;
+    z-index: 5;
+    opacity: 0.9;
+  }
+
+  img:last-of-type {
+    z-index: 3;
+  }
+}
+
+@media (max-width: 540px) {
+
+  #motto {
+    min-height: 120vh;
+  }
+
+  .motto__underlay {
+    width: 100%;
+
+    img {
+      width: 400%;
+    }
+  }
+
+  .motto__title__box {
+    h1 {
+      top: 15.6rem;
+      left: 20%;
+      font-size: 31vw;
+      text-shadow: 0px 0px 100px black;
+    }
+
+    img {
+      top: 16.5rem;
+      left: 15%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+}
