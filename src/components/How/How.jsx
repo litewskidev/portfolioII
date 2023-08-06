@@ -27,8 +27,7 @@ const How = ({ data }) => {
       <div className='how__info' ref={howTriggerRef}>
         <p>{data.how?.info}</p>
         <div className='how__qr' ref={qrCodeRef}>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/githubqr.svg'} alt='github'/>
-          <img src={process.env.PUBLIC_URL + '/assets/images/overlay.webp'} alt='old overlay'/>
+          <a href='https://github.com/litewskidev' target="_blank" rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/githubqr.svg'} alt='github'/></a>
         </div>
       </div>
       <div className='how__image'>

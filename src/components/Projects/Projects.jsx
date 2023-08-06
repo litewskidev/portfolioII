@@ -5,51 +5,53 @@ import './Projects.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
+  const projectsTriggerRef = useRef(null);
+  const projectsSectionRef = useRef(null);
 
   useEffect(() => {
-      const section = sectionRef.current;
-      const trigger = triggerRef.current;
+    const projectsTrigger = projectsTriggerRef.current;
+    const projectsSection = projectsSectionRef.current;
 
-      gsap.fromTo(section, {x: 0}, {x: "-300vw", ease: "power0",
+      gsap.to(projectsSection, {x: "-300vw", ease: "power0",
         scrollTrigger: {
-          trigger: trigger,
+          trigger: projectsTrigger,
           start: "1% 1%",
           end: "400% 1%",
-          scrub: 0.1,
-          pin: true
+          scrub: 1,
+          pin: projectsTrigger
         }
       })
   }, []);
 
   return(
     <section id='projects' className='projects__outer'>
-      <div ref={triggerRef}>
-        <div className='projects__inner' ref={sectionRef}>
+      <div id='projects-container' ref={projectsTriggerRef}>
+        <div className='projects__title__container'>
+          <div className='projects__title'>
+            <h1>PROJECTS</h1>
+            <p>REACT & JAVASCRIPT</p>
+          </div>
+          <div className='projects__title__pattern'>
+            <img src={process.env.PUBLIC_URL + '/assets/shapes/kreski.webp'}/>
+          </div>
+        </div>
+        <div className='projects__inner' ref={projectsSectionRef}>
           <div className='scroll__section one'>
-            <h3>Section 1</h3>
-            <h3>Section 1</h3>
-            <h3>Section 1</h3>
-            <h3>Section 1</h3>
+            <div className='section__one__info'>
+              <h3>No.1</h3>
+            </div>
           </div>
           <div className='scroll__section two'>
-            <h3>Section 2</h3>
-            <h3>Section 2</h3>
-            <h3>Section 2</h3>
-            <h3>Section 2</h3>
+            <h3>No.2</h3>
           </div>
           <div className='scroll__section three'>
-            <h3>Section 3</h3>
-            <h3>Section 3</h3>
-            <h3>Section 3</h3>
-            <h3>Section 3</h3>
+            <h3>No.3</h3>
           </div>
           <div className='scroll__section four'>
-            <h3>Section 4</h3>
-            <h3>Section 4</h3>
-            <h3>Section 4</h3>
-            <h3>Section 4</h3>
+            <h3>No.4</h3>
+          </div>
+          <div className='projects__underlay'>
+            <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid background' />
           </div>
         </div>
       </div>

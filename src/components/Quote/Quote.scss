@@ -1,0 +1,38 @@
+@import '../../styles/settings.scss';
+
+.quote__wrapper {
+  overflow: hidden;
+  z-index: 999;
+  padding-top: 3%;
+  border-top: 1px solid rgb(104, 104, 104);
+}
+
+.quote__header {
+  background-color: $raven;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  z-index: 25;
+
+  width: 150%;
+
+  h1 {
+    font-size: 2rem;
+    font-family: $font-text;
+    font-weight: 100;
+    white-space: nowrap;
+    color: $platinum-2;
+  }
+}
+
+@media(max-width: 540px) {
+  .quote__wrapper {
+    margin-bottom: -8%;
+  }
+
+  .quote__header {
+    h1 {
+      font-size: 1.1rem;
+    }
+  }
+}

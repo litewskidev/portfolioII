@@ -3,8 +3,9 @@
 #motto {
   min-height: 120vh;
   overflow: hidden;
-  background-color: black;
+  background-color: $raven;
   position: relative;
+  border-bottom: 1px solid $platinum-2;
 }
 
 .motto__underlay {
@@ -33,7 +34,7 @@
     font-size: 17vw;
     color: $copper;
     z-index: 4;
-    text-shadow: 0px 0px 200px black;
+    text-shadow: 0px 0px 200px $raven;
   }
 
   img {
@@ -43,13 +44,27 @@
     min-width: 60%;
     max-width: 60%;
     z-index: 5;
-    opacity: 0.9;
   }
 
   img:last-of-type {
     z-index: 3;
   }
 }
+
+  .motto__info {
+    position: absolute;
+    z-index: 20;
+    bottom: 5%;
+    left: 5%;
+    opacity: 0.95;
+
+    p {
+      font-size: 7rem;
+      font-weight: 600;
+      color: $platinum-2;
+      font-family: $font-1;
+    }
+  }
 
 @media (max-width: 540px) {
 
@@ -70,7 +85,7 @@
       top: 15.6rem;
       left: 20%;
       font-size: 31vw;
-      text-shadow: 0px 0px 100px black;
+      text-shadow: 0px 0px 100px $raven;
     }
 
     img {
@@ -78,6 +93,15 @@
       left: 15%;
       min-width: 100%;
       max-width: 100%;
+    }
+  }
+
+  .motto__info {
+    bottom: 5%;
+    left: 5%;
+
+    p {
+      font-size: 3rem;
     }
   }
 }

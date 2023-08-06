@@ -32,6 +32,9 @@ const Motto = ({ data }) => {
       <div className='motto__underlay'>
         <img src={process.env.PUBLIC_URL + '/assets/images/wall1920.webp'} alt='red wall background'/>
       </div>
+      <div className='motto__info'>
+        <p>{data.motto?.quote}<br />- Winston</p>
+      </div>
     </div>
   )
 };

@@ -6,15 +6,13 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  opacity: 1;
-  z-index: 40;
 }
 
 .home__hero {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: black;
+  background-color: $raven;
   position: relative;
   gap: 8%;
   padding: 10%;
@@ -106,7 +104,7 @@
 .hero__image__one {
   transform: rotate(-5deg);
   margin-right: 4%;
-  margin-bottom: -0.2%;
+  margin-bottom: -0.25%;
 }
 
 .hero__image__five {

@@ -1,11 +1,21 @@
 //  FONTS
 $font-text: 'Titillium Web', sans-serif;
-$font-retro-text: 'VT323', monospace;
+$font-1: 'Lacquer', cursive;
+
+//  MAIN PALLETTE
+$persian-red: rgba(182, 76, 57, 1);
+$jasper: rgba(195, 74, 54, 1);
+$copper: rgba(193, 119, 56, 1);
+$tan: rgba(218, 189, 154, 1);
+$tan-2: rgba(205, 169, 125, 1);;
+$platinum: #DBDBDBff;
+$platinum-2: #E7E7E7ff;
+$eerie-black: rgba(37, 34, 32, 1);
+$raven: rgb(5,3,1);
 
 //  RETRO PALLETTE
 $caf-noir: rgba(72, 43, 11, 1);
 $russet: rgba(113, 57, 22, 1);
-$copper: rgba(193, 119, 56, 1);
 $earth-yellow: rgba(219, 171, 110, 1);
 $peach: rgba(254, 205, 165, 1);
 $cambridge-blue: rgba(124, 165, 151, 1);
@@ -15,17 +25,15 @@ $jet: rgba(42, 43, 38, 1);
 
 //  RED
 $red-cmyk: rgba(230, 24, 32, 1);
-$tea-rose-red: rgba(239, 182, 182, 1);
-$isabelline: rgba(240, 235, 231, 1);
 $imperial-red: rgba(227, 67, 74, 1);
 $indian-red: rgba(230, 98, 103, 1);
-
-//  ALYRAK PALLETTE
-$night: rgba(18, 18, 18, 1);
-$eerie-black: rgba(37, 34, 32, 1);
-$persian-red: rgba(182, 76, 57, 1);
-$black-olive: rgba(52, 61, 56, 1);
-$jasper: rgba(195, 74, 54, 1);
+$chili-red: rgba(221, 33, 7, 1);
+$black-bean: rgba(45, 0, 4, 1);
+$sinopia: rgba(215, 34, 1, 1);
+$engineering-orange: rgba(197, 14, 4, 1);
+$turkey-red: rgba(175, 5, 2, 1);
+$tea-rose-red: rgba(239, 182, 182, 1);
+$isabelline: rgba(240, 235, 231, 1);
 
 //  TERMINAL PALLETTE
 $jade: rgba(88, 173, 111, 1);
@@ -35,31 +43,22 @@ $mint-2: rgba(107, 175, 122, 1);
 $cambridge-blue: rgba(118, 181, 141, 1);
 
 //  DISCS PALETTE
+$black-olive: rgba(52, 61, 56, 1);
 $dark-slate-gray: rgba(29, 62, 57, 1);
 $dark-slate-gray-2: rgba(50, 82, 77, 1);
 $dark-slate-gray-3: rgba(52, 68, 62, 1);
 $dark-slate-gray-4: rgba(45, 63, 58, 1);
 $feldgrau: rgba(66, 90, 84, 1);
 
-//  QR PALLETTE
-$tan: rgba(218, 189, 154, 1);
-$tan-2: rgba(205, 169, 125, 1);;
-$tan-3: rgba(205, 168, 124, 1);
-
-//  PERSONA PALLETTE
-$chili-red: rgba(221, 33, 7, 1);
-$black-bean: rgba(45, 0, 4, 1);
-$sinopia: rgba(215, 34, 1, 1);
-$engineering-orange: rgba(197, 14, 4, 1);
-$turkey-red: rgba(175, 5, 2, 1);
-
-//  WHITE
+//  WHITE PALETTE
 $lynx-white: #f5f6fa;
-$platinum: #DBDBDBff;
-$white-smoke: #F2F2F2ff;
-$platinum-2: #E7E7E7ff;
 
-//  BLACK
-$jet: #383838ff;
-$onyx: #404040ff;
-$jet-2: #292929ff;
+//  BLACK PALLETTE
+$sable: rgb(6, 6, 6);
+$obsidian: rgb(2, 4, 3);
+$spider: rgb(4, 2, 0);
+$wet: rgb(8, 7, 6);
+$slate: rgb(4, 7, 7);
+$fashion: rgb(6, 4, 3);
+$hole: rgb(6, 6, 5);
+$void: rgb(1, 2, 7);
