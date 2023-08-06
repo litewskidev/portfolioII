@@ -12,16 +12,16 @@ const Skills = ({ data }) => {
 
     gsap.fromTo(".skills__box", {scale: 0, opacity: 0}, { scale: 1, opacity: 1, duration: 1,
       stagger: {
-        from: "start",
+        from: 0,
         axis: "x",
-        amount: 1.5,
+        amount: 2,
+        ease: "power1"
       },
       scrollTrigger: {
         trigger: skillsTrigger,
-        scrub: 0.3,
+        scrub: 1,
         start: "1% 50%",
-        end: "70% 70%",
-        markers: false,
+        end: "75% 70%"
       }
     });
   }, [])

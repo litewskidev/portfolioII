@@ -21,18 +21,18 @@
 
 .hero__underlay {
   position: absolute;
-  filter: invert(1) brightness(0.2) sepia(1);
+  filter: invert(1) brightness(0.15) sepia(1);
 }
 
 .home__arrows {
   position: absolute;
   bottom: 15%;
-  left: 0;
+  left: 5%;
 
   img {
-    width: 25%;
+    width: 20%;
     transform: rotate(90deg);
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 
@@ -86,7 +86,8 @@
   align-items: center;
   z-index: 40;
   margin-top: -3%;
-  border: 1px solid $tan-2;
+  border: 2px solid $tan-2;
+  transform: rotate(4deg);
 }
 
 .home__hero__image__box {
@@ -110,7 +111,7 @@
 }
 
 .hero__image__three {
-  transform: scale(1.4) rotate(10deg);
+  transform: scale(1.4) rotate(8deg);
   z-index: 1;
 }
 
@@ -131,10 +132,10 @@
   }
 
   .home__arrows {
-    left: -3%;
+    left: 0;
 
     img {
-      width: 20%;
+      width: 15%;
     }
   }
 

@@ -15,10 +15,9 @@ const How = ({ data }) => {
     gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease:Linear.easeNone,
       scrollTrigger: {
         trigger: howTrigger,
-        scrub: 0.3,
+        scrub: 1,
         start: "30% 95%",
-        end: "1% 25%",
-        markers: false
+        end: "1% 25%"
       }
     });
   }, []);

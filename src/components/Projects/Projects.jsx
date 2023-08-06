@@ -13,12 +13,11 @@ const Projects = ({ data }) => {
     gsap.fromTo(projectsTitle, {x: '100%'}, {x: 0, ease:Linear.easeNone,
       scrollTrigger: {
         trigger: projectsTitle,
-        scrub: 0.3,
-        markers: false,
+        scrub: 1,
         start: "1% 50%",
         end: "1% 15%"
       }
-    })
+    });
   }, []);
 
   return(

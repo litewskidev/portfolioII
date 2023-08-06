@@ -19,7 +19,6 @@ const Home = ({ data }) => {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    const tl2 = gsap.timeline( {repeat: -1} );
 
     const heroImgContainer = heroImgContainerRef.current;
     const heroImgOne = heroImgOneRef.current;
@@ -31,7 +30,6 @@ const Home = ({ data }) => {
     const heroTextTwo = heroTextTwoRef.current;
     const heroTextThree = heroTextThreeRef.current;
     const heroSocial = heroSocialRef.current;
-    const heroArrows = homeArrowsRef.current;
 
     tl.fromTo(heroImgContainer, {x: "-=40%", opacity: 0}, {x:0, opacity: 1, delay: 0.5, duration: 0.3, ease: "power2"})
     .fromTo(heroImgOne, {x: "-=40%", opacity: 0}, {x:0, opacity: 1, duration: 0.3, ease: "power2"})
@@ -43,10 +41,6 @@ const Home = ({ data }) => {
     .fromTo(heroImgThree, {x: "30%", opacity: 0}, {x:0, opacity: 1, delay: 0.5, duration: 0.4, ease: "power2"})
     .fromTo(heroTextThree, {x: "30%", opacity: 0}, {x: 0, opacity: 1, duration: 0.4, ease: "power2"}, "<")
     .fromTo(heroSocial, {y: "-=20%", opacity: 0}, {y: 0, delay: 0.5, opacity: 1, duration: 1, ease: "power1"})
-    .fromTo(heroArrows, {opacity: 0}, {opacity: 1, duration: 1, ease: "power1"}, "<")
-
-    tl2.to(heroArrows, {y: "50%", duration: 0.6, ease: "power0"})
-    .to(heroArrows, {y: "-=50%", duration: 0.6, ease: "power0"})
   }, []);
 
   return(
@@ -82,9 +76,6 @@ const Home = ({ data }) => {
           </div>
           <div className='hero__underlay'>
             <img src={process.env.PUBLIC_URL + '/assets/images/dust2-1920.webp'} alt='overlay dust'/>
-          </div>
-          <div className='home__arrows'>
-            <img src={process.env.PUBLIC_URL + '/assets/shapes/arrows.webp'} ref={homeArrowsRef} alt='arrows shape'/>
           </div>
         </div>
       </div>

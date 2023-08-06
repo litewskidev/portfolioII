@@ -15,33 +15,27 @@ const About = ({ data }) => {
     const aboutTitle = aboutTitleRef.current;
     const aboutInfoLeft = aboutInfoLeftRef.current;
     const aboutInfoRight = aboutInfoRightRef.current;
-
     const tl = gsap.timeline();
 
     tl.fromTo(aboutTitle, {y: "-=150%"}, {y: 0, scrollTrigger: {
-      markers: false,
       trigger: aboutTrigger,
       start: "1% 90%",
       end: "10% 20%",
-      scrub: 0.3,
+      scrub: 1,
     }})
     .fromTo(aboutInfoLeft, {x: "-=100%"}, {x: 0, scrollTrigger: {
-      markers: false,
       trigger: aboutTrigger,
       start: "15% 60%",
       end: "30% 30%",
-      scrub: 0.3,
+      scrub: 1,
     }})
     .fromTo(aboutInfoRight, {x: "100%"}, {x: 0, scrollTrigger: {
-      markers: false,
       trigger: aboutTrigger,
       start: "15% 60%",
       end: "30% 30%",
-      scrub: 0.3,
+      scrub: 1,
     }})
   }, [])
-
-
 
   return(
     <div id='about' ref={aboutTriggerRef}>

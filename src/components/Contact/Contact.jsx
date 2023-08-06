@@ -18,8 +18,7 @@ const Contact = ({ data }) => {
         trigger: contactFrameTrigger,
         start: "1% 60%",
         end: "1% 40%",
-        scrub: 0.3,
-        markers: false
+        scrub: 1
       }
     });
   }, []);
