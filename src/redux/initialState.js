@@ -3,54 +3,41 @@ const initialState = {
 
   projects: [
     {
+      id: 1,
       tech: 'react',
       title: 'watchmore',
-      img: '/assets/projects/watchCrop.webp',
-      web: 'http://watchmore.litewskidev.usermd.net/',
-      stills: [
-        '/assets/stills/watch1.webp',
-        '/assets/stills/watch2.webp',
-        '/assets/stills/watch3.webp',
-        '/assets/stills/watch4.webp',
-      ]
+      img: '/assets/covers/1.webp',
+      web: 'http://watchmore.litewskidev.usermd.net',
     },
     {
+      id: 2,
       tech: 'javascript',
       title: 'pathfinder',
-      img: '/assets/projects/pathCrop.webp',
-      web: 'http://pathfinder.litewskidev.usermd.net/',
-      stills: [
-        '/assets/stills/Path1.webp',
-        '/assets/stills/Path2.webp',
-        '/assets/stills/Path3.webp',
-      ]
+      img: '/assets/covers/2.webp',
+      web: 'http://pathfinder.litewskidev.usermd.net',
     },
     {
+      id: 3,
       tech: 'react',
       title: 'audiophile',
-      img: '/assets/projects/audioCrop.webp',
-      web: 'http://audiophile.litewskidev.usermd.net/',
-      stills: [
-        '/assets/stills/audio1.webp',
-        '/assets/stills/audio2.webp',
-        '/assets/stills/audio3.webp',
-        '/assets/stills/audio4.webp',
-      ]
+      img: '/assets/covers/3.webp',
+      web: 'http://audiophile.litewskidev.usermd.net',
     },
     {
+      id: 4,
       tech: 'javascript',
       title: 'memory',
-      img: '/assets/projects/memoryCrop.webp',
-      web: 'http://memory.litewskidev.usermd.net/',
-      stills: [
-        '/assets/stills/Memory1.webp',
-        '/assets/stills/Memory2.webp',
-        '/assets/stills/Memory3.webp',
-        '/assets/stills/Memory4.webp',
-      ]
+      img: '/assets/covers/4.webp',
+      web: 'http://memory.litewskidev.usermd.net',
+    },
+    {
+      id: 5,
+      tech: 'javascript',
+      title: 'miau ma mia',
+      img: '/assets/covers/5.webp',
+      web: 'https://project-pizzeria.litewskidev.repl.co',
     }
   ]
-
 };
 
 export default initialState;

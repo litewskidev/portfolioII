@@ -9,7 +9,7 @@
 
 .projects__inner {
   height: 83.9vh;
-  width: 400vw;
+  width: 500vw;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -73,13 +73,15 @@
 //  SECTIONS
 .scroll__section {
   width: 100vw;
-  padding: 1%;
+  padding: 1rem;
   z-index: 4;
   background-color: $jasper;
   border: 1px solid $platinum-2;
+  display: flex;
+  gap: 10%;
 
   h3 {
-    font-size: 4rem;
+    font-size: 2rem;
     color: $platinum-2;
     font-family: $font-text;
     font-weight: 100;
@@ -103,9 +105,18 @@
 .four {
 }
 
+.scroll__section__project {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 540px) {
   #projects-container {
     padding-top: 3rem;
+  }
+
+  .projects__inner {
+    height: 85vh;
   }
 
   .projects__underlay {
@@ -139,6 +150,9 @@
   }
 
   .scroll__section {
+    flex-direction: column;
+    gap: 10%;
+
     h3 {
       font-size: 1.5rem;
     }

@@ -1,0 +1,113 @@
+@import '../../styles/settings.scss';
+
+.projects__card__wrapper {
+  width: 100%;
+  border: 1px solid $platinum-2;
+}
+
+.projects__card__container {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.projects__card__inner {
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex__card__inner__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.projects__card__image {
+  width: 100%;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.projects__card__title {
+  p {
+    font-family: $font-text;
+    font-weight: 600;
+    font-size: 3rem;
+    color: $platinum;
+    text-transform: uppercase;
+  }
+}
+
+.projects__card__btn {
+  display: inline;
+
+  button {
+    cursor: pointer;
+    background: transparent;
+    padding: 0.5rem 2rem;
+    border: 1px solid $platinum-2;
+    font-family: $font-text;
+    font-weight: 100;
+    font-size: 1rem;
+    color: $platinum-2;
+  }
+}
+
+.projects__card__link {
+  width: 25%;
+  margin-top: 1rem;
+
+  img{
+    cursor: pointer;
+    width: 100%;
+    filter: invert(1);
+  }
+}
+
+.projects__card__serial {
+  p {
+    font-family: $font-text;
+    font-weight: 100;
+    font-size: 1rem;
+    color: $platinum-2;
+  }
+}
+
+@media (max-width: 540px) {
+  .projects__card__container {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .projects__card__inner {
+    width: 100%;
+  }
+
+  .flex__card__inner__info {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .projects__card__title {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+.projects__card__link {
+  margin-top: 0.5rem;
+}
+
+  .projects__card__serial {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
