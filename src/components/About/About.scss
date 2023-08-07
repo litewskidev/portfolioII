@@ -5,6 +5,8 @@
   overflow: hidden;
   position: relative;
   z-index: 20;
+  height: 130vh;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.6);
 }
 
 .about__front__end {
@@ -68,7 +70,6 @@
 .about__info__container {
   display: flex;
   gap: 5%;
-  padding-bottom: 10%;
 
   p {
     font-family: $font-text;
@@ -112,11 +113,10 @@
 @media (max-width: 540px) {
 
   .about__wrapper {
-  min-height: 75vh;
+    height: 80vh;
   }
 
   .about__front__end {
-
     p {
       font-size: 0.7rem;
     }
@@ -144,7 +144,7 @@
   }
 
   .about__info__container {
-    margin-top: -1%;
+    margin-top: -2%;
 
     p {
       font-weight: 300;

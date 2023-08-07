@@ -1,0 +1,14 @@
+@import '../../styles/settings.scss';
+
+.quote__two__wrapper {
+  width: 100%;
+  height: 29.5vh;
+  background-color: $raven;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    filter: invert(1);
+    opacity: 0.4;
+  }
+}

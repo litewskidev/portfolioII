@@ -28,11 +28,11 @@ const Projects = () => {
       <div id='projects-container' ref={projectsTriggerRef}>
         <div className='projects__title__container'>
           <div className='projects__title'>
-            <h1>PROJECTS</h1>
+            <h1>PROJECTS?</h1>
             <p>REACT & JAVASCRIPT</p>
           </div>
           <div className='projects__title__pattern'>
-            <img src={process.env.PUBLIC_URL + '/assets/shapes/kreski.webp'}/>
+            <img src={process.env.PUBLIC_URL + '/assets/shapes/kreski.webp'} alt='lines pattern'/>
           </div>
         </div>
         <div className='projects__inner' ref={projectsSectionRef}>

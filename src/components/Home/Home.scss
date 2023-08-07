@@ -48,7 +48,7 @@
     color: $persian-red;
     font-weight: 100;
     font-size: 13vw;
-    line-height: 9.3vw;
+    line-height: 0.72;
     opacity: 1;
   }
 
@@ -58,7 +58,7 @@
     font-weight: 100;
     font-size: 4.15vw;
     letter-spacing: 0.24vw;
-    line-height: 3.2vw;
+    line-height: 0.76;
     opacity: 1;
     text-align: end;
   }
@@ -153,13 +153,11 @@
 
     h1 {
       font-size: 5rem;
-      line-height: 3.65rem;
     }
 
     h2 {
       margin-top: 0;
       font-size: 1.7rem;
-      line-height: 1.2rem;
       letter-spacing: 0.05rem;
     }
   }

@@ -50,6 +50,7 @@ const Contact = ({ data }) => {
   return(
     <div id='contact' className='contact__wrapper'>
       <p>{data.contact?.title}</p>
+      <p>{data.contact?.info}</p>
       <form className='contact__form' onSubmit={handleSubmit}>
 
         <input className='contact__form__text'

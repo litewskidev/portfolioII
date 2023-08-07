@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  min-height: 100vh;
+  height: 100vh;
   background-color: $raven;
   padding-top: 6rem;
   position: relative;
@@ -15,6 +15,13 @@
     font-weight: 100;
     font-family: 'Alyrak';
     color: $platinum-2;
+  }
+
+  p:last-of-type {
+    font-family: $font-text;
+    font-weight: 100;
+    color: $platinum-2;
+    font-size: 2rem;
   }
 }
 
@@ -82,9 +89,12 @@
 
     p {
       font-size: 5rem;
-      font-weight: 200;
-      font-family: 'Alyrak';
-      color: $platinum-2;
+    }
+
+    p:last-of-type {
+      font-size: 1rem;
+      padding: 0 10%;
+      text-align: center;
     }
   }
 

@@ -8,6 +8,7 @@ import Motto from '../Motto/Motto.jsx';
 import Contact from '../Contact/Contact.jsx';
 import NavbarBottom from '../NavbarBottom/NavbarBottom.jsx';
 import './Main.scss';
+import QuoteTwo from '../QuoteTwo/QuoteTwo.jsx';
 
 const Main = ({ data }) => {
   return(
@@ -18,6 +19,7 @@ const Main = ({ data }) => {
       <Projects />
       <Skills data={data} />
       <How data={data} />
+      <QuoteTwo />
       <Motto data={data} />
       <Contact data={data} />
       <NavbarBottom data={data} />
