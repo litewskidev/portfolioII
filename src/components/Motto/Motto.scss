@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 #motto {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   background-color: $raven;
   position: relative;

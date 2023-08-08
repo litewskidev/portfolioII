@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 #skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $raven;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@
   #skills {
     padding-top: 0.5rem;
     padding-bottom: 5rem;
-    min-height: 50vh;
+    min-height: 85vh;
 
     h1 {
       font-size: 5rem;

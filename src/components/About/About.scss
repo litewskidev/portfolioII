@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
   z-index: 20;
-  height: 130vh;
+  min-height: 130vh;
   border-bottom: 1px solid rgb(255, 255, 255, 0.6);
 }
 
@@ -113,7 +113,7 @@
 @media (max-width: 540px) {
 
   .about__wrapper {
-    height: 80vh;
+    min-height: 80vh;
   }
 
   .about__front__end {

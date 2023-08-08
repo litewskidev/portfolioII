@@ -9,10 +9,12 @@ import Contact from '../Contact/Contact.jsx';
 import NavbarBottom from '../NavbarBottom/NavbarBottom.jsx';
 import './Main.scss';
 import QuoteTwo from '../QuoteTwo/QuoteTwo.jsx';
+import NewHero from '../NewHero/NewHero.jsx';
 
 const Main = ({ data }) => {
   return(
     <div id='main'>
+      <NewHero />
       <Home data={data}/>
       <About data={data} />
       <Quote />
