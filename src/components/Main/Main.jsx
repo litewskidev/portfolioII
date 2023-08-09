@@ -1,4 +1,3 @@
-import Home from '../Home/Home.jsx';
 import About from '../About/About.jsx';
 import Quote from '../Quote/Quote.jsx';
 import Projects from '../Projects/Projects.jsx';
@@ -9,8 +8,6 @@ import Contact from '../Contact/Contact.jsx';
 import NavbarBottom from '../NavbarBottom/NavbarBottom.jsx';
 import './Main.scss';
 import QuoteTwo from '../QuoteTwo/QuoteTwo.jsx';
-import NewHero from '../NewHero/NewHero.jsx';
-import ColorHero from '../ColorHero/ColorHero.jsx';
 import ArtyHero from '../ArtyHero/ArtyHero.jsx';
 
 const Main = ({ data }) => {

@@ -10,18 +10,18 @@ const ArtyHero = () => {
               <p>hi. i'm adrian</p>
             </div>
             <div className='main__top__right'>
-              <img src={process.env.PUBLIC_URL + '/assets/test/arty/2of3.webp'} alt='middle face part'/>
+              <img src={process.env.PUBLIC_URL + '/assets/arty/1.webp'} alt='middle face part'/>
             </div>
           </div>
           <div className='arty__hero__main__center'>
             <div className='main__center__left'>
-              <img src={process.env.PUBLIC_URL + '/assets/test/arty/3of3.webp'} alt='bottom face part' />
+              <img src={process.env.PUBLIC_URL + '/assets/arty/2.webp'} alt='bottom face part' />
               <div className='arty__hero__image__overlay'>
                 <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid overlay' />
               </div>
             </div>
             <div className='main__center__right'>
-                <p>i create websites</p>
+              <p>i create websites</p>
             </div>
           </div>
           <div className='arty__hero__main__bottom'>
