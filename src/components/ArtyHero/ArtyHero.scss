@@ -1,0 +1,162 @@
+@import '../../styles/settings.scss';
+
+.arty__hero__wrapper {
+  min-height: 100vh;
+  background-color: $platinum;
+  padding-top: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.arty__hero__underlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+  }
+}
+
+.arty__hero__container {
+  margin: 3%;
+  margin-top: 0;
+}
+
+.arty__hero__social {
+  display: flex;
+  gap: 1.5rem;
+
+  img {
+    width: 3rem;
+    filter: invert(40%) sepia(10%) saturate(2365%) hue-rotate(355deg) brightness(1.7) contrast(0.6);
+    cursor: pointer;
+  }
+}
+
+.arty__hero__main {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 2.5%;
+  padding-top: 8rem;
+  background-color: $raven;
+  border-bottom-right-radius: 5rem;
+}
+
+.arty__hero__main__top {
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.main__top__right {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.main__top__left {
+  width: 100%;
+  text-align: end;
+  margin-bottom: -0.5rem;
+
+  p {
+    font-family: 'Alyrak';
+    font-size: 11rem;
+    font-weight: 100;
+    color: $persian-red;
+    text-transform: uppercase;
+    line-height: 0.73;
+  }
+}
+
+.arty__hero__main__center {
+  display: flex;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.main__center__right {
+  width: 100%;
+  text-align: start;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+
+  p {
+    font-family: 'Alyrak';
+    font-size: 17rem;
+    font-weight: 100;
+    color: $persian-red;
+    text-transform: uppercase;
+    line-height: 0.73;
+  }
+}
+
+.main__center__left {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  img {
+    width: 100%;
+  }
+}
+
+.arty__hero__image__overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.arty__hero__main__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.main__bottom__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6rem;
+
+  p {
+    font-family: $font-text;
+    font-size: 2.15rem;
+    font-weight: 100;
+    color: $platinum;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  button {
+    display: inline;
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: $persian-red;
+    padding: 1rem 5rem;
+    border: none;
+    color: $raven;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    z-index: 99;
+    cursor: pointer;
+  }
+}

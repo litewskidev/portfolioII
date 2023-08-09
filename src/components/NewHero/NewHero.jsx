@@ -5,7 +5,7 @@ const NewHero = () => {
     <div className='new__hero__wrapper'>
       <div className='new__hero__container'>
         <div className='new__hero__title'>
-          <p>I CREATE WEBSITES --&gt;</p>
+          <p>FRONT-END DEVELOPER</p>
         </div>
         <div className='new__hero__image'>
           <div className='new__hero__image__pattern'></div>
