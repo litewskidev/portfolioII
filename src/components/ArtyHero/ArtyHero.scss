@@ -2,10 +2,18 @@
 
 .arty__hero__wrapper {
   min-height: 100vh;
-  background-color: $platinum;
-  padding-top: 4rem;
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
+}
+
+.arty__hero__version {
+  margin-left: 1%;
+  p {
+    font-size: 0.9rem;
+    color: $platinum;
+    opacity: 0.6;
+  }
 }
 
 .arty__hero__underlay {
@@ -13,18 +21,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  //z-index: -1;
 
   img {
     width: 100%;
     opacity: 0.4;
     object-fit: cover;
+    filter: invert(1);
   }
 }
 
 .arty__hero__container {
   margin: 3%;
   margin-top: 0;
+  z-index: 2;
+  background-color: $raven;
 }
 
 .arty__hero__main {
@@ -32,19 +43,21 @@
   flex-direction: column;
   padding: 5%;
   padding-bottom: 2.5%;
-  padding-top: 8rem;
   background-color: $raven;
-  border-bottom-right-radius: 5rem;
+  z-index: 99;
 }
 
 .arty__hero__main__top {
+  padding-top: 1rem;
   display: flex;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 3;
+  background-color: $raven;
 }
 
 .main__top__right {
   width: 100%;
+  background-color: $raven;
 
   img {
     width: 100%;
@@ -54,13 +67,14 @@
 .main__top__left {
   width: 100%;
   text-align: end;
-  margin-bottom: -0.5rem;
+  margin-bottom: -0.2rem;
+  background-color: $raven;
 
   p {
     font-family: 'Alyrak';
-    font-size: 11rem;
+    font-size: 9rem;
     font-weight: 100;
-    color: $persian-red;
+    color: $jasper;
     text-transform: uppercase;
     line-height: 0.73;
   }
@@ -70,6 +84,7 @@
   display: flex;
   align-items: flex-start;
   z-index: 2;
+  background-color: $raven;
 }
 
 .main__center__right {
@@ -77,12 +92,13 @@
   text-align: start;
   margin-top: 0.8rem;
   margin-left: 0.2rem;
+  background-color: $raven;
 
   p {
     font-family: 'Alyrak';
-    font-size: 17rem;
+    font-size: 14rem;
     font-weight: 100;
-    color: $persian-red;
+    color: $jasper;
     text-transform: uppercase;
     line-height: 0.73;
   }
@@ -93,6 +109,7 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
+  background-color: $raven;
 
   img {
     width: 100%;
@@ -119,6 +136,7 @@
   align-items: flex-end;
   justify-content: space-between;
   z-index: 2;
+  background-color: $raven;
 }
 
 .main__bottom__left {
@@ -129,7 +147,7 @@
 
   p {
     font-family: $font-text;
-    font-size: 2.15rem;
+    font-size: 1.5rem;
     font-weight: 100;
     color: $platinum;
     text-transform: uppercase;
@@ -141,7 +159,7 @@
     font-family: $font-text;
     font-weight: 900;
     font-size: 2rem;
-    background-color: $persian-red;
+    background-color: $jasper;
     padding: 1rem 5rem;
     border: none;
     color: $raven;
@@ -165,7 +183,14 @@
 
 @media (max-width: 540px) {
   .arty__hero__wrapper {
-    padding-top: 2.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .arty__hero__version {
+    p {
+      font-size: 0.7rem;
+      opacity: 0.4;
+    }
   }
 
   .arty__hero__container {

@@ -17,13 +17,13 @@ const Motto = ({ data }) => {
         trigger: mottoTrigger,
         scrub: 1,
         start: "1% 50%",
-        end: "1% 15%"
+        end: "1% 1%"
       }
     });
   }, []);
 
   return(
-    <div id='motto' className='motto__wrapper' ref={mottoTriggerRef}>
+    <section id='motto' className='motto__wrapper' ref={mottoTriggerRef}>
       <div className='motto__title__box' >
         <img src={process.env.PUBLIC_URL + "/assets/images/hand21920.webp"} alt='metal hand' ref={mottoTitleRef}/>
       </div>
@@ -33,7 +33,7 @@ const Motto = ({ data }) => {
       <div className='motto__info'>
         <p>{data.motto?.quote}<br />- Winston</p>
       </div>
-    </div>
+    </section>
   )
 };
 

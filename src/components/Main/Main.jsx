@@ -12,8 +12,8 @@ import ArtyHero from '../ArtyHero/ArtyHero.jsx';
 
 const Main = ({ data }) => {
   return(
-    <div id='main'>
-      <ArtyHero />
+    <main id='main'>
+      <ArtyHero data={data} />
       <About data={data} />
       <Quote />
       <Projects />
@@ -23,7 +23,7 @@ const Main = ({ data }) => {
       <Motto data={data} />
       <Contact data={data} />
       <NavbarBottom data={data} />
-    </div>
+    </main>
   )
 };
 

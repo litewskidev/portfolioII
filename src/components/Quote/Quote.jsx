@@ -23,7 +23,7 @@ const Quote = () => {
     })
   }, [])
   return(
-    <div id='quote' className='quote__wrapper' ref={quoteTriggerRef}>
+    <section id='quote' className='quote__wrapper' ref={quoteTriggerRef}>
       <div className='quote__header' ref={quoteRef}>
         <h1>&#8275;</h1>
         <h1>Experience is the name everyone gives to their mistakes</h1>
@@ -43,7 +43,7 @@ const Quote = () => {
         <h1>In order to be irreplaceable, one must always be different</h1>
         <h1>&#8275;</h1>
       </div>
-    </div>
+    </section>
   )
 };
 

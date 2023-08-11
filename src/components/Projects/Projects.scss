@@ -2,13 +2,13 @@
 
 .projects__outer {
   overflow: hidden;
-  min-height: 83.9vh;
+  min-height: 85.4vh;
   background-color: $raven;
   z-index: 800;
 }
 
 .projects__inner {
-  height: 83.9vh;
+  height: 85.4vh;
   width: 500vw;
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@
 }
 
 #projects-container {
-  padding-top: 4.5rem;
+  padding-top: 3.1rem;
 }
 
 .projects__title__container {
@@ -44,25 +44,25 @@
 
 .projects__title {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 
   h1 {
     font-family: 'Alyrak';
     font-weight: 100;
-    font-size: 7rem;
+    font-size: 4rem;
     color: $platinum-2;
   }
 
   p {
     font-family: $font-text;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $platinum-2;
   }
 }
 
 .projects__title__pattern {
-  width: 20%;
+  width: 15%;
   opacity: 0.8;
 
   img {
@@ -110,8 +110,40 @@
   align-items: center;
 }
 
+//  MODAL
+.project__modal {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  transition: all 0.3s ease-in;
+}
+
+.project__modal.show {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 3.1rem;
+  z-index: 990;
+}
+
+.project__modal__inner {
+  width: 85%;
+  height: 100%;
+  background-color: $eerie-black;
+  padding: 3%;
+}
+
 @media (max-width: 540px) {
   #projects-container {
+    padding-top: 3rem;
+  }
+
+  .project__modal.show {
     padding-top: 3rem;
   }
 
@@ -141,7 +173,7 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 

@@ -30,7 +30,7 @@ const NavbarTop = ({ data }) => {
   };
 
   return(
-    <div id='navbar-top'>
+    <nav id='navbar-top'>
       <div className='navbar__top__wrapper'>
         <div className='navbar__top__logo'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/terminal-solid.svg'} alt='logo'/>
@@ -45,7 +45,7 @@ const NavbarTop = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   )
 };
 

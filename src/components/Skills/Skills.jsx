@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ data }) => {
   return(
-    <div id='skills'>
+    <section id='skills'>
       <h1>{data.skills?.title}</h1>
       <div className='skills__container'>
         <div className='skills__box'>
@@ -76,7 +76,7 @@ const Skills = ({ data }) => {
           <img src={process.env.PUBLIC_URL + '/assets/shapes/wave.webp'} alt='wave shape' />
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 

@@ -2,12 +2,18 @@ import { shallowEqual, useSelector } from 'react-redux';
 import './ProjectCard.scss';
 import { getProject } from '../../redux/projectsRedux.js';
 
-const ProjectCard = ({ id }) => {
+const ProjectCard = ({ id, setId }) => {
 
   const project = useSelector(state => getProject(state, id), shallowEqual);
 
+  const handleMore = () => {
+    setId(id);
+    const modal = document.querySelector('#project-modal')
+    modal.classList.add('show');
+  };
+
   return(
-    <div className='project__card__wrapper'>
+    <section className='project__card__wrapper'>
       <div className='projects__card__container'>
         <div className='projects__card__inner'>
           <div className='projects__card__image'>
@@ -23,7 +29,7 @@ const ProjectCard = ({ id }) => {
               <p>{project[0].title}</p>
             </div>
             <div className='projects__card__btn'>
-              <button>LEARN MORE</button>
+              <button onClick={handleMore}>LEARN MORE</button>
             </div>
           </div>
           <div className='projects__card__link'>
@@ -31,7 +37,7 @@ const ProjectCard = ({ id }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 

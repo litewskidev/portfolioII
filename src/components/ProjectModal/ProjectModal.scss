@@ -1,0 +1,32 @@
+@import '../../styles/settings.scss';
+
+.project__modalshow__wrapper {
+  position: relative;
+}
+
+.project__modalshow__title {
+  width: 100%;
+
+  p {
+    font-family: 'Alyrak';
+    font-size: 3rem;
+    font-weight: 500;
+    color: $platinum;
+  }
+}
+
+.project__modalshow__button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+
+  button {
+    border: none;
+    font-family: 'Alyrak';
+    font-size: 3rem;
+    font-weight: 500;
+    color: $jasper;
+    background-color: inherit;
+    cursor: pointer;
+  }
+}

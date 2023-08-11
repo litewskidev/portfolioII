@@ -48,7 +48,7 @@ const Contact = ({ data }) => {
   };
 
   return(
-    <div id='contact' className='contact__wrapper'>
+    <section id='contact' className='contact__wrapper'>
       <p>{data.contact?.title}</p>
       <p>{data.contact?.info}</p>
       <form className='contact__form' onSubmit={handleSubmit}>
@@ -81,7 +81,7 @@ const Contact = ({ data }) => {
         <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
         <button type='submit'>{data.contact?.button}</button>
       </form>
-    </div>
+    </section>
   )
 };
 

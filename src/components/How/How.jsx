@@ -23,7 +23,7 @@ const How = ({ data }) => {
   }, []);
 
   return(
-    <div id='how' className='how__wrapper'>
+    <section id='how' className='how__wrapper'>
       <div className='how__info' ref={howTriggerRef}>
         <p>{data.how?.info}</p>
         <div className='how__qr' ref={qrCodeRef}>
@@ -37,7 +37,7 @@ const How = ({ data }) => {
       <div className='how__underlay'>
         <img src={process.env.PUBLIC_URL + 'assets/images/dust1-1920.webp'} alt='overlay dust'/>
       </div>
-    </div>
+    </section>
   )
 };
 

@@ -32,8 +32,8 @@ const NavbarBottom = ({ data }) => {
   }
 
   return(
-    <div id='navbar-bottom'>
-      <div className='navbar__bottom__wrapper'>
+    <footer id='navbar-bottom'>
+      <nav className='navbar__bottom__wrapper'>
         <p className='cursor__nav' onClick={handleHomeScroll}>{data.navbar?.home}</p>
         <p>/</p>
         <p className='cursor__nav' onClick={handleAboutScroll}>{data.navbar?.about}</p>
@@ -43,8 +43,8 @@ const NavbarBottom = ({ data }) => {
         <p className='cursor__nav' onClick={handleSkillsScroll}>{data.navbar?.skills}</p>
         <p>/</p>
         <p className='cursor__nav' onClick={handleMottoScroll}>{data.navbar?.motto}</p>
-      </div>
-    </div>
+      </nav>
+    </footer>
   )
 };
 

@@ -27,8 +27,8 @@
     position: absolute;
     top: 0;
     right: -10%;
-    min-width: 60%;
-    max-width: 60%;
+    min-width: 50%;
+    max-width: 50%;
     z-index: 5;
     transform: rotate(-30deg);
   }
@@ -40,9 +40,10 @@
     bottom: 5%;
     left: 5%;
     opacity: 0.95;
+    width: 85%;
 
     p {
-      font-size: 8rem;
+      font-size: 6rem;
       font-weight: 600;
       color: $platinum-2;
       font-family: $font-1;
@@ -75,6 +76,7 @@
   .motto__info {
     bottom: 5%;
     left: 5%;
+    width: 100%;
 
     p {
       font-size: 3.1rem;

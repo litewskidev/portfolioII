@@ -12,56 +12,22 @@ const About = ({ data }) => {
     const aboutTrigger =  aboutTriggerRef.current
     const aboutTitle = aboutTitleRef.current;
 
-    gsap.fromTo(aboutTitle, {y: "-=150%"}, {y: 0, scrollTrigger: {
+    gsap.fromTo(aboutTitle, {y: "-=100%"}, {y: 0, scrollTrigger: {
       trigger: aboutTrigger,
-      start: "1% 90%",
-      end: "10% 20%",
+      start: "1% 80%",
+      end: "1% 1%",
       scrub: 1,
     }})
   }, [])
 
   return(
-    <div id='about' ref={aboutTriggerRef}>
+    <section id='about' ref={aboutTriggerRef}>
       <div className='about__wrapper'>
-        <div className='about__front__end'>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-          <p>FRONT-END DEVELOPER</p>
-        </div>
-        <div className='about__title' ref={aboutTitleRef}>
+        <div className='about__title__container' ref={aboutTitleRef}>
           <img className='about__title__hand' src={process.env.PUBLIC_URL + '/assets/images/hand1920.webp'} alt='metal hand' />
           <p className='about__title__info'>{data.about?.title}</p>
         </div>
         <div className='about__info__container'>
-          <div className='about__info__left'>
-            <p>{data.about?.one}</p>
-          </div>
           <div className='about__info__right'>
             <p>{data.about?.one}</p>
           </div>
@@ -70,7 +36,7 @@ const About = ({ data }) => {
           <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid background'/>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 

@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+//  GLOBAL FONT SIZE
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 //  SCROLLBAR
 html::-webkit-scrollbar {
   width: 10px;
