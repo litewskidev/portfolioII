@@ -12,9 +12,10 @@
 
   p {
     font-size: 7rem;
-    font-weight: 100;
+    font-weight: 500;
     font-family: 'Alyrak';
     color: $cosmic-latte;
+    filter: brightness(1.1);
   }
 
   p:last-of-type {
@@ -22,6 +23,7 @@
     font-weight: 100;
     color: $cosmic-latte;
     font-size: 1.5rem;
+    filter: brightness(1);
   }
 }
 
@@ -41,10 +43,10 @@
     font-family: $font-text;
     font-weight: 200;
     font-size: 1rem;
-    padding: 0.5rem 4rem;
+    padding: .5rem 4rem;
     cursor: pointer;
     text-transform: uppercase;
-    margin-top: 17%;
+    margin-top: 20%;
   }
 
   img {
@@ -63,7 +65,7 @@
   border: 1px dotted $tan-2;
   border-bottom: 1px dotted $cosmic-latte;
   outline: none;
-  padding: 0.15rem 0.8rem;
+  padding: .15rem .8rem;
   background: inherit;
   color: $cosmic-latte;
 
@@ -106,7 +108,7 @@
     button {
       margin-top: 15%;
       font-size: 1rem;
-      padding: 0.5rem 3.5rem;
+      padding: .5rem 3.5rem;
     }
 
     img {
@@ -117,7 +119,7 @@
   .contact__form__text, .contact__form__message {
     font-size: 1rem;
     width: 70%;
-    padding: 0.1rem 0.5rem;
+    padding: .1rem .5rem;
   }
 
   .contact__form__message {

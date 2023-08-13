@@ -46,6 +46,9 @@ const ProjectModal = ({ id, setId }) => {
             <a href={project[0]?.web} target='_blank' rel='noreferrer'>
               <p>TAKE A LOOK &#171;</p>
             </a>
+            <div className='project__modalshow__link__github'>
+              <a href={project[0]?.git} target="_blank" rel='noreferrer'>&#187;<img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
 .navbar__bottom__wrapper {
   width: 100%;
   background-color: $jasper;
-  padding: 0.1rem 25%;
+  padding: .1rem 25%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,7 +12,8 @@
   p {
     font-family: $font-text;
     color: $cosmic-latte;
-    font-size: 0.8rem;
+    filter: brightness(1.1);
+    font-size: 1rem;
     font-weight: 400;
     font-style: italic;
   }
@@ -28,7 +29,7 @@
     padding: 0.1rem 15%;
 
     p {
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
   }
 }

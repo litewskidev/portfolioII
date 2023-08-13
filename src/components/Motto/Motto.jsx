@@ -17,7 +17,7 @@ const Motto = ({ data }) => {
         trigger: mottoTrigger,
         scrub: 1,
         start: "1% 50%",
-        end: "1% 1%"
+        end: "1% 10%"
       }
     });
   }, []);

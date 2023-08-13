@@ -4,11 +4,10 @@
   background-color: $raven;
   overflow: hidden;
   position: relative;
-  z-index: 20;
-  min-height: 130vh;
-  border-bottom: 1px solid rgb(255, 255, 255, 0.6);
+  min-height: 100vh;
+  border-bottom: 1px solid rgb(255, 255, 255, .6);
   display: flex;
-  gap: 5%;
+  gap: 10%;
 }
 
 .about__underlay {
@@ -19,7 +18,7 @@
 
   img {
     width: 100%;
-    opacity: 0.4;
+    opacity: .3;
     filter: invert(1);
   }
 }
@@ -30,7 +29,7 @@
   align-items: center;
   width: 100%;
   z-index: 30;
-  margin-top: -30vw;
+  margin-top: -31vw;
   gap: 7vw;
 }
 
@@ -48,17 +47,14 @@
     width: 100%;
     transform: rotate(90deg);
     font-family: 'Alyrak';
-    font-weight: 100;
+    font-weight: 500;
     line-height: 0;
-    z-index: 1;
     color: $jasper;
-    font-size: 17rem;
-    text-shadow: 0px 0px 200px $raven;
+    font-size: 23rem;
 }
 
 .about__info__container {
   display: flex;
-  //align-items: flex-end;
   width: 100%;
 
   p {
@@ -66,7 +62,7 @@
     font-weight: 100;
     color: $raven;
     font-size: 2rem;
-    text-shadow: 0 1px 1px $raven;
+    text-shadow: 0 0 1px $raven;
   }
 }
 
@@ -76,12 +72,7 @@
   width: 100%;
   display: flex;
   padding: 10%;
-  padding-right: 2%;
   background-color: $cosmic-latte;
-  border-top: 1px solid $raven;
-  border-left: 1px solid $raven;
-  border-bottom: 1px solid $raven;
-  z-index: 11;
 }
 
 @media (max-width: 540px) {
@@ -89,12 +80,6 @@
   .about__wrapper {
     min-height: 80vh;
     max-height: 100vh;
-  }
-
-  .about__front__end {
-    p {
-      font-size: 0.7rem;
-    }
   }
 
   .about__underlay {
@@ -106,17 +91,15 @@
   }
 
   .about__title__container {
-    margin-top: -10%;
+    margin-top: -1%;
   }
 
   .about__title__info {
-      font-size: 31vw;
-      text-shadow: 0px 0px 100px $raven;
+      font-size: 7rem;
   }
 
   .about__info__container {
     p {
-      font-weight: 300;
       font-size: 1rem;
     }
   }

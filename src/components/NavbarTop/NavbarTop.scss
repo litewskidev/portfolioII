@@ -12,14 +12,14 @@
   z-index: 999;
   background-color: $raven;
   font-family: "Alyrak";
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .navbar__top__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: .5rem;
 
   img {
     filter: invert(100);
@@ -35,7 +35,7 @@
 
 .navbar__top__contact {
   border: 1px dotted $cosmic-latte;
-  padding: 0.1rem 1rem;
+  padding: .1rem 1rem;
   cursor: pointer;
 
   p {
@@ -52,11 +52,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.15rem;
+  border-radius: .15rem;
   color: $cosmic-latte;
   cursor: pointer;
   border: 1px dotted $cosmic-latte;
-  padding: 0.1rem;
+  padding: .1rem;
 }
 
 .navbar__top__language__pl {
@@ -74,8 +74,8 @@
   align-items: center;
   justify-content: center;
   background-color: $jasper;
-  border-top-left-radius: 0.15rem;
-  border-bottom-left-radius: 0.15rem;
+  border-top-left-radius: .15rem;
+  border-bottom-left-radius: .15rem;
   width: 50%;
   height: 100%;
 }
@@ -84,11 +84,10 @@
 
   .navbar__top__wrapper {
     padding: 0 1rem;
-    height: 2.5rem;
   }
 
   .navbar__top__logo {
-    gap: 0.1rem;
+    gap: .1rem;
 
     img {
       width: 1.5rem;

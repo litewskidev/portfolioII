@@ -17,7 +17,8 @@ const initialState = {
         '/assets/icons/firebase.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: "Watch More! Multi-page 'streaming' app with login, sign up, watch list, movies, TV shows, collections, hubs and search."
+      desc: 'Watch More! Multi-page "streaming" app with login, sign up, watch list, movies, TV shows, collections, hubs and search.',
+      git: 'https://github.com/litewskidev/watchmore-app'
     },
     {
       id: 2,
@@ -33,7 +34,8 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: "Find the best path! Draw your available routes on grid and Pathfinder will find the best path for You."
+      desc: 'Find the best path! Draw your available routes on grid and Pathfinder will find the best path for You.',
+      git: 'https://github.com/litewskidev/pathfinder-app'
     },
     {
       id: 3,
@@ -49,7 +51,8 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: "Multi-page E-commerce App for audiophiles. Category and product page. Cart with quantity input. Checkout page, confirming-order-modal with order ID and ordered products dropdown."
+      desc: 'Multi-page E-commerce App for audiophiles. Category and product page. Cart with quantity input. Checkout page, confirming-order-modal with order ID and ordered products dropdown.',
+      git: 'https://github.com/litewskidev/audiophile-ecom'
     },
     {
       id: 4,
@@ -65,7 +68,8 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: "Try to match pairs. Solo or Multiplayer (Up to 4 Players) Game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid."
+      desc: 'Try to match pairs. Solo or Multiplayer (Up to 4 Players) Game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid.',
+      git: 'https://github.com/litewskidev/memory-game'
     },
     {
       id: 5,

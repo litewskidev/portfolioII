@@ -14,7 +14,7 @@
 .projects__card__inner {
   width: 64%;
   display: flex;
-  gap: 0.5rem;
+  gap: .5rem;
   flex-direction: column;
 }
 
@@ -22,7 +22,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: .5rem;
   width: 100%;
 }
 
@@ -32,7 +32,7 @@
   img {
     width: 100%;
     display: block;
-    filter: sepia(0.3) contrast(0.95);
+    filter: sepia(.3) contrast(.95);
     box-shadow: 5px 5px 15px $raven;
   }
 }
@@ -54,7 +54,7 @@
     width: 90%;
     cursor: pointer;
     background: transparent;
-    padding: 0.5rem 2rem;
+    padding: .5rem 2rem;
     border: 1px solid $cosmic-latte;
     font-family: $font-text;
     font-weight: 100;
@@ -70,7 +70,7 @@
     color: $cosmic-latte;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: .5rem;
     justify-content: space-between;
     width: 100%;
   }
@@ -79,7 +79,7 @@
     text-align: center;
     width: 90%;
     border: 1px solid $cosmic-latte;
-    padding: 0.1rem 1rem;
+    padding: .1rem 1rem;
     font-family: $font-text;
     font-weight: 800;
     font-size: 1.7rem;
@@ -139,12 +139,12 @@
   }
 
 .projects__card__link {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
 }
 
   .projects__card__serial {
     p {
-      font-size: 0.8rem;
+      font-size: .8rem;
     }
   }
 }

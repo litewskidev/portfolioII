@@ -1,5 +1,4 @@
 import About from '../About/About.jsx';
-import Quote from '../Quote/Quote.jsx';
 import Projects from '../Projects/Projects.jsx';
 import Skills from '../Skills/Skills.jsx';
 import How from '../How/How.jsx';
@@ -15,7 +14,6 @@ const Main = ({ data }) => {
     <main id='main'>
       <ArtyHero data={data} />
       <About data={data} />
-      <Quote />
       <Projects />
       <Skills data={data} />
       <How data={data} />

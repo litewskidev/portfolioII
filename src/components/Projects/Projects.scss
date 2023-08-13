@@ -2,17 +2,13 @@
 
 .projects__outer {
   overflow: hidden;
-  min-height: 85.4vh;
-  background-color: $raven;
-  z-index: 800;
 }
 
 .projects__inner {
-  height: 85.4vh;
+  height: 88.4vh;
   width: 500vw;
   display: flex;
   flex-direction: row;
-  position: relative;
   overflow: hidden;
 }
 
@@ -25,19 +21,19 @@
 
   img {
     width: 20%;
-    opacity: 0.35;
+    opacity: .3;
     filter: invert(1);
   }
 }
 
 #projects-container {
-  padding-top: 3.1rem;
+  padding-top: 3rem;
 }
 
 .projects__title__container {
-  border: 1px solid $cosmic-latte;
-  padding: 0.5rem 1rem;
   background-color: $jasper;
+  border: 1px solid $cosmic-latte;
+  padding: .5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,25 +42,24 @@
 .projects__title {
   display: flex;
   gap: 1.5rem;
+  color: $cosmic-latte;
 
   h1 {
     font-family: 'Alyrak';
-    font-weight: 100;
-    font-size: 4rem;
-    color: $cosmic-latte;
+    font-weight: 500;
+    font-size: 5rem;
   }
 
   p {
     font-family: $font-text;
     font-weight: 100;
     font-size: 1.5rem;
-    color: $cosmic-latte;
   }
 }
 
 .projects__title__pattern {
   width: 15%;
-  opacity: 0.8;
+  opacity: .8;
 
   img {
     width: 100%;
@@ -74,36 +69,26 @@
 //  SECTIONS
 .scroll__section {
   width: 100vw;
-  padding: 1rem;
+  padding: .5%;
   z-index: 4;
   background-color: $jasper;
   border: 1px solid $cosmic-latte;
   display: flex;
-  gap: 10%;
+  gap: 5%;
 
   h3 {
-    font-size: 2rem;
-    color: $cosmic-latte;
     font-family: $font-text;
     font-weight: 100;
+    font-size: 2rem;
+    color: $cosmic-latte;
     border: 1px solid $cosmic-latte;
-    border-radius: 0.5rem;
-    display: inline;
-    padding: 0rem 0.4rem;
+    border-radius: .5rem;
+    padding: 0 .4%;
   }
 }
 
 .one {
   margin-left: 20vw;
-}
-
-.two {
-}
-
-.three {
-}
-
-.four {
 }
 
 .scroll__section__project {
@@ -113,23 +98,22 @@
 
 //  MODAL
 .project__modal {
+  height: 100vh;
   position: absolute;
   opacity: 0;
   width: 0;
-  transition: all 0.3s ease-in;
-  height: 100vh;
+  transition: all .3s ease-out;
 }
 
 .project__modal.show {
+  height: 100vh;
+  padding-top: 3rem;
   position: fixed;
-  opacity: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
   opacity: 1;
   width: 100vw;
-  height: 101vh;
-  padding-top: 3.1rem;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 990;
 }
 
@@ -142,32 +126,16 @@
 
 @media (max-width: 540px) {
   #projects-container {
-    padding-top: 3rem;
-  }
-
-  .project__modal.show {
-    padding-top: 3rem;
+    padding-top: 3.1rem;
   }
 
   .project__modal__inner {
     width: 90%;
   }
 
-  .projects__inner {
-    height: 85vh;
-  }
-
   .projects__underlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-
     img {
       width: 40%;
-      opacity: 0.3;
-      filter: invert(1);
     }
   }
 
@@ -179,7 +147,7 @@
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 
@@ -189,9 +157,10 @@
 
   .scroll__section {
     flex-direction: column;
-    gap: 10%;
+    padding: 1%;
 
     h3 {
+      padding-left: 2%;
       font-size: 1.5rem;
     }
   }
