@@ -6,7 +6,8 @@ const ProjectCard = ({ id, setId }) => {
 
   const project = useSelector(state => getProject(state, id), shallowEqual);
 
-  const handleMore = () => {
+  const handleMore = e => {
+    e.preventDefault();
     setId(id);
     const modal = document.querySelector('#project-modal')
     modal.classList.add('show');

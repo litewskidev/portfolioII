@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   min-height: 100vh;
   background-color: $raven;
-  padding-top: 6rem;
+  padding-top: 5rem;
   position: relative;
 
   p {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 100;
     font-family: 'Alyrak';
     color: $cosmic-latte;
@@ -21,7 +21,7 @@
     font-family: $font-text;
     font-weight: 100;
     color: $cosmic-latte;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -40,7 +40,7 @@
     color: $cosmic-latte;
     font-family: $font-text;
     font-weight: 200;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.5rem 4rem;
     cursor: pointer;
     text-transform: uppercase;
@@ -57,7 +57,7 @@
 
 .contact__form__text, .contact__form__message {
   font-family: $font-text;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
   width: 70%;
   border: 1px dotted $tan-2;
@@ -75,7 +75,7 @@
 
 .contact__form__message {
   margin-top: 20%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   width: 65%;
   padding-bottom: 30%;
   z-index: 1;

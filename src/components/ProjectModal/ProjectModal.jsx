@@ -6,8 +6,8 @@ const ProjectModal = ({ id, setId }) => {
 
   const project = useSelector(state => getProject(state, id), shallowEqual);
 
-  const handleClose = () => {
-    setId(null);
+  const handleClose = e => {
+    e.preventDefault();
     const modal = document.querySelector('#project-modal')
     modal.classList.remove('show');
   };
