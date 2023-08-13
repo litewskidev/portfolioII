@@ -33,7 +33,9 @@ const ProjectCard = ({ id, setId }) => {
             </div>
           </div>
           <div className='projects__card__link'>
-            <a href={project[0].web} target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/shapes/atom.webp'} alt='link button' /></a>
+            <a href={project[0].web} target='_blank' rel='noreferrer'>
+              <p>TAKE A LOOK</p>
+            </a>
           </div>
         </div>
       </div>

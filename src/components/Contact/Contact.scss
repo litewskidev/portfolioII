@@ -14,13 +14,13 @@
     font-size: 8rem;
     font-weight: 100;
     font-family: 'Alyrak';
-    color: $platinum-2;
+    color: $cosmic-latte;
   }
 
   p:last-of-type {
     font-family: $font-text;
     font-weight: 100;
-    color: $platinum-2;
+    color: $cosmic-latte;
     font-size: 2rem;
   }
 }
@@ -36,8 +36,8 @@
 
   button {
     background-color: inherit;
-    border: 1px dotted $platinum-2;
-    color: $platinum-2;
+    border: 1px dotted $cosmic-latte;
+    color: $cosmic-latte;
     font-family: $font-text;
     font-weight: 200;
     font-size: 1.3rem;
@@ -61,14 +61,14 @@
   font-weight: 200;
   width: 70%;
   border: 1px dotted $tan-2;
-  border-bottom: 1px dotted $platinum-2;
+  border-bottom: 1px dotted $cosmic-latte;
   outline: none;
   padding: 0.15rem 0.8rem;
   background: inherit;
-  color: $platinum-2;
+  color: $cosmic-latte;
 
   &::placeholder {
-    color: $platinum-2;
+    color: $cosmic-latte;
     opacity: 0.4;
   }
 }

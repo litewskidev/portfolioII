@@ -15,7 +15,7 @@
 
   img {
     width: 160%;
-    filter: brightness(0.9);
+    filter: brightness(0.9) sepia(0.1) contrast(0.95);
   }
 }
 
@@ -45,7 +45,7 @@
     p {
       font-size: 6rem;
       font-weight: 600;
-      color: $platinum-2;
+      color: $cosmic-latte;
       font-family: $font-1;
       filter: brightness(0.95);
     }

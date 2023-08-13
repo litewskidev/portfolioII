@@ -9,9 +9,10 @@
 
 .arty__hero__version {
   margin-left: 1%;
+
   p {
     font-size: 0.9rem;
-    color: $platinum;
+    color: $cosmic-latte;
     opacity: 0.6;
   }
 }
@@ -35,7 +36,6 @@
   margin: 3%;
   margin-top: 0;
   z-index: 2;
-  background-color: $raven;
 }
 
 .arty__hero__main {
@@ -61,6 +61,7 @@
 
   img {
     width: 100%;
+    filter: sepia(0.4);
   }
 }
 
@@ -113,6 +114,7 @@
 
   img {
     width: 100%;
+    filter: sepia(0.4);
     display: block;
   }
 }
@@ -149,7 +151,7 @@
     font-family: $font-text;
     font-size: 1.5rem;
     font-weight: 100;
-    color: $platinum;
+    color: $cosmic-latte;
     text-transform: uppercase;
     line-height: 1.2;
   }

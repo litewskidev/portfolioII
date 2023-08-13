@@ -2,7 +2,7 @@
 
 .projects__card__wrapper {
   width: 100%;
-  border: 1px solid $platinum-2;
+  border: 1px solid $cosmic-latte;
 }
 
 .projects__card__container {
@@ -14,6 +14,7 @@
 .projects__card__inner {
   width: 64%;
   display: flex;
+  gap: 0.5rem;
   flex-direction: column;
 }
 
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .projects__card__image {
@@ -30,6 +32,8 @@
   img {
     width: 100%;
     display: block;
+    filter: sepia(0.3) contrast(0.95);
+    box-shadow: 5px 5px 15px $raven;
   }
 }
 
@@ -38,7 +42,7 @@
     font-family: $font-text;
     font-weight: 600;
     font-size: 3rem;
-    color: $platinum;
+    color: $cosmic-latte;
     text-transform: uppercase;
   }
 }
@@ -47,24 +51,43 @@
   display: inline;
 
   button {
+    width: 90%;
     cursor: pointer;
     background: transparent;
     padding: 0.5rem 2rem;
-    border: 1px solid $platinum-2;
+    border: 1px solid $cosmic-latte;
     font-family: $font-text;
     font-weight: 100;
     font-size: 1rem;
-    color: $platinum-2;
+    color: $cosmic-latte;
   }
 }
 
 .projects__card__link {
-  width: 25%;
   margin-top: 1rem;
+
+  a {
+    color: $cosmic-latte;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    width: 90%;
+    border: 1px solid $cosmic-latte;
+    padding: 0.1rem 1rem;
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 1.7rem;
+  }
 
   img{
     cursor: pointer;
-    width: 100%;
+    width: 25%;
     filter: invert(1);
   }
 }
@@ -74,7 +97,7 @@
     font-family: $font-text;
     font-weight: 100;
     font-size: 1rem;
-    color: $platinum-2;
+    color: $cosmic-latte;
   }
 }
 
@@ -90,7 +113,6 @@
   }
 
   .flex__card__inner__info {
-    flex-direction: row;
     align-items: center;
     gap: 2rem;
   }
