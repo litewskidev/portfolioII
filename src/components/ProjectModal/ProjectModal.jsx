@@ -44,7 +44,7 @@ const ProjectModal = ({ id, setId }) => {
           </div>
           <div className='project__modalshow__link'>
             <a href={project[0]?.web} target='_blank' rel='noreferrer'>
-              <p>TAKE A LOOK</p>
+              <p>TAKE A LOOK &#171;</p>
             </a>
           </div>
         </div>

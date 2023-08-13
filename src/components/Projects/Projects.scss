@@ -113,16 +113,14 @@
 
 //  MODAL
 .project__modal {
-  visibility: hidden;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   width: 0;
   transition: all 0.3s ease-in;
   height: 100vh;
 }
 
 .project__modal.show {
-  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -148,6 +146,10 @@
 
   .project__modal.show {
     padding-top: 3rem;
+  }
+
+  .project__modal__inner {
+    width: 90%;
   }
 
   .projects__inner {

@@ -24,18 +24,13 @@ const ProjectCard = ({ id, setId }) => {
           </div>
         </div>
         <div className='flex__card__inner__info'>
-          <div>
+          <div className='flex__card__inner'>
             <div className='projects__card__title'>
               <p>{project[0].title}</p>
             </div>
             <div className='projects__card__btn'>
-              <button onClick={handleMore}>LEARN MORE</button>
+              <button onClick={handleMore}>&#187; LEARN MORE &#171;</button>
             </div>
-          </div>
-          <div className='projects__card__link'>
-            <a href={project[0].web} target='_blank' rel='noreferrer'>
-              <p>TAKE A LOOK</p>
-            </a>
           </div>
         </div>
       </div>

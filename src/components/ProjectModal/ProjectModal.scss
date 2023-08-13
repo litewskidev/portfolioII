@@ -3,15 +3,15 @@
 .project__modalshow__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 1rem;
+  border: 1px solid $cosmic-latte;
 }
 
 .project__modalshow__container {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   overflow: hidden;
-  box-shadow: 0px 30px 30px $raven;
 }
 
 .project__modalshow__title {
@@ -34,6 +34,7 @@
   background-color: $jasper;
   padding: 0 2%;
   border: 1px solid $cosmic-latte;
+  border-right: none;
   width: 100%;
 }
 
@@ -58,6 +59,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-top: 1px solid $cosmic-latte;
+  border-right: 1px solid $cosmic-latte;
 
   p {
     font-family: $font-text;
@@ -69,15 +72,19 @@
 }
 
 .project__modalshow__bottom__right {
+  border-top: 1px solid $cosmic-latte;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
 .project__modalshow__techs {
   display: flex;
+  text-align: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 3.5%;
 }
@@ -93,15 +100,16 @@
 
 .project__modalshow__link {
   a {
-    color: $cosmic-latte;
+    color: $jasper;
   }
 
   p {
-    border: 1px dotted $cosmic-latte;
+    border-top: 1px dotted $cosmic-latte;
+    border-bottom: 1px dotted $cosmic-latte;
     padding: 0.1rem 1rem;
     width: 100%;
     font-family: $font-text;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 2rem;
   }
 }
@@ -184,6 +192,7 @@
 
   .project__modalshow__bottom__left {
     margin-top: 0.5rem;
+    border-right: none;
 
     p {
       font-size: 1rem;
@@ -203,7 +212,7 @@
     p {
       width: 100%;
       font-family: $font-text;
-      font-weight: 900;
+      font-weight: 800;
       font-size: 2rem;
     }
   }
