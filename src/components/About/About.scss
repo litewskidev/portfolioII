@@ -5,7 +5,7 @@
   overflow: hidden;
   position: relative;
   min-height: 100vh;
-  border-bottom: 1px solid rgb(255, 255, 255, .2);
+  border-bottom: 1px solid $grid;
   display: flex;
   gap: 10%;
 }
@@ -77,6 +77,10 @@
   background-color: $cosmic-latte;
   border-right: 1px solid $eerie-black;
 
+  p {
+    padding: 5%;
+  }
+
   button {
     width: 100%;
     font-family: $font-text;
@@ -124,7 +128,6 @@
   }
 
   .about__info__right {
-    padding: 5%;
     padding-top: 150%;
 
     button {

@@ -36,6 +36,11 @@
 
 @media(max-width: 540px) {
   .quote__two__wrapper {
+
+    img {
+      width: 114%;
+    }
+
     button {
       font-size: 1.2rem;
       padding: .4rem 1.6rem;

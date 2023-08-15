@@ -172,8 +172,12 @@
 
 @media (max-width: 540px) {
   #projects-container {
-    padding-top: 2.35rem;
+    padding-top: 2.55rem;
   }
+
+.project__modal {
+  padding-top: 2.55rem;
+}
 
   .project__modal__inner {
     width: 90%;
