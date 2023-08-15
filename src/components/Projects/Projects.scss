@@ -27,7 +27,7 @@
 }
 
 #projects-container {
-  padding-top: 3rem;
+  padding-top: 3.05rem;
 }
 
 .projects__title__container {
@@ -73,6 +73,7 @@
   z-index: 4;
   background-color: $jasper;
   border: 1px solid $cosmic-latte;
+  border-top: none;
   display: flex;
   gap: 5%;
 
@@ -147,7 +148,7 @@
 
 //  MODAL
 .project__modal {
-  padding-top: 3rem;
+  padding-top: 3.05rem;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -171,7 +172,7 @@
 
 @media (max-width: 540px) {
   #projects-container {
-    padding-top: 3.1rem;
+    padding-top: 2.35rem;
   }
 
   .project__modal__inner {

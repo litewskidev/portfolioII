@@ -38,7 +38,8 @@
 
   button {
     background-color: inherit;
-    border: 1px dotted $cosmic-latte;
+    border: 1px dotted $tan;
+    border-bottom: 1px dotted $cosmic-latte;
     color: $cosmic-latte;
     font-family: $font-text;
     font-weight: 200;
@@ -62,7 +63,7 @@
   font-size: 1rem;
   font-weight: 200;
   width: 70%;
-  border: 1px dotted $tan-2;
+  border: 1px dotted $tan;
   border-bottom: 1px dotted $cosmic-latte;
   outline: none;
   padding: .15rem .8rem;

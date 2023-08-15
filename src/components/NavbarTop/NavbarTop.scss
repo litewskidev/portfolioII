@@ -13,6 +13,7 @@
   top: 0;
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid $eerie-black;
 }
 
 .navbar__top__container {
@@ -21,7 +22,7 @@
   justify-content: space-between;
   padding: 0 5%;
   height: 3rem;
-  background-color: $raven;
+  background-color: $cosmic-latte;
   font-family: "Alyrak";
   font-weight: 500;
 }
@@ -43,25 +44,28 @@
   justify-content: flex-start;
   align-items: center;
   margin: 0 1rem;
+  background-color: $cosmic-latte;
 }
 
 .navbar__links {
   width: 100%;
   display: flex;
   gap: 3%;
-  border: 1px dotted $platinum-2;
-  padding: .1rem 1rem;
+  border: 1px dotted $eerie-black;
+  padding: 0 1rem;
+  list-style-type: none;
+  margin: 0;
 
   p {
-    color: $platinum-2;
+    color: $eerie-black;
     font-family: $font-text;
     font-size: 1.1rem;
     font-weight: 800;
     letter-spacing: .09rem;
     cursor: pointer;
     padding: 0 0.5rem;
-    border-left: 1px dotted $platinum-2;
-    border-right: 1px dotted $platinum-2;
+    border-left: 1px dotted $eerie-black;
+    border-right: 1px dotted $eerie-black;
   }
 }
 
@@ -76,18 +80,6 @@
   gap: 1rem;
 }
 
-.navbar__top__contact {
-  border: 1px dotted $platinum-2;
-  padding: .1rem 1rem;
-  cursor: pointer;
-
-  p {
-    font-family: $font-text;
-    color: $platinum-2;
-    font-size: 1rem;
-  }
-}
-
 .navbar__top__language__switch {
   width: 4.5rem;
   height: 2rem;
@@ -96,9 +88,9 @@
   align-items: center;
   justify-content: center;
   border-radius: .15rem;
-  color: $platinum-2;
+  color: $eerie-black;
   cursor: pointer;
-  border: 1px dotted $platinum-2;
+  border: 1px dotted $eerie-black;
   padding: .1rem;
 }
 
@@ -140,7 +132,7 @@
     gap: .3rem;
 
     .dropdown__btn__inner {
-      background-color: $cosmic-latte;
+      background-color: $eerie-black;
       width: 2rem;
       height: .25rem;
       border-radius: 3rem;
@@ -174,7 +166,7 @@
 
   .dropdown__container {
     position: absolute;
-    top: 3rem;
+    top: 2.3rem;
     left: 0;
     background-color: $cosmic-latte;
     height: 100vh;
@@ -212,6 +204,10 @@
       height: 2.5rem;
       background-color: $persian-red;
     }
+  }
+
+  .navbar__top__container {
+    height: 2.3rem;
   }
 
   .navbar__top__container {
