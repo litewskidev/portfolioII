@@ -76,10 +76,48 @@ const initialState = {
       tech: 'javascript',
       title: 'miau ma mia',
       img: '/assets/covers/5.webp',
-      web: 'https://project-pizzeria.litewskidev.repl.co',
+      web: 'http://miaumamia.litewskidev.usermd.net',
+      moc1: '/assets/mocs/memoryMOC1.webp',
+      moc2: '/assets/mocs/memoryMOC2.webp',
       techs: [
-
-      ]
+        '/assets/icons/js.svg',
+        '/assets/icons/html5.svg',
+        '/assets/icons/sass.svg',
+        '/assets/icons/responsive-design.svg'
+      ],
+      git: 'https://github.com/litewskidev/project-pizzeria'
+    },
+    {
+      id: 6,
+      tech: 'react',
+      title: 'dine',
+      img: '/assets/covers/5.webp',
+      web: 'http://dine.litewskidev.usermd.net',
+      moc1: '/assets/mocs/memoryMOC1.webp',
+      moc2: '/assets/mocs/memoryMOC2.webp',
+      techs: [
+        '/assets/icons/react.svg',
+        '/assets/icons/redux.svg',
+        '/assets/icons/sass.svg',
+        '/assets/icons/responsive-design.svg'
+      ],
+      git: 'https://github.com/litewskidev/dine-restaurant'
+    },
+    {
+      id: 7,
+      tech: 'javascript',
+      title: 'blog',
+      img: '/assets/covers/5.webp',
+      web: 'http://blog.litewskidev.usermd.net',
+      moc1: '/assets/mocs/memoryMOC1.webp',
+      moc2: '/assets/mocs/memoryMOC2.webp',
+      techs: [
+        '/assets/icons/js.svg',
+        '/assets/icons/html5.svg',
+        '/assets/icons/sass.svg',
+        '/assets/icons/responsive-design.svg'
+      ],
+      git: 'https://github.com/litewskidev/javascript-blog'
     }
   ]
 };

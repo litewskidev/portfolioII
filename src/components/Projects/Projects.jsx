@@ -9,13 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const projectsTriggerRef = useRef(null);
   const projectsSectionRef = useRef(null);
-  const [projectId, setProjectId] = useState(null);
+  const [projectId, setProjectId] = useState(1);
 
   useEffect(() => {
     const projectsTrigger = projectsTriggerRef.current;
     const projectsSection = projectsSectionRef.current;
 
-      gsap.to(projectsSection, {x: "-400vw", ease: "power0",
+      gsap.to(projectsSection, {x: "-600vw", ease: "power0",
         scrollTrigger: {
           trigger: projectsTrigger,
           start: "1% 1%",
@@ -67,6 +67,18 @@ const Projects = () => {
             <h3>No.5</h3>
             <div className='scroll__section__project'>
               <ProjectCard id={5} setId={setProjectId} />
+            </div>
+          </div>
+          <div className='scroll__section six'>
+            <h3>No.6</h3>
+            <div className='scroll__section__project'>
+              <ProjectCard id={6} setId={setProjectId} />
+            </div>
+          </div>
+          <div className='scroll__section seven'>
+            <h3>No.7</h3>
+            <div className='scroll__section__project'>
+              <ProjectCard id={7} setId={setProjectId} />
             </div>
           </div>
           <div className='projects__underlay'>
