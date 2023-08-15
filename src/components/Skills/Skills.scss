@@ -28,11 +28,11 @@
   width: 100%;
   top: 50%;
   left: 0;
-  z-index: 13;
+  z-index: 1;
 
   img {
     width: 100%;
-    opacity: .3;
+    opacity: .2;
     transform: rotate(90deg);
     filter: sepia(.3) contrast(.95);
   }
@@ -91,11 +91,11 @@
   }
 
   .skills__underlay {
-    top: 43%;
-    left: -35%;
+    top: 41%;
+    left: -40%;
 
     img {
-      width: 180%;
+      width: 190%;
     }
   }
 

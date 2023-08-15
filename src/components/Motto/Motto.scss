@@ -15,7 +15,7 @@
 
   img {
     width: 160%;
-    filter: brightness(.9) sepia(.1) contrast(.95);
+    filter: brightness(.9) sepia(.1) contrast(.99);
   }
 }
 
@@ -49,6 +49,29 @@
     }
   }
 
+  .motto__contactBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    button {
+      display: inline;
+      font-family: $font-text;
+      font-weight: 900;
+      font-size: 2rem;
+      background-color: transparent;
+      padding: .5rem 5rem;
+      border: none;
+      border-top: 1px solid $eerie-black;
+      border-left: 1px solid $eerie-black;
+      color: $eerie-black;
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+      cursor: pointer;
+    }
+  }
+
 @media (max-width: 540px) {
 
   #motto {
@@ -79,6 +102,14 @@
 
     p {
       font-size: 3.1rem;
+    }
+  }
+
+  .motto__contactBtn {
+    button {
+      font-size: 1.2rem;
+      padding: .4rem 1.6rem;
+      letter-spacing: 0;
     }
   }
 }

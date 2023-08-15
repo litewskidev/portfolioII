@@ -1,0 +1,32 @@
+@import '../../styles/settings.scss';
+
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .15rem;
+  background-color: $cosmic-latte;
+
+
+  p:first-of-type {
+    margin-top: .2rem;
+  }
+
+  p {
+    font-family: $font-text;
+    font-size: 1.1rem;
+    font-weight: 200;
+    font-style: italic;
+    color: $eerie-black;
+    line-height: 1;
+  }
+}
+
+@media(max-width: 540px) {
+  .footer__wrapper {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

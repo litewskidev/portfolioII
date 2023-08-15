@@ -14,7 +14,7 @@ const ProjectCard = ({ id, setId }) => {
   };
 
   return(
-    <section className='project__card__wrapper'>
+    <section id='project-card' className='project__card__wrapper'>
       <div className='projects__card__container'>
         <div className='projects__card__inner'>
           <div className='projects__card__image'>

@@ -63,12 +63,12 @@
 
   img {
     position: absolute;
-    aspect-ratio: 16/10;
+    aspect-ratio: 16/9;
     border-top-left-radius: 25rem;
     border-bottom-left-radius: 25rem;
     width: 100%;
     object-fit: cover;
-    filter: brightness(1) saturate(0.5) sepia(0.2) contrast(0.95);
+    filter: brightness(1.1) saturate(.6) sepia(.3) contrast(.95);
   }
 
   img:last-of-type {

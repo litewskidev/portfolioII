@@ -17,7 +17,7 @@ const How = ({ data }) => {
         trigger: howTrigger,
         scrub: 1,
         start: "30% 95%",
-        end: "1% 25%"
+        end: "0% 25%"
       }
     });
   }, []);

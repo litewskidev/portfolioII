@@ -16,8 +16,8 @@ const Motto = ({ data }) => {
       scrollTrigger: {
         trigger: mottoTrigger,
         scrub: 1,
-        start: "1% 50%",
-        end: "1% 10%"
+        start: "0% 50%",
+        end: "0% 10%"
       }
     });
   }, []);

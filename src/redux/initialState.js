@@ -74,7 +74,7 @@ const initialState = {
     {
       id: 5,
       tech: 'javascript',
-      title: 'miau ma mia',
+      title: 'miaumamia',
       img: '/assets/covers/5.webp',
       web: 'http://miaumamia.litewskidev.usermd.net',
       moc1: '/assets/mocs/memoryMOC1.webp',

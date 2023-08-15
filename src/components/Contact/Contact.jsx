@@ -16,8 +16,8 @@ const Contact = ({ data }) => {
     gsap.to(contactFrame, {rotate: 5, ease: "power0",
       scrollTrigger: {
         trigger: contactFrameTrigger,
-        start: "1% 60%",
-        end: "1% 40%",
+        start: "0% 60%",
+        end: "0% 40%",
         scrub: 1
       }
     });

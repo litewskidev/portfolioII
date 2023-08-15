@@ -1,7 +1,4 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Skills.scss';
-gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ data }) => {
   return(

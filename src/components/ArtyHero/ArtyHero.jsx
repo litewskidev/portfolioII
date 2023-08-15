@@ -9,7 +9,7 @@ const ArtyHero = ({ data }) => {
   }
 
   return(
-    <header id='home' className='arty__hero__wrapper'>
+    <section id='home' className='arty__hero__wrapper'>
       <div className='arty__hero__container'>
         <div className='arty__hero__main'>
           <div className='arty__hero__main__top'>
@@ -50,7 +50,7 @@ const ArtyHero = ({ data }) => {
       <div className='arty__hero__version'>
         <p>ver.1000.1001</p>
       </div>
-    </header>
+    </section>
   )
 };
 

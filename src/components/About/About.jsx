@@ -12,12 +12,14 @@ const About = ({ data }) => {
     const aboutTrigger =  aboutTriggerRef.current
     const aboutTitle = aboutTitleRef.current;
 
-    gsap.fromTo(aboutTitle, {y: "-=100%"}, {y: 0, scrollTrigger: {
-      trigger: aboutTrigger,
-      start: "1% 80%",
-      end: "1% 1%",
-      scrub: 1,
-    }})
+    gsap.fromTo(aboutTitle, {y: "-=100%"}, {y: 0,
+      scrollTrigger: {
+        trigger: aboutTrigger,
+        start: "0% 80%",
+        end: "0% 0%",
+        scrub: 1
+      }
+    })
   }, [])
 
   return(
@@ -30,6 +32,7 @@ const About = ({ data }) => {
         <div className='about__info__container'>
           <div className='about__info__right'>
             <p>{data.about?.one}</p>
+            <button>scroll down</button>
           </div>
         </div>
         <div className='about__underlay'>

@@ -20,7 +20,7 @@
   width: 100%;
 
   img {
-    width: 20%;
+    width: 14.3%;
     opacity: .3;
     filter: invert(1);
   }
@@ -91,9 +91,58 @@
   margin-left: 20vw;
 }
 
+.seven {
+  position: relative;
+}
+
+.scroll__section__navBtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  button {
+    display: inline;
+    font-family: $font-text;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: .5rem 3rem;
+    border: none;
+    border-top: 1px solid $eerie-black;
+    border-left: 1px solid $eerie-black;
+    color: $eerie-black;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    z-index: 99;
+    cursor: pointer;
+  }
+}
+
 .scroll__section__project {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1%;
+}
+
+.scroll__section__project__navButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  p {
+    font-family: $font-text;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 5rem;
+    cursor: pointer;
+    color: $cosmic-latte;
+  }
+}
+
+.narrowBtn {
+  justify-content: center;
 }
 
 //  MODAL
@@ -106,7 +155,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 990;
   transform: translateX(-100%);
-  transition: transform .4s ease-out;
+  transition: transform .5s ease-out;
 }
 
 .project__modal.show {
@@ -131,7 +180,7 @@
 
   .projects__underlay {
     img {
-      width: 40%;
+      width: 28%;
     }
   }
 
@@ -160,4 +209,17 @@
       font-size: 1.5rem;
     }
   }
+
+
+.scroll__section__navBtn {
+  position: absolute;
+  bottom: 10%;
+  border-bottom: 1px solid $eerie-black;
+
+  button {
+    font-size: 1rem;
+    padding: .4rem 1rem;
+    letter-spacing: 0;
+  }
+}
 }

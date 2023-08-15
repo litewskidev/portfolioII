@@ -1,9 +1,9 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
-import './Projects.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectModal from '../ProjectModal/ProjectModal';
+import './Projects.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -18,17 +18,22 @@ const Projects = () => {
       gsap.to(projectsSection, {x: "-600vw", ease: "power0",
         scrollTrigger: {
           trigger: projectsTrigger,
-          start: "1% 1%",
-          end: "500% 1%",
+          start: "0% 0%",
+          end: "600% 0%",
           scrub: 1,
           pin: projectsTrigger
         }
       })
   }, []);
 
+  const handleCheckSkillsScroll = e => {
+    e.preventDefault();
+    gsap.to(window, {duration: 1, scrollTo: "#skills", ease: "power1"});
+  };
+
   return(
-    <section id='projects' className='projects__outer'>
-      <div id='projects-container' ref={projectsTriggerRef}>
+    <section id='projects' className='projects__outer' ref={projectsTriggerRef}>
+      <div id='projects-container'>
         <div className='projects__title__container'>
           <div className='projects__title'>
             <h1>PROJECTS?</h1>
@@ -45,13 +50,13 @@ const Projects = () => {
               <ProjectCard id={1} setId={setProjectId} />
             </div>
           </div>
-          <div className='scroll__section two'>
+          <div id='two' className='scroll__section two'>
             <h3>No.2</h3>
             <div className='scroll__section__project'>
               <ProjectCard id={2} setId={setProjectId} />
             </div>
           </div>
-          <div className='scroll__section three'>
+          <div id='three' className='scroll__section three'>
             <h3>No.3</h3>
             <div className='scroll__section__project'>
               <ProjectCard id={3} setId={setProjectId} />
@@ -80,6 +85,9 @@ const Projects = () => {
             <div className='scroll__section__project'>
               <ProjectCard id={7} setId={setProjectId} />
             </div>
+            <nav className='scroll__section__navBtn'>
+              <button onClick={handleCheckSkillsScroll}>check my skills & toolbox</button>
+            </nav>
           </div>
           <div className='projects__underlay'>
             <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid background' />

@@ -16,6 +16,7 @@
 
 .project__modalshow__title {
   width: 15%;
+  height: 100%;
 
   p {
     margin-top: -8vw;
@@ -46,6 +47,7 @@
     width: 100%;
     display: block;
     filter: sepia(0.3) contrast(0.95);
+    object-fit: cover;
   }
 }
 
@@ -165,7 +167,7 @@
 
   .project__modalshow__moc {
     padding: 0;
-    padding-top: 20%;
+    padding-top: 10%;
     flex-direction: column-reverse;
     gap: 0.05rem;
     justify-content: center;
@@ -182,6 +184,7 @@
       width: 50%;
       display: block;
       filter: sepia(0.3) contrast(0.95);
+      object-fit: cover;
     }
   }
 
