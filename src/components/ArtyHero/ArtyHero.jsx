@@ -44,9 +44,6 @@ const ArtyHero = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className='arty__hero__underlay'>
-        <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='background grid' />
-      </div>
       <div className='arty__hero__version'>
         <p>ver.1000.1001</p>
       </div>
