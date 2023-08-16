@@ -31,7 +31,6 @@
   z-index: 3;
   border-top: 1px solid $cosmic-latte;
   border-right: 1px solid $cosmic-latte;
-  border-left: 1px solid $cosmic-latte;
 }
 
 .main__top__right {
@@ -64,7 +63,6 @@
   z-index: 2;
   background-color: $raven;
   border-right: 1px solid $cosmic-latte;
-  border-left: 1px solid $cosmic-latte;
 }
 
 .main__center__right {
@@ -112,7 +110,6 @@
   z-index: 2;
   background-color: $raven;
   border-right: 1px solid $cosmic-latte;
-  border-left: 1px solid $cosmic-latte;
 }
 
 .main__bottom__left {
@@ -138,9 +135,6 @@
     background-color: $jasper;
     padding: 1rem 5rem;
     border: none;
-    border-right: 1px solid $cosmic-latte;
-    border-top: 1px solid $cosmic-latte;
-    border-bottom: 1px solid $cosmic-latte;
     color: $raven;
     text-transform: uppercase;
     letter-spacing: .05rem;

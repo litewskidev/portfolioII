@@ -1,73 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
+    <title>litewskidev</title>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Adrian Litewski Portfolio"
-    />
+    <meta name="theme-color" content="#000" />
+    <meta name="description" content=" Portfolio of Adrian Litewski" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preload" href="%PUBLIC_URL%/static/media/alyrak.432d27aeb07234341efb.woff" as="font" crossorigin="true"/>
+    <link rel="preload" href="%PUBLIC_URL%/static/media/alyrak.59e02bab6274fd7bd482.ttf" as="font" crossorigin="true"/>
+    <link rel="preload" href="%PUBLIC_URL%/static/media/alyrak.7679f4bdddb79d2d486e.woff2" as="font" crossorigin="true"/>
     <!--IMAGES / 26-->
-    <link rel="preload" href="/assets/logo/ldlogo.webp" as="image" />
-    <link rel="preload" href="/assets/arty/1.webp" as="image" />
-    <link rel="preload" href="/assets/arty/2.webp" as="image" />
-    <link rel="preload" href="/assets/shapes/wave.webp" as="image" />
-    <link rel="preload" href="/assets/shapes/lines.webp" as="image" />
-    <link rel="preload" href="/assets/images/dust1-1920.webp" as="image" />
-    <link rel="preload" href="/assets/images/frame1920.webp" as="image" />
-    <link rel="preload" href="/assets/images/wall1920.webp" as="image" />
-    <link rel="preload" href="/assets/images/hand1920.webp" as="image" />
-    <link rel="preload" href="/assets/images/hand21920.webp" as="image" />
-    <link rel="preload" href="/assets/images/overlay.webp" as="image" />
-    <link rel="preload" href="/assets/images/persona1920.webp" as="image" />
-    <link rel="preload" href="/assets/images/grid.webp" as="image" />
-    <link rel="preload" href="/assets/covers/1.webp" as="image" />
-    <link rel="preload" href="/assets/covers/2.webp" as="image" />
-    <link rel="preload" href="/assets/covers/3.webp" as="image" />
-    <link rel="preload" href="/assets/covers/4.webp" as="image" />
-    <link rel="preload" href="/assets/covers/5.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/audioMOC1.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/audioMOC2.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/memoryMOC1.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/memoryMOC2.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/pathMOC1.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/pathMOC2.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/watchMOC1.webp" as="image" />
-    <link rel="preload" href="/assets/mocs/watchMOC2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/logo/ldlogo.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/arty/1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/arty/2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/shapes/wave.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/shapes/lines.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/dust1-1920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/frame1920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/wall1920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/hand1920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/hand21920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/overlay.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/persona1920.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/images/grid.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/covers/1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/covers/2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/covers/3.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/covers/4.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/covers/5.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/audioMOC1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/audioMOC2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/memoryMOC1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/memoryMOC2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/pathMOC1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/pathMOC2.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/watchMOC1.webp" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/mocs/watchMOC2.webp" as="image" />
     <!--ICONS / 20-->
-    <link rel="preload" href="/assets/icons/facebook.svg" as="image" />
-    <link rel="preload" href="/assets/icons/github.svg" as="image" />
-    <link rel="preload" href="/assets/icons/linkedin.svg" as="image" />
-    <link rel="preload" href="/assets/icons/githubqr.svg" as="image" />
-    <link rel="preload" href="/assets/icons/bootstrap.svg" as="image" />
-    <link rel="preload" href="/assets/icons/css3-alt.svg" as="image" />
-    <link rel="preload" href="/assets/icons/expressjs.svg" as="image" />
-    <link rel="preload" href="/assets/icons/greensock.svg" as="image" />
-    <link rel="preload" href="/assets/icons/firebase.svg" as="image" />
-    <link rel="preload" href="/assets/icons/framer.svg" as="image" />
-    <link rel="preload" href="/assets/icons/git.svg" as="image" />
-    <link rel="preload" href="/assets/icons/html5.svg" as="image" />
-    <link rel="preload" href="/assets/icons/js.svg" as="image" />
-    <link rel="preload" href="/assets/icons/node-js.svg" as="image" />
-    <link rel="preload" href="/assets/icons/react.svg" as="image" />
-    <link rel="preload" href="/assets/icons/redux.svg" as="image" />
-    <link rel="preload" href="/assets/icons/responsive-design.svg" as="image" />
-    <link rel="preload" href="/assets/icons/sass.svg" as="image" />
-    <link rel="preload" href="/assets/icons/typescript.svg" as="image" />
-    <link rel="preload" href="/assets/icons/visual-studio.svg" as="image" />
-    <title>litewskidev</title>
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/facebook.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/github.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/linkedin.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/githubqr.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/bootstrap.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/css3-alt.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/expressjs.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/greensock.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/firebase.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/framer.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/git.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/html5.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/js.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/node-js.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/react.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/redux.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/responsive-design.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/sass.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/typescript.svg" as="image" />
+    <link rel="preload" href="%PUBLIC_URL%/assets/icons/visual-studio.svg" as="image" />
   </head>
-  <body>
-    <div id="root"></div>
+  <body style="margin: 0;">
+    <div id="root">
+      <div style="
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(182, 76, 57);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(37, 34, 32);
+      ">
+        <img src="https://i.postimg.cc/05pYSwJY/ldlogo.webp" style="
+        width: 10rem;
+        margin-bottom: 3rem;
+        " />
+        <p style="
+        font-size: 1.4rem;
+        font-weight: 100;
+        margin: 0;">
+        Welcome to Portfolio of Adrian Litewski
+        </p>
+        <h1 style="
+        font-size: 3rem;
+        font-weight: 900;
+        margin: 0;">
+        LOADING...
+        </h1>
+      </div>
+    </div>
   </body>
 </html>

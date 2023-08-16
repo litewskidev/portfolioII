@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { fetchLangEng, getFetchedLang } from "./redux/languageRedux";
+import { fetchLangEng, getFetchedLang } from "./redux/languageRedux.js";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 import NavbarTop from './components/NavbarTop/NavbarTop.jsx';
-import Main from "./components/Main/Main";
-import E404 from "./components/E404/E404";
+import Main from "./components/Main/Main.jsx";
+import E404 from "./components/E404/E404.jsx";
 
 const App = () => {
   const dispatch = useDispatch();

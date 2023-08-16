@@ -13,7 +13,7 @@ const Contact = ({ data }) => {
     const contactFrame = contactFrameRef.current;
     const contactFrameTrigger = contactFrameTriggerRef.current;
 
-    gsap.to(contactFrame, {rotate: 5, ease: "power0",
+    gsap.to(contactFrame, {rotation: 5, ease: "none",
       scrollTrigger: {
         trigger: contactFrameTrigger,
         start: "0% 60%",
@@ -37,7 +37,7 @@ const Contact = ({ data }) => {
     emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, {
       from_name: name,
       message: message,
-      from_email: email,
+      from_email: email
     })
     .then(res => {console.log(res.text)})
     .catch(err => {console.log(err.text)});

@@ -3,10 +3,9 @@ import './ArtyHero.scss';
 
 const ArtyHero = ({ data }) => {
 
-  const handleGetToKnow = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1"});
-  }
+  const handleGetToKnow = () => {
+    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+  };
 
   return(
     <section id='home' className='arty__hero__wrapper'>

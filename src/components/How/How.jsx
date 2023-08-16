@@ -12,7 +12,7 @@ const How = ({ data }) => {
     const howTrigger = howTriggerRef.current;
     const qrCode = qrCodeRef.current;
 
-    gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease: "power1",
+    gsap.fromTo(qrCode, {y: "200%", opacity: 0}, {y: 0, opacity: 1, ease: "power1.out",
       scrollTrigger: {
         trigger: howTrigger,
         scrub: 1,

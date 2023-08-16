@@ -1,15 +1,14 @@
 import { shallowEqual, useSelector } from 'react-redux';
-import './ProjectCard.scss';
 import { getProject } from '../../redux/projectsRedux.js';
+import './ProjectCard.scss';
 
 const ProjectCard = ({ id, setId }) => {
-
   const project = useSelector(state => getProject(state, id), shallowEqual);
 
   const handleMore = e => {
     e.preventDefault();
     setId(id);
-    const modal = document.querySelector('#project-modal')
+    const modal = document.querySelector('#project-modal');
     modal.classList.add('show');
   };
 

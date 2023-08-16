@@ -3,7 +3,7 @@
   src:
   url('alyrak.woff') format('woff'),
   url('alyrak.woff2') format('woff2'),
-  url('alyrak.ttf') format('truetype'),
+  url('alyrak.ttf') format('truetype')
 }
 
 @import './settings.scss';
@@ -11,9 +11,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
-//  GLOBAL FONT SIZE
-
 
 //  SCROLLBAR
 html::-webkit-scrollbar {
@@ -40,11 +37,7 @@ body {
   background-color: $raven;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
-
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 

@@ -7,7 +7,7 @@
   min-height: 100vh;
   border-bottom: 1px solid $grid;
   display: flex;
-  gap: 10%;
+  gap: 5%;
 }
 
 .about__underlay {
@@ -27,10 +27,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
   z-index: 30;
-  margin-top: -31vw;
-  gap: 7vw;
+  margin-top: -30vw;
+  gap: 6vw;
 }
 
 .about__title__hand {
@@ -50,7 +50,7 @@
     font-weight: 500;
     line-height: 0;
     color: $jasper;
-    font-size: 23rem;
+    font-size: 24rem;
 }
 
 .about__info__container {
@@ -101,7 +101,7 @@
 @media (max-width: 540px) {
 
   .about__wrapper {
-    min-height: 100vh;
+    min-height: 80vh;
     max-height: 100vh;
   }
 
@@ -114,11 +114,11 @@
   }
 
   .about__title__container {
-    margin-top: -1%;
+    margin-top: -1rem;
   }
 
   .about__title__info {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 
   .about__info__container {

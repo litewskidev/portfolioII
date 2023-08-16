@@ -6,21 +6,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = ({ data }) => {
   const aboutTitleRef = useRef(null);
-  const aboutTriggerRef = useRef(null)
+  const aboutTriggerRef = useRef(null);
 
   useEffect(() => {
-    const aboutTrigger =  aboutTriggerRef.current
+    const aboutTrigger =  aboutTriggerRef.current;
     const aboutTitle = aboutTitleRef.current;
 
-    gsap.fromTo(aboutTitle, {y: "-=100%"}, {y: 0,
+    gsap.fromTo(aboutTitle, {y: "-=100%"}, {y: 0, ease: "power1.out",
       scrollTrigger: {
         trigger: aboutTrigger,
         start: "0% 80%",
         end: "0% 0%",
         scrub: 1
       }
-    })
-  }, [])
+    });
+  }, []);
 
   return(
     <section id='about' ref={aboutTriggerRef}>

@@ -1,14 +1,13 @@
 import { shallowEqual, useSelector } from 'react-redux';
+import { getProject } from '../../redux/projectsRedux.js';
 import './ProjectModal.scss';
-import { getProject } from '../../redux/projectsRedux';
 
-const ProjectModal = ({ id, setId }) => {
-
+const ProjectModal = ({ id }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
 
   const handleClose = e => {
     e.preventDefault();
-    const modal = document.querySelector('#project-modal')
+    const modal = document.querySelector('#project-modal');
     modal.classList.remove('show');
   };
 

@@ -1,21 +1,21 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import ProjectModal from '../ProjectModal/ProjectModal';
+import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+import ProjectModal from '../ProjectModal/ProjectModal.jsx';
 import './Projects.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
+  const [projectId, setProjectId] = useState(1);
   const projectsTriggerRef = useRef(null);
   const projectsSectionRef = useRef(null);
-  const [projectId, setProjectId] = useState(1);
 
   useEffect(() => {
     const projectsTrigger = projectsTriggerRef.current;
     const projectsSection = projectsSectionRef.current;
 
-      gsap.to(projectsSection, {x: "-600vw", ease: "power0",
+      gsap.to(projectsSection, {x: "-600vw", ease: "none",
         scrollTrigger: {
           trigger: projectsTrigger,
           start: "0% 0%",
@@ -23,11 +23,10 @@ const Projects = () => {
           scrub: 1,
           pin: projectsTrigger
         }
-      })
+      });
   }, []);
 
-  const handleCheckSkillsScroll = e => {
-    e.preventDefault();
+  const handleCheckSkillsScroll = () => {
     gsap.to(window, {duration: 1, scrollTo: "#skills", ease: "power1"});
   };
 
@@ -86,7 +85,7 @@ const Projects = () => {
               <ProjectCard id={7} setId={setProjectId} />
             </div>
             <nav className='scroll__section__navBtn'>
-              <button onClick={handleCheckSkillsScroll}>check my skills & toolbox</button>
+              <button onClick={handleCheckSkillsScroll}>check out my skills & toolbox</button>
             </nav>
           </div>
           <div className='projects__underlay'>
@@ -95,7 +94,7 @@ const Projects = () => {
         </div>
         <div id='project-modal' className='project__modal'>
         <div className='project__modal__inner'>
-          <ProjectModal id={projectId} setId={setProjectId}/>
+          <ProjectModal id={projectId} />
         </div>
       </div>
       </div>

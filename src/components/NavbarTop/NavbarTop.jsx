@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux';
-import { fetchLangEng, fetchLangPl } from '../../redux/languageRedux';
+import { useRef } from 'react';
+import { fetchLangEng, fetchLangPl } from '../../redux/languageRedux.js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import './NavbarTop.scss';
-import { useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -13,7 +13,7 @@ const NavbarTop = ({ data }) => {
 
   const langEnRef = useRef(null);
   const langPlRef = useRef(null);
-  const dropdownBtnRef = useRef(null)
+  const dropdownBtnRef = useRef(null);
   const dropdownRef = useRef(null);
 
   const handlePl = e => {
@@ -32,37 +32,32 @@ const NavbarTop = ({ data }) => {
     e.target.classList.add('clickedEng');
   };
 
-  const handleHomeScroll = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#home", ease: "power1"});
-  };
-
-  const handleAboutScroll = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#about", ease: "power1"});
-  };
-
-  const handleProjectsScroll = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#projects", ease: "power1"});
-  };
-
-  const handleSkillsScroll = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#skills", ease: "power1"});
-  };
-
-  const handleContactScroll = e => {
-    e.preventDefault();
-    gsap.to(window, {duration: 2, scrollTo: "#contact", ease: "power1"});
-  };
-
   const toggleDropdown = e => {
     e.preventDefault();
     const dropdownBtn = dropdownBtnRef.current;
     const dropdown = dropdownRef.current;
     dropdownBtn.classList.toggle('on');
     dropdown.classList.toggle('show');
+  };
+
+  const handleHomeScroll = () => {
+    gsap.to(window, {duration: 2, scrollTo: "#home", ease: "power1.out"});
+  };
+
+  const handleAboutScroll = () => {
+    gsap.to(window, {duration: 2, scrollTo: "#about", ease: "power1.out"});
+  };
+
+  const handleProjectsScroll = () => {
+    gsap.to(window, {duration: 2, scrollTo: "#projects", ease: "power1.out"});
+  };
+
+  const handleSkillsScroll = () => {
+    gsap.to(window, {duration: 2, scrollTo: "#skills", ease: "power1.out"});
+  };
+
+  const handleContactScroll = () => {
+    gsap.to(window, {duration: 2, scrollTo: "#contact", ease: "power1.out"});
   };
 
   return(
