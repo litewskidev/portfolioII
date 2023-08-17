@@ -11,8 +11,8 @@ const ArtyHero = ({ data }) => {
     const eyesImg = eyesImgRef.current;
     const beardImg = beardImgRef.current;
 
-    tl.fromTo(eyesImg, {y: "50%", opacity: 0}, {y: 0, opacity: 1, delay: 0.6, ease: "power3.out"})
-    .fromTo(beardImg, {y: "-=50%", opacity: 0}, {y: 0, opacity: 1, ease: "power3.out"}, "<");
+    tl.fromTo(eyesImg, {y: "50%", opacity: 0}, {y: 0, opacity: 1, delay: 0.6, ease: "power2.out"})
+    .fromTo(beardImg, {y: "-=50%", opacity: 0}, {y: 0, opacity: 1, ease: "power2.out"}, "<");
   }, []);
 
   const handleGetToKnow = () => {

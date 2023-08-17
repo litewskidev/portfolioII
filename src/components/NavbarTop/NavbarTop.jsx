@@ -75,19 +75,19 @@ const NavbarTop = ({ data }) => {
           <nav className='navbar__links__container'>
             <ul className='navbar__links'>
               <li>
-                <p onClick={handleHomeScroll}>HOME</p>
+                <button onClick={handleHomeScroll}>HOME</button>
               </li>
               <li>
-                <p onClick={handleAboutScroll}>WHO</p>
+                <button onClick={handleAboutScroll}>WHO</button>
               </li>
               <li>
-                <p onClick={handleProjectsScroll}>WHAT</p>
+                <button onClick={handleProjectsScroll}>WHAT</button>
               </li>
               <li>
-                <p onClick={handleSkillsScroll}>HOW</p>
+                <button onClick={handleSkillsScroll}>HOW</button>
               </li>
               <li>
-                <p onClick={handleContactScroll}>{data.contactTop?.title}</p>
+                <button onClick={handleContactScroll}>{data.contactTop?.title}</button>
               </li>
             </ul>
           </nav>

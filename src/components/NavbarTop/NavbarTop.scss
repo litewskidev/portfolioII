@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5.2%;
+  padding: 0 5.15%;
   height: 3rem;
   background-color: $raven;
   font-family: "Alyrak";
@@ -39,41 +39,28 @@
 
 .navbar__links__container {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin: 0 1rem;
   background-color: $raven;
 }
 
 .navbar__links {
   width: 100%;
-  display: flex;
-  gap: 3%;
-  padding: 0 1rem;
   list-style-type: none;
   margin: 0;
+  display: flex;
+  gap: 3%;
 
-  p {
+  button {
+    background-color: transparent;
+    border: none;
     color: $cosmic-latte;
     font-family: $font-text;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: .09rem;
-    cursor: pointer;
     padding: 0 0.5rem;
+    cursor: pointer;
   }
-}
-
-.activeLink {
-  background-color: $jasper;
-  color: $raven !important;
-  font-weight: 800;
-}
-
-.navbar__top__info {
-  display: flex;
-  gap: 1rem;
 }
 
 .navbar__top__language__switch {
@@ -82,11 +69,10 @@
   background-color: inherit;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: $cosmic-latte;
-  cursor: pointer;
   border: 1px dotted $platinum-2;
   padding: .1rem;
+  cursor: pointer;
 }
 
 .navbar__top__language__pl {
@@ -104,7 +90,6 @@
   align-items: center;
   justify-content: center;
   background-color: $persian-red;
-  width: 50%;
   height: 100%;
 }
 
