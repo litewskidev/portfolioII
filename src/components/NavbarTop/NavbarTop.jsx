@@ -104,19 +104,19 @@ const NavbarTop = ({ data }) => {
           <nav className='dropdown__container' ref={dropdownRef}>
             <ul className='dropdown__links'>
               <li>
-                <p onClick={handleHomeScroll}>HOME</p>
+                <button onClick={handleHomeScroll}>HOME</button>
               </li>
               <li>
-                <p onClick={handleAboutScroll}>WHO</p>
+                <button onClick={handleAboutScroll}>WHO</button>
               </li>
               <li>
-                <p onClick={handleProjectsScroll}>WHAT</p>
+                <button onClick={handleProjectsScroll}>WHAT</button>
               </li>
               <li>
-                <p onClick={handleSkillsScroll}>HOW</p>
+                <button onClick={handleSkillsScroll}>HOW</button>
               </li>
               <li>
-                <p onClick={handleContactScroll}>{data.contactTop?.title}</p>
+                <button onClick={handleContactScroll}>{data.contactTop?.title}</button>
               </li>
               <li>
                 <img src={process.env.PUBLIC_URL + '/assets/logo/ldlogo.webp'} alt='logo'/>

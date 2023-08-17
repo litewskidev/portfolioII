@@ -10,13 +10,13 @@ const Enter = () => {
     const boxs = gsap.utils.toArray(".enter__box");
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(boxs, {rotateY: 90, x: "100%", duration: 0.3,
+    tl.to(boxs, {rotateY: 90, duration: 0.3, delay: 0.5,
     stagger: {
       each: 0.03,
       from: 0,
       ease: "none"
     }
-  }).to(enterWrapper, {display: "none", delay: 0.5}, "<");
+  }).to(enterWrapper, {display: "none", delay: 0.6}, "<");
   }, []);
 
   return(

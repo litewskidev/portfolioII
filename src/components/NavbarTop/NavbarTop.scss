@@ -169,7 +169,9 @@
     padding: 3.5rem 0;
     margin: 0;
 
-    li p {
+    li button {
+      background-color: transparent;
+      border: none;
       font-family: $font-text;
       font-weight: 800;
       color: $eerie-black;
