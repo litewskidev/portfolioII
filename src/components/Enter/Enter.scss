@@ -1,0 +1,23 @@
+@import '../../styles/settings.scss';
+
+.enter__wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.enter__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.enter__box {
+  width: 100vw;
+  height: 100vh;
+  background-color: $persian-red;
+}

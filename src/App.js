@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import NavbarTop from './components/NavbarTop/NavbarTop.jsx';
 import Main from "./components/Main/Main.jsx";
 import E404 from "./components/E404/E404.jsx";
+import Enter from "./components/Enter/Enter.jsx";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const App = () => {
 
   return(
     <main id="app">
+      <Enter />
       <NavbarTop data={data}/>
       <Routes>
         <Route exact path="/" element={ <Main data={data} /> } />

@@ -1,7 +1,19 @@
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './ArtyHero.scss';
 
 const ArtyHero = ({ data }) => {
+  const eyesImgRef = useRef(null);
+  const beardImgRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    const eyesImg = eyesImgRef.current;
+    const beardImg = beardImgRef.current;
+
+    tl.fromTo(eyesImg, {y: "50%", opacity: 0}, {y: 0, opacity: 1, delay: 0.6, ease: "power3.out"})
+    .fromTo(beardImg, {y: "-=50%", opacity: 0}, {y: 0, opacity: 1, ease: "power3.out"}, "<");
+  }, []);
 
   const handleGetToKnow = () => {
     gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
@@ -15,12 +27,12 @@ const ArtyHero = ({ data }) => {
             <div className='main__top__left'>
               <p>{data.home?.title}<br />adrian</p>
             </div>
-            <div className='main__top__right'>
+            <div className='main__top__right' ref={eyesImgRef}>
               <img src={process.env.PUBLIC_URL + '/assets/arty/1.webp'} alt='middle face part'/>
             </div>
           </div>
           <div className='arty__hero__main__center'>
-            <div className='main__center__left'>
+            <div className='main__center__left' ref={beardImgRef}>
               <img src={process.env.PUBLIC_URL + '/assets/arty/2.webp'} alt='bottom face part' />
               <div className='arty__hero__image__overlay'>
                 <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid overlay' />

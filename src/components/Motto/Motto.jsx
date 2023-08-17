@@ -12,7 +12,7 @@ const Motto = ({ data }) => {
     const mottoTitle = mottoTitleRef.current;
     const mottoTrigger = mottoTriggerRef.current;
 
-    gsap.fromTo(mottoTitle, {y: "-=100%", x: "100%"}, {y: 0, x:0, ease: "power1.out",
+    gsap.fromTo(mottoTitle, {y: "-=100%", x: "100%"}, {y: 0, x:0, ease: "none",
       scrollTrigger: {
         trigger: mottoTrigger,
         scrub: 1,

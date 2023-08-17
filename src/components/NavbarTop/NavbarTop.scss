@@ -13,16 +13,15 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  border-bottom: 1px solid $eerie-black;
 }
 
 .navbar__top__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 5.2%;
   height: 3rem;
-  background-color: $cosmic-latte;
+  background-color: $raven;
   font-family: "Alyrak";
   font-weight: 500;
 }
@@ -44,28 +43,25 @@
   justify-content: flex-start;
   align-items: center;
   margin: 0 1rem;
-  background-color: $cosmic-latte;
+  background-color: $raven;
 }
 
 .navbar__links {
   width: 100%;
   display: flex;
   gap: 3%;
-  border: 1px dotted $eerie-black;
   padding: 0 1rem;
   list-style-type: none;
   margin: 0;
 
   p {
-    color: $eerie-black;
+    color: $cosmic-latte;
     font-family: $font-text;
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     letter-spacing: .09rem;
     cursor: pointer;
     padding: 0 0.5rem;
-    border-left: 1px dotted $eerie-black;
-    border-right: 1px dotted $eerie-black;
   }
 }
 
@@ -87,10 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: .15rem;
-  color: $eerie-black;
+  color: $cosmic-latte;
   cursor: pointer;
-  border: 1px dotted $eerie-black;
+  border: 1px dotted $platinum-2;
   padding: .1rem;
 }
 
@@ -109,8 +104,6 @@
   align-items: center;
   justify-content: center;
   background-color: $persian-red;
-  border-top-left-radius: .15rem;
-  border-bottom-left-radius: .15rem;
   width: 50%;
   height: 100%;
 }
@@ -132,7 +125,7 @@
     gap: .3rem;
 
     .dropdown__btn__inner {
-      background-color: $eerie-black;
+      background-color: $cosmic-latte;
       width: 2rem;
       height: .25rem;
       border-radius: 3rem;
@@ -152,6 +145,7 @@
 
     .firstHam {
       transform: rotate(45deg);
+      background-color: $jasper;
     }
 
     .secondHam {
@@ -161,6 +155,7 @@
     .thirdHam {
       margin-top: -.55rem;
       transform: rotate(-45deg);
+      background-color: $jasper;
     }
   }
 
@@ -170,10 +165,9 @@
     left: 0;
     background-color: $cosmic-latte;
     height: 100vh;
-    width: 14%;
+    width: 15%;
     transform: translateX(-101%);
     transition: transform .4s ease;
-    border-right: 1px solid $eerie-black;
   }
 
   .dropdown__container.show {
@@ -192,10 +186,10 @@
 
     li p {
       font-family: $font-text;
-      font-weight: 900;
+      font-weight: 800;
       color: $eerie-black;
       line-height: 0;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       transform: rotate(-90deg);
     }
 

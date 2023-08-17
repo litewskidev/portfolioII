@@ -27,7 +27,7 @@
 }
 
 #projects-container {
-  padding-top: 3.05rem;
+  padding-top: 3rem;
 }
 
 .projects__title__container {
@@ -148,7 +148,7 @@
 
 //  MODAL
 .project__modal {
-  padding-top: 3.05rem;
+  padding-top: 3rem;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -172,11 +172,11 @@
 
 @media (max-width: 540px) {
   #projects-container {
-    padding-top: 2.55rem;
+    padding-top: 2.5rem;
   }
 
 .project__modal {
-  padding-top: 2.55rem;
+  padding-top: 2.5rem;
 }
 
   .project__modal__inner {
