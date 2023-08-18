@@ -15,7 +15,7 @@
 
   img {
     width: 160%;
-    filter: brightness(.9) sepia(.1) contrast(.99);
+    filter: brightness(.8) sepia(.1) contrast(.99);
   }
 }
 
@@ -39,10 +39,10 @@
     z-index: 20;
     bottom: 5%;
     left: 5%;
-    width: 85%;
+    width: 70%;
 
     p {
-      font-size: 8rem;
+      font-size: 6rem;
       font-weight: 600;
       color: $platinum-2;
       font-family: $font-1;
@@ -95,9 +95,10 @@
     bottom: 5%;
     left: 5%;
     width: 100%;
+    padding: 2%;
 
     p {
-      font-size: 3.1rem;
+      font-size: 3rem;
     }
   }
 

@@ -27,7 +27,7 @@ const About = ({ data }) => {
       <div className='about__wrapper'>
         <div className='about__title__container' ref={aboutTitleRef}>
           <img className='about__title__hand' src={process.env.PUBLIC_URL + '/assets/images/hand1920.webp'} alt='metal hand' />
-          <p className='about__title__info'>{data.about?.title}</p>
+          <h1 className='about__title__info'>{data.about?.title}</h1>
         </div>
         <div className='about__info__container'>
           <div className='about__info__right'>

@@ -66,7 +66,6 @@ const NavbarTop = ({ data }) => {
         <div className='navbar__top__container'>
           <div className='navbar__top__dropdown__btn' ref={dropdownBtnRef} onClick={toggleDropdown}>
             <div className='dropdown__btn__inner firstHam'></div>
-            <div className='dropdown__btn__inner secondHam'></div>
             <div className='dropdown__btn__inner thirdHam'></div>
           </div>
           <div className='navbar__top__logo'>

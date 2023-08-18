@@ -7,9 +7,9 @@ import './Projects.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
-  const [projectId, setProjectId] = useState(1);
   const projectsTriggerRef = useRef(null);
   const projectsSectionRef = useRef(null);
+  const [projectId, setProjectId] = useState(1);
 
   useEffect(() => {
     const projectsTrigger = projectsTriggerRef.current;
@@ -25,10 +25,6 @@ const Projects = () => {
         }
       });
   }, []);
-
-  const handleCheckSkillsScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#skills", ease: "power1"});
-  };
 
   return(
     <section id='projects' className='projects__outer' ref={projectsTriggerRef}>
@@ -84,9 +80,6 @@ const Projects = () => {
             <div className='scroll__section__project'>
               <ProjectCard id={7} setId={setProjectId} />
             </div>
-            <nav className='scroll__section__navBtn'>
-              <button onClick={handleCheckSkillsScroll}>check out my skills & toolbox</button>
-            </nav>
           </div>
           <div className='projects__underlay'>
             <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid background' />

@@ -6,19 +6,18 @@
   justify-content: center;
   align-items: center;
   gap: .15rem;
-  background-color: $cosmic-latte;
-
+  background-color: $raven;
 
   p:first-of-type {
-    margin-top: .2rem;
+    margin-top: .1rem;
   }
 
   p {
     font-family: $font-text;
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 500;
     font-style: italic;
-    color: $eerie-black;
+    color: $cosmic-latte;
     line-height: 1;
   }
 }

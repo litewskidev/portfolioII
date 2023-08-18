@@ -38,10 +38,10 @@
 }
 
 .projects__card__title {
-  p {
+  h1 {
     font-family: $font-text;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $cosmic-latte;
     text-transform: uppercase;
   }
@@ -127,13 +127,14 @@
   }
 
   .flex__card__inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .5rem;
   }
 
   .projects__card__title {
-    p {
+    h1 {
       font-size: 1.5rem;
     }
   }

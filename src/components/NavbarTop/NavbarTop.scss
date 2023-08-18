@@ -19,11 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5.15%;
+  padding: 0 3%;
   height: 3rem;
   background-color: $raven;
-  font-family: "Alyrak";
-  font-weight: 500;
 }
 
 .navbar__top__logo {
@@ -39,7 +37,6 @@
 
 .navbar__links__container {
   width: 100%;
-  margin: 0 1rem;
   background-color: $raven;
 }
 
@@ -55,10 +52,9 @@
     border: none;
     color: $cosmic-latte;
     font-family: $font-text;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: .09rem;
-    padding: 0 0.5rem;
     cursor: pointer;
   }
 }
@@ -73,6 +69,9 @@
   border: 1px dotted $platinum-2;
   padding: .1rem;
   cursor: pointer;
+  font-family: "Alyrak";
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .navbar__top__language__pl {
@@ -114,27 +113,14 @@
       width: 2rem;
       height: .25rem;
       border-radius: 3rem;
-      transition: transform .4s ease;
-    }
-
-    .firstHam {
-      transform: rotate(0);
-    }
-
-    .thirdHam {
-      transform: rotate(0);
+      transition: all .4s ease;
     }
   }
 
   .navbar__top__dropdown__btn.on {
-
     .firstHam {
       transform: rotate(45deg);
       background-color: $jasper;
-    }
-
-    .secondHam {
-      display: none;
     }
 
     .thirdHam {
@@ -165,7 +151,7 @@
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    gap: 6.4rem;
+    gap: 5.3rem;
     padding: 3.5rem 0;
     margin: 0;
 
@@ -176,7 +162,7 @@
       font-weight: 800;
       color: $eerie-black;
       line-height: 0;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       transform: rotate(-90deg);
     }
 

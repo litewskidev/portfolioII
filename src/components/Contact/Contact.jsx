@@ -8,6 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Contact = ({ data }) => {
   const contactFrameRef = useRef(null);
   const contactFrameTriggerRef = useRef(null);
+  const contactModalRef = useRef(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     const contactFrame = contactFrameRef.current;
@@ -21,15 +25,9 @@ const Contact = ({ data }) => {
         scrub: 1
       }
     });
-  }, []);
 
-  useEffect(() =>
     emailjs.init(process.env.REACT_APP_USER_ID)
-  , []);
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  }, []);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -39,7 +37,13 @@ const Contact = ({ data }) => {
       message: message,
       from_email: email
     })
-    .then(res => {console.log(res.text)})
+    .then(res => {
+      console.log(res.text);
+      contactModalRef.current.classList.add('sent');
+      setTimeout(() => {
+        contactModalRef.current.classList.remove('sent');
+      }, 5000);
+    })
     .catch(err => {console.log(err.text)});
 
     setName('');
@@ -49,7 +53,7 @@ const Contact = ({ data }) => {
 
   return(
     <section id='contact' className='contact__wrapper'>
-      <p>{data.contact?.title}</p>
+      <h1>{data.contact?.title}</h1>
       <p>{data.contact?.info}</p>
       <form className='contact__form' onSubmit={handleSubmit}>
 
@@ -81,6 +85,9 @@ const Contact = ({ data }) => {
         <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
         <button type='submit'>{data.contact?.button}</button>
       </form>
+      <div className='contact__modal' ref={contactModalRef}>
+        <p>Thanks for contacting me! I will be in touch with you shortly.</p>
+      </div>
     </section>
   )
 };

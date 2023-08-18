@@ -26,7 +26,7 @@ const ProjectCard = ({ id, setId }) => {
         <div className='flex__card__inner__info'>
           <div className='flex__card__inner'>
             <div className='projects__card__title'>
-              <p>{project[0].title}</p>
+              <h1>{project[0].title}</h1>
             </div>
             <div className='projects__card__btn'>
               <button onClick={handleMore}>&#187; LEARN MORE &#171;</button>

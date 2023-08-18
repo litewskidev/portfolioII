@@ -18,7 +18,7 @@ const ProjectModal = ({ id }) => {
       </div>
       <div className='project__modalshow__container'>
         <div className='project__modalshow__title'>
-          <p>{project[0]?.title}</p>
+          <h1>{project[0]?.title}</h1>
         </div>
         <div className='project__modalshow__moc'>
           <div className='project__modalshow__moc__image'>
@@ -43,7 +43,7 @@ const ProjectModal = ({ id }) => {
           </div>
           <div className='project__modalshow__link'>
             <a href={project[0]?.web} target='_blank' rel='noreferrer'>
-              <p>TAKE A LOOK &#171;</p>
+              <h2>TAKE A LOOK &#171;</h2>
             </a>
             <div className='project__modalshow__link__github'>
               <a href={project[0]?.git} target="_blank" rel='noreferrer'>&#187;<img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>

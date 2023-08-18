@@ -1,5 +1,39 @@
+@import '../../styles/settings.scss';
+
 .e404__wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
+  padding: 5%;
+  gap: 2%;
+  padding-top: 7rem;
+  height: 100vh;
+  background-color: $raven;
+
+  h1 {
+    font-family: 'Alyrak';
+    font-weight: 500;
+    color: $jasper;
+    font-size: 6rem;
+  }
+
+  p {
+    font-family: $font-text;
+    font-weight: 200;
+    color: $cosmic-latte;
+    font-size: 1.5rem;
+  }
+
+  span {
+    color: $jasper;
+  }
+
+  a {
+    font-family: $font-text;
+    color: $cosmic-latte;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }

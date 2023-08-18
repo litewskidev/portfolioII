@@ -18,7 +18,7 @@
 
   img {
     width: 100%;
-    opacity: .3;
+    opacity: .2;
     filter: invert(1);
   }
 }
@@ -28,9 +28,9 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  z-index: 30;
-  margin-top: -30vw;
-  gap: 6vw;
+  z-index: 3;
+  margin-top: -27vw;
+  gap: 5.7vw;
 }
 
 .about__title__hand {
@@ -49,52 +49,45 @@
     font-family: 'Alyrak';
     font-weight: 500;
     line-height: 0;
+    font-size: 20rem;
     color: $jasper;
-    font-size: 24rem;
 }
 
 .about__info__container {
   display: flex;
   width: 100%;
-
-  p {
-    font-family: $font-text;
-    font-weight: 100;
-    color: $eerie-black;
-    font-size: 2rem;
-    text-shadow: 0 0 1px $eerie-black;
-  }
 }
 
 .about__info__right {
-  text-align: center;
-  width: 100%;
+  padding-top: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 70%;
   background-color: $cosmic-latte;
-  border-right: 1px solid $eerie-black;
+  z-index: 2;
 
   p {
     padding: 5%;
+    font-family: $font-text;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: $eerie-black;
+    text-shadow: 0 0 1px $eerie-black;
   }
 
   button {
     width: 100%;
+    background-color: $cosmic-latte;
+    text-transform: uppercase;
     font-family: $font-text;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1;
-    background-color: $cosmic-latte;
-    padding: 1rem 3rem;
+    letter-spacing: .05rem;
+    color: $eerie-black;
+    padding: 1rem 0;
     border: none;
     border-top: 1px solid $eerie-black;
-    color: $eerie-black;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    z-index: 9;
   }
 }
 
@@ -114,7 +107,9 @@
   }
 
   .about__title__container {
-    margin-top: -1rem;
+    margin-top: 0;
+    gap: 1.75rem;
+    width: 45%;
   }
 
   .about__title__info {
@@ -122,13 +117,15 @@
   }
 
   .about__info__container {
+    text-align: center;
+
     p {
       font-size: 1rem;
     }
   }
 
   .about__info__right {
-    padding-top: 150%;
+    padding-top: 120%;
 
     button {
       font-size: 1rem;

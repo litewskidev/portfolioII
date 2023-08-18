@@ -11,12 +11,16 @@ const Enter = () => {
     const enterWrapper = enterWrapperRef.current;
 
     tl.to(boxs, {rotateY: 90, duration: 0.3, delay: 0.5,
-    stagger: {
-      each: 0.03,
-      from: 0,
-      ease: "none"
-    }
-  }).to(enterWrapper, {display: "none", delay: 0.6}, "<");
+      stagger: {
+        each: 0.03,
+        from: 0,
+        ease: "none"
+      }
+    });
+
+    setTimeout(() => {
+    enterWrapper.classList.add('enter__off');
+    }, 1500);
   }, []);
 
   return(
@@ -42,9 +46,16 @@ const Enter = () => {
         <div className='enter__box'></div>
         <div className='enter__box'></div>
         <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
+        <div className='enter__box desktop'></div>
       </div>
     </div>
   )

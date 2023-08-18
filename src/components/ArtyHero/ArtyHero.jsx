@@ -1,20 +1,7 @@
-import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './ArtyHero.scss';
 
 const ArtyHero = ({ data }) => {
-  const eyesImgRef = useRef(null);
-  const beardImgRef = useRef(null);
-
-  useEffect(() => {
-    const tl = gsap.timeline();
-    const eyesImg = eyesImgRef.current;
-    const beardImg = beardImgRef.current;
-
-    tl.fromTo(eyesImg, {y: "50%", opacity: 0}, {y: 0, opacity: 1, delay: 1.55, ease: "power1.out"})
-    .fromTo(beardImg, {y: "-=50%", opacity: 0}, {y: 0, opacity: 1, ease: "power1.out"}, "<");
-  }, []);
-
   const handleGetToKnow = () => {
     gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
   };
@@ -25,21 +12,21 @@ const ArtyHero = ({ data }) => {
         <div className='arty__hero__main'>
           <div className='arty__hero__main__top'>
             <div className='main__top__left'>
-              <p>{data.home?.title}<br />adrian</p>
+              <h1>{data.home?.title}<br />adrian</h1>
             </div>
-            <div className='main__top__right' ref={eyesImgRef}>
+            <div className='main__top__right'>
               <img src={process.env.PUBLIC_URL + '/assets/arty/1.webp'} alt='middle face part'/>
             </div>
           </div>
           <div className='arty__hero__main__center'>
-            <div className='main__center__left' ref={beardImgRef}>
+            <div className='main__center__left'>
               <img src={process.env.PUBLIC_URL + '/assets/arty/2.webp'} alt='bottom face part' />
               <div className='arty__hero__image__overlay'>
                 <img src={process.env.PUBLIC_URL + '/assets/images/grid.webp'} alt='grid overlay' />
               </div>
             </div>
             <div className='main__center__right'>
-              <p>{data.home?.subtitle}</p>
+              <h1>{data.home?.subtitle}</h1>
             </div>
           </div>
           <div className='arty__hero__main__bottom'>
@@ -54,9 +41,6 @@ const ArtyHero = ({ data }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className='arty__hero__version'>
-        <p>ver.1000.1001</p>
       </div>
     </section>
   )

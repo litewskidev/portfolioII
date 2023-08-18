@@ -1,29 +1,29 @@
 @import '../../styles/settings.scss';
 
 .contact__wrapper {
+  height: 100vh;
+  background-color: $raven;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  min-height: 100vh;
-  background-color: $raven;
-  padding-top: 5rem;
   position: relative;
+  overflow: hidden;
 
-  p {
-    font-size: 7rem;
-    font-weight: 500;
+  h1 {
     font-family: 'Alyrak';
+    font-size: 6rem;
+    font-weight: 500;
     color: $cosmic-latte;
     filter: brightness(1.1);
   }
 
-  p:last-of-type {
+  p {
     font-family: $font-text;
+    font-size: 1.5rem;
     font-weight: 100;
     color: $cosmic-latte;
-    font-size: 1.5rem;
-    filter: brightness(1);
   }
 }
 
@@ -33,21 +33,20 @@
   align-items: center;
   gap: 1rem;
   width: 40%;
-  padding-bottom: 10rem;
   position: relative;
 
   button {
+    padding: .5rem 4rem;
     background-color: inherit;
     border: 1px dotted $tan;
     border-bottom: 1px dotted $cosmic-latte;
-    color: $cosmic-latte;
     font-family: $font-text;
     font-weight: 200;
     font-size: 1rem;
-    padding: .5rem 4rem;
-    cursor: pointer;
+    color: $cosmic-latte;
     text-transform: uppercase;
-    margin-top: 20%;
+    cursor: pointer;
+    margin-top: 21%;
   }
 
   img {
@@ -85,13 +84,39 @@
   border: none;
 }
 
+.contact__modal.sent {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.contact__modal {
+  width: 40%;
+  background-color: $jasper;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%) translateY(400%);
+  opacity: 0;
+  transition: all .4s ease;
+
+  p {
+    text-align: center;
+    font-family: $font-text;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+
 @media (max-width: 540px) {
   .contact__wrapper {
     gap: 2rem;
     padding-top: 3rem;
 
-    p {
-      font-size: 5rem;
+    h1 {
+      font-size: 4rem;
     }
 
     p:last-of-type {
@@ -128,5 +153,10 @@
     margin-bottom: 3rem;
     width: 60%;
     padding-bottom: 25%;
+  }
+
+
+  .contact__modal {
+    width: 90%;
   }
 }
