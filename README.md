@@ -18,4 +18,4 @@ Check out my Portfolio. I tried to make it reflect my personality.
 - Desktop
 
 # Links:
-- Live Site URL: http://portfolio.litewskidev.usermd.net/
+- Live Site URL:

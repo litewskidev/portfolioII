@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .contact__wrapper {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $raven;
   padding-top: 5rem;
   display: flex;
@@ -95,7 +95,7 @@
   padding: .5rem 1rem;
   border-radius: .5rem;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
   z-index: 99;
   transform: translateX(-50%) translateY(400%);

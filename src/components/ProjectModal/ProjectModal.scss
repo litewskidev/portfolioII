@@ -197,6 +197,7 @@
   .project__modalshow__techs {
     display: flex;
     align-items: center;
+    margin-top: .1rem;
     padding: 0 5%;
     gap: .5rem;
     width: 100%;
@@ -235,10 +236,6 @@
 
   .project__modalshow__bottom__right {
     gap: .1rem;
-  }
-
-  .project__modalshow__techs {
-    margin-top: 2%;
   }
 
   .project__modalshow__link {
