@@ -1,9 +1,12 @@
 @font-face {
   font-family: 'Alyrak';
+  font-style: normal;
+  font-weight: 500;
   src:
   url('alyrak.woff') format('woff'),
   url('alyrak.woff2') format('woff2'),
-  url('alyrak.ttf') format('truetype')
+  url('alyrak.ttf') format('truetype');
+  font-display: swap;
 }
 
 @import './settings.scss';
