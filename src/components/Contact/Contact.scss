@@ -47,6 +47,13 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 21%;
+
+    &:hover {
+      background-color: $tan;
+      border: 1px dotted $raven;
+      color: $raven;
+      font-weight: 400;
+    }
   }
 
   img {

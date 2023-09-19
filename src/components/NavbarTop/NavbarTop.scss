@@ -56,6 +56,10 @@
     font-weight: 700;
     letter-spacing: .09rem;
     cursor: pointer;
+
+    &:hover {
+      color: $tan;
+    }
   }
 }
 
@@ -77,11 +81,19 @@
 .navbar__top__language__pl {
   width: 50%;
   text-align: center;
+
+  &:hover {
+    color: $tan;
+  }
 }
 
 .navbar__top__language__eng {
   width: 50%;
   text-align: center;
+
+  &:hover {
+    color: $tan;
+  }
 }
 
 .clickedPl, .clickedEng {
@@ -90,6 +102,10 @@
   justify-content: center;
   background-color: $persian-red;
   height: 100%;
+
+  &:hover {
+    color: $cosmic-latte;
+  }
 }
 
 @media (max-width: 540px) {

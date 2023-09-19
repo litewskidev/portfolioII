@@ -99,6 +99,10 @@
   img {
     width: 25%;
     filter: invert(1) brightness(5);
+
+    &:hover {
+      filter: invert(40%) sepia(10%) saturate(2365%) hue-rotate(355deg) brightness(1.7) contrast(0.6);
+    }
   }
 }
 

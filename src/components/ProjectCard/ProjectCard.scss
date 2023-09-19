@@ -60,6 +60,11 @@
     font-weight: 100;
     font-size: 1rem;
     color: $cosmic-latte;
+
+    &:hover {
+      background-color: $tan;
+      color: $raven;
+    }
   }
 }
 
