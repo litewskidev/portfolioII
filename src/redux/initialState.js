@@ -17,7 +17,7 @@ const initialState = {
         '/assets/icons/firebase.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: 'Watch More! Multi-page "streaming" app with login, sign up, watch list, movies, TV shows, collections, hubs and search.',
+      desc: 'Watch more! Multi-page "streaming" app with Login, Sign up, Watch list, Movies, TV shows, Collections, Hubs and Search.',
       git: 'https://github.com/litewskidev/watchmore-app'
     },
     {
@@ -51,7 +51,7 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: 'Multi-page E-commerce App for audiophiles. Category and product page. Cart with quantity input. Checkout page, confirming-order-modal with order ID and ordered products dropdown.',
+      desc: 'Multi-page E-commerce App for audiophiles. Category and product pages. Cart with quantity input. Checkout page, confirming order modal with order ID and ordered products dropdown.',
       git: 'https://github.com/litewskidev/audiophile-ecom'
     },
     {
@@ -68,7 +68,7 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: 'Try to match pairs. Solo or Multiplayer (Up to 4 Players) Game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid.',
+      desc: 'Try to match pairs. Solo or multiplayer (up to 4 Players) game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid.',
       git: 'https://github.com/litewskidev/memory-game'
     },
     {

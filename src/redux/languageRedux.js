@@ -1,7 +1,6 @@
 //  SELECTORS
 export const getFetchedLang = ({ language }) => language;
-export const getHome = ({ language }) => language.home;
-export const getAbout = ({ language }) => language.about;
+export const getProjectDesc = ({ language }, id) => language.descriptions?.filter(description => description.id === id);
 
 //  ACTIONS
 const createActionName = actionName => `app/language/${actionName}`;

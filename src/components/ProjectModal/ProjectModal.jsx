@@ -1,9 +1,11 @@
 import { shallowEqual, useSelector } from 'react-redux';
 import { getProject } from '../../redux/projectsRedux.js';
 import './ProjectModal.scss';
+import { getProjectDesc } from '../../redux/languageRedux.js';
 
 const ProjectModal = ({ id }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
+  const projectDesc = useSelector(state => getProjectDesc(state, id));
 
   const handleClose = e => {
     e.preventDefault();
@@ -31,7 +33,9 @@ const ProjectModal = ({ id }) => {
       </div>
       <div className='project__modalshow__bottom'>
         <div className='project__modalshow__bottom__left'>
-          <p>{project[0]?.desc}</p>
+          {projectDesc?.map(desc => (
+            <p key={desc.id}>{desc.desc}</p>
+          ))}
         </div>
         <div className='project__modalshow__bottom__right'>
           <div className='project__modalshow__techs'>
