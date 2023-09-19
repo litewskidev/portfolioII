@@ -14,7 +14,7 @@ const Main = ({ data }) => {
     <main id='main'>
       <ArtyHero data={data} />
       <About data={data} />
-      <Projects />
+      <Projects data={data}/>
       <Skills data={data} />
       <How data={data} />
       <QuoteTwo />

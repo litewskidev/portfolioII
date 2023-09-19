@@ -67,10 +67,12 @@
   z-index: 2;
 
   p {
-    padding: 5%;
+    width: 80%;
+    padding: 2% 10%;
+    padding-top: 0;
     font-family: $font-text;
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: $eerie-black;
     text-shadow: 0 0 1px $eerie-black;
   }
@@ -116,7 +118,7 @@
   }
 
   .about__info__container {
-    text-align: center;
+    text-align: start;
 
     p {
       font-size: 1rem;
@@ -124,7 +126,14 @@
   }
 
   .about__info__right {
-    padding-top: 120%;
+    padding-top: 115%;
+
+    p {
+      padding: 5%;
+      padding-top: 0;
+      width: 100%;
+      font-size: 1rem;
+    }
 
     button {
       font-size: 1rem;

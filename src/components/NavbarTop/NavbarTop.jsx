@@ -74,19 +74,19 @@ const NavbarTop = ({ data }) => {
           <nav className='navbar__links__container'>
             <ul className='navbar__links'>
               <li>
-                <button onClick={handleHomeScroll}>HOME</button>
+                <button onClick={handleHomeScroll}>{data.navbar?.home}</button>
               </li>
               <li>
-                <button onClick={handleAboutScroll}>WHO</button>
+                <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
               </li>
               <li>
-                <button onClick={handleProjectsScroll}>WHAT</button>
+                <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
               </li>
               <li>
-                <button onClick={handleSkillsScroll}>HOW</button>
+                <button onClick={handleSkillsScroll}>{data.navbar?.skills}</button>
               </li>
               <li>
-                <button onClick={handleContactScroll}>{data.contactTop?.title}</button>
+                <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
               </li>
             </ul>
           </nav>
@@ -103,19 +103,19 @@ const NavbarTop = ({ data }) => {
           <nav className='dropdown__container' ref={dropdownRef}>
             <ul className='dropdown__links'>
               <li>
-                <button onClick={handleHomeScroll}>HOME</button>
+                <button onClick={handleHomeScroll}>{data.navbar?.home}</button>
               </li>
               <li>
-                <button onClick={handleAboutScroll}>WHO</button>
+                <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
               </li>
               <li>
-                <button onClick={handleProjectsScroll}>WHAT</button>
+                <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
               </li>
               <li>
-                <button onClick={handleSkillsScroll}>HOW</button>
+                <button onClick={handleSkillsScroll}>{data.navbar?.skills}</button>
               </li>
               <li>
-                <button onClick={handleContactScroll}>{data.contactTop?.title}</button>
+                <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
               </li>
               <li>
                 <img src={process.env.PUBLIC_URL + '/assets/logo/ldlogo.webp'} alt='logo'/>

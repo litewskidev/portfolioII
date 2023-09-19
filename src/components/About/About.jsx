@@ -31,8 +31,12 @@ const About = ({ data }) => {
         </div>
         <div className='about__info__container'>
           <div className='about__info__right'>
-            <p>{data.about?.one}</p>
-            <button>scroll down</button>
+            <div className='about__info__right__inner'>
+              <p>{data.about?.one}</p>
+              <p>{data.about?.two}</p>
+              <p>{data.about?.three}</p>
+            </div>
+            <button>{data.about?.button}</button>
           </div>
         </div>
         <div className='about__underlay'>

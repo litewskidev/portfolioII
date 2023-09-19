@@ -106,9 +106,9 @@ const initialState = {
     {
       id: 7,
       tech: 'javascript',
-      title: 'blog',
+      title: 'invaders',
       img: '/assets/covers/5.webp',
-      web: 'http://blog.litewskidev.usermd.net',
+      web: 'http://invaders.litewskidev.usermd.net/',
       moc1: '/assets/mocs/memoryMOC1.webp',
       moc2: '/assets/mocs/memoryMOC2.webp',
       techs: [
@@ -117,7 +117,7 @@ const initialState = {
         '/assets/icons/sass.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      git: 'https://github.com/litewskidev/javascript-blog'
+      git: 'https://github.com/litewskidev/invaders-game'
     }
   ]
 };
