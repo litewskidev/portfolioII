@@ -1,5 +1,5 @@
 ## Portfolio ##
-Check out my Portfolio. I tried to make it reflect my personality.
+Check out my Portfolio.
 
 # Build with:
 - HTML5
@@ -18,4 +18,4 @@ Check out my Portfolio. I tried to make it reflect my personality.
 - Desktop
 
 # Links:
-- Live Site URL:
+- Live Site URL: http://portfolio.litewskidev.usermd.net/
