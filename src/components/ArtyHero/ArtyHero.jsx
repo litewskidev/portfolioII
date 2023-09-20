@@ -35,7 +35,7 @@ const ArtyHero = ({ data }) => {
               <button onClick={handleGetToKnow}>{data.home?.button}</button>
             </div>
             <div className='arty__hero__social'>
-              <a href='https://www.linkedin.com/in/adrian-litewski-8069a0291' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
+              <a href='https://www.linkedin.com/in/adrian-litewski-litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
               <a href='https://github.com/litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github icon' /></a>
             </div>
           </div>

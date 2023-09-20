@@ -55,6 +55,7 @@ const Contact = ({ data }) => {
     <section id='contact' className='contact__wrapper'>
       <h1>{data.contact?.title}</h1>
       <p>{data.contact?.info}</p>
+      <p>{data.contact?.info2}</p>
       <form className='contact__form' onSubmit={handleSubmit}>
 
         <input className='contact__form__text'
@@ -85,6 +86,7 @@ const Contact = ({ data }) => {
         <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
         <button type='submit'>{data.contact?.button}</button>
       </form>
+      <p>litewskidev@gmail.com</p>
       <div className='contact__modal' ref={contactModalRef}>
         <p>Thanks for contacting me! I will be in touch with you shortly.</p>
       </div>

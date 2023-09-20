@@ -22,7 +22,7 @@ const ProjectCard = ({ id, setId }) => {
             <img src={process.env.PUBLIC_URL + project[0].img} alt='projects card cover'/>
           </div>
           <div className='projects__card__serial'>
-            <p>0015/005/0023</p>
+            <p>{project[0].date}</p>
           </div>
         </div>
         <div className='flex__card__inner__info'>

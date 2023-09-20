@@ -3,7 +3,7 @@ import { getProject } from '../../redux/projectsRedux.js';
 import './ProjectModal.scss';
 import { getProjectDesc } from '../../redux/languageRedux.js';
 
-const ProjectModal = ({ id }) => {
+const ProjectModal = ({ id, data }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
   const projectDesc = useSelector(state => getProjectDesc(state, id));
 
@@ -47,7 +47,7 @@ const ProjectModal = ({ id }) => {
           </div>
           <div className='project__modalshow__link'>
             <a href={project[0]?.web} target='_blank' rel='noreferrer'>
-              <h2>TAKE A LOOK &#171;</h2>
+              <h2>{data?.modal} &#171;</h2>
             </a>
             <div className='project__modalshow__link__github'>
               <a href={project[0]?.git} target="_blank" rel='noreferrer'>&#187;<img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>
