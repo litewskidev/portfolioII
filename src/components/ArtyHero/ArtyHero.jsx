@@ -1,5 +1,5 @@
 import { gsap } from 'gsap';
-import './ArtyHero.scss';
+//import './ArtyHero.scss';
 
 const ArtyHero = ({ data }) => {
   const handleGetToKnow = () => {

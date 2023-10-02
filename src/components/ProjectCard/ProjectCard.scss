@@ -41,7 +41,7 @@
   h1 {
     font-family: $font-text;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $cosmic-latte;
     text-transform: uppercase;
   }
@@ -58,7 +58,7 @@
     border: 1px solid $cosmic-latte;
     font-family: $font-text;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: $cosmic-latte;
 
     &:hover {
@@ -141,6 +141,12 @@
   .projects__card__title {
     h1 {
       font-size: 1.5rem;
+    }
+  }
+
+  .projects__card__btn {
+    button {
+      font-size: 1.1rem;
     }
   }
 

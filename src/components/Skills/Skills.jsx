@@ -34,8 +34,12 @@ const Skills = ({ data }) => {
           <p>CSS3</p>
         </div>
         <div className='skills__box'>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/sass.svg'} alt="SASS" />
-          <p>SASS</p>
+          <img src={process.env.PUBLIC_URL + '/assets/icons/responsive-design.svg'} alt="RWD" />
+          <p>RWD</p>
+        </div>
+        <div className='skills__box'>
+          <img src={process.env.PUBLIC_URL + '/assets/icons/mongodb.svg'} alt="MongoDB" />
+          <p>MongoDB</p>
         </div>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/firebase.svg'} alt="Firebase" />
@@ -46,31 +50,24 @@ const Skills = ({ data }) => {
           <p>Express</p>
         </div>
         <div className='skills__box'>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/greensock.svg'} alt="GSAP" />
-          <p>GSAP</p>
-        </div>
-        <div className='skills__box'>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/framer.svg'} alt="Framer" />
-          <p>Framer</p>
+          <img src={process.env.PUBLIC_URL + '/assets/icons/git.svg'} alt="Git" />
+          <p>Git</p>
         </div>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/bootstrap.svg'} alt="Bootstrap" />
           <p>Bootstrap</p>
         </div>
         <div className='skills__box'>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/git.svg'} alt="Git" />
-          <p>Git</p>
+          <img src={process.env.PUBLIC_URL + '/assets/icons/sass.svg'} alt="SASS" />
+          <p>SASS</p>
+        </div>
+        <div className='skills__box'>
+          <img src={process.env.PUBLIC_URL + '/assets/icons/greensock.svg'} alt="GSAP" />
+          <p>GSAP</p>
         </div>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/visual-studio.svg'} alt="Visual Studio" />
           <p>VS</p>
-        </div>
-        <div className='skills__box'>
-          <img src={process.env.PUBLIC_URL + '/assets/icons/responsive-design.svg'} alt="RWD" />
-          <p>RWD</p>
-        </div>
-        <div className='skills__underlay'>
-          <img src={process.env.PUBLIC_URL + '/assets/shapes/wave.webp'} alt='wave shape' />
         </div>
       </div>
     </section>

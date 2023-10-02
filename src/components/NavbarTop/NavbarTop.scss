@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3%;
+  padding: 0 5%;
   height: 3rem;
   background-color: $raven;
 }
@@ -27,6 +27,7 @@
 .navbar__top__logo {
   display: flex;
   align-items: center;
+  border: 1px solid $cosmic-latte;
 
   img {
     width: 2rem;
@@ -70,7 +71,7 @@
   display: flex;
   align-items: center;
   color: $cosmic-latte;
-  border: 1px dotted $platinum-2;
+  border: 1px solid $cosmic-latte;
   padding: .1rem;
   cursor: pointer;
   font-family: "Alyrak";
@@ -186,6 +187,8 @@
       width: 2.5rem;
       height: 2.5rem;
       background-color: $persian-red;
+      border: 1px solid $raven;
+      padding: .1rem;
     }
   }
 

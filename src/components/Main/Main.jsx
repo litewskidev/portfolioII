@@ -8,11 +8,12 @@ import Motto from '../Motto/Motto.jsx';
 import Contact from '../Contact/Contact.jsx';
 import Footer from '../Footer/Footer.jsx';
 import './Main.scss';
+import NewHero from '../NewHero/NewHero.jsx';
 
 const Main = ({ data }) => {
   return(
     <main id='main'>
-      <ArtyHero data={data} />
+      <NewHero data={data} />
       <About data={data} />
       <Projects data={data}/>
       <Skills data={data} />

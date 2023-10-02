@@ -61,6 +61,7 @@
     position: absolute;
     top: 7.5rem;
     z-index: 0;
+    filter: saturate(.9) sepia(.25);
   }
 }
 
@@ -78,7 +79,7 @@
 
   &::placeholder {
     color: $cosmic-latte;
-    opacity: 0.4;
+    opacity: .4;
   }
 }
 
