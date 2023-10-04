@@ -86,7 +86,7 @@ const Contact = ({ data }) => {
         <img src={process.env.PUBLIC_URL + '/assets/images/frame1920.webp'} alt='old frame' ref={contactFrameRef}/>
         <button type='submit'>{data.contact?.button}</button>
       </form>
-      <p>litewskidev@gmail.com</p>
+      <p className='contact__email'>litewskidev@gmail.com</p>
       <div className='contact__modal' ref={contactModalRef}>
         <p>Thanks for contacting me! I will be in touch with you shortly.</p>
       </div>

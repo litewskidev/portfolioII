@@ -15,7 +15,7 @@ const Projects = ( {data} ) => {
     const projectsTrigger = projectsTriggerRef.current;
     const projectsSection = projectsSectionRef.current;
 
-      gsap.to(projectsSection, {x: "-600vw", ease: "none",
+      gsap.to(projectsSection, {x: "-500vw", ease: "none",
         scrollTrigger: {
           trigger: projectsTrigger,
           start: "0% 0%",
@@ -42,7 +42,7 @@ const Projects = ( {data} ) => {
           <div className='scroll__section one'>
             <p>{data.projects?.number}.1</p>
             <div className='scroll__section__project'>
-              <ProjectCard id={7} setId={setProjectId} />
+              <ProjectCard id={6} setId={setProjectId} />
             </div>
           </div>
           <div className='scroll__section two'>
@@ -73,12 +73,6 @@ const Projects = ( {data} ) => {
             <p>{data.projects?.number}.6</p>
             <div className='scroll__section__project'>
               <ProjectCard id={5} setId={setProjectId} />
-            </div>
-          </div>
-          <div className='scroll__section seven'>
-            <p>{data.projects?.number}.7</p>
-            <div className='scroll__section__project'>
-              <ProjectCard id={6} setId={setProjectId} />
             </div>
           </div>
           <div className='projects__underlay'>

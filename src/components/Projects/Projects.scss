@@ -8,7 +8,7 @@
 
 .projects__inner {
   height: 90vh;
-  width: 700vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -30,6 +30,7 @@
 
 #projects-container {
   padding-top: 3rem;
+  width: 600vw;
 }
 
 .projects__title__container {
@@ -40,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 5rem;
 }
 
 .projects__title {

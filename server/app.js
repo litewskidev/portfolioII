@@ -26,25 +26,25 @@ app.get("/api/language/pl", (req, res) => {
         "button": "poznaj mnie"
       },
       "about": {
-        "title": "KTO?",
+        "title": "KTO",
         "button": "PRZEWIŃ W DÓŁ",
         "one": "Cześć! Nazywam się Adrian Litewski.",
         "two" : "Moja przygoda z pisaniem kodu rozpoczęła się w zeszłym roku. Z czasem przerodziła się w prawdziwą pasję. Dziś jestem entuzjastycznym programistą, skupiającym się na dostarczaniu przykuwających oko i łatwych w użyciu rozwiązań. Piszę czysty, dobrze ustrukturyzowany, wolny od błędów kod i dążę do tego żeby móc poświęcać temu jak najwięcej czasu.",
         "three": " Przewiń w dół żeby zobaczyć moje projekty i technologie, których używam."
       },
       "skills": {
-        "title": "JAK ?",
+        "title": "JAK",
       },
       "how": {
         "info": "Zawsze dbam o przejrzystość kodu, świetny design, responsywność oraz doświadczenie użytkownika.",
         "info2": "Zajrzyj do moich repozytoriów na Githubie."
       },
       "motto": {
-        "title": "MOTTO?",
+        "title": "MOTTO",
         "quote": "Lepiej jest zrobić cokolwiek niż nic nie robić i czekać na zrobienie wszystkiego"
       },
       "contact": {
-        "title": "GDZIE?",
+        "title": "GDZIE",
         "info": "Mieszkam w Gdańsku. Aktualnie szukam swojej pierwszej pracy w branży IT.",
         "info2": "Skontaktuj się ze mną:",
         "button": "WYŚLIJ",
@@ -65,7 +65,7 @@ app.get("/api/language/pl", (req, res) => {
         "title": "GDZIE",
       },
       "projects": {
-        "title": "PROJEKTY?",
+        "title": "PROJEKTY",
         "button": "WIĘCEJ",
         "number": "Nr",
       },
@@ -92,10 +92,6 @@ app.get("/api/language/pl", (req, res) => {
         },
         {
           "id": 6,
-          "desc": "Strona informacyjna eleganckiej restauracji. Dokonaj rezerwacji w Dine!"
-        },
-        {
-          "id": 7,
           "desc": "Broń miasta i niszcz kosmitów! Strzelaj do obcych statków i zbieraj kapsuły, aby zwabić statek-matkę. Wygraj w jak najkrótszym czasie i dodaj swój wynik do tabeli liderów."
         }
       ],
@@ -115,25 +111,25 @@ app.get("/api/language/eng", (req, res) => {
         "button": "get to know me"
       },
       "about": {
-        "title": "WHO?",
+        "title": "WHO",
         "button": "SCROLL DOWN",
         "one": "Hi! My name is Adrian Litewski.",
         "two" : "My adventure with coding began about a year ago. Over time, it turned into a real passion. Today I am an enthusiastic front-end developer, focused on delivering eye-catching and easy to use solutions. I am writing clean, well-structured, error-free code and I strive to be able to devote as much time to it as possible.",
         "three": "Scroll down to see my projects and technologies I use."
       },
       "skills": {
-        "title": "HOW?",
+        "title": "HOW",
       },
       "how": {
         "info": "I always care about clear code, cool design, responsiveness and user experience.",
         "info2": "Check out my repositories on Github."
       },
       "motto": {
-        "title": "MOTTO?",
+        "title": "MOTTO",
         "quote": "It is better to do something than to do nothing while waiting to do everything"
       },
       "contact": {
-        "title": "WHERE?",
+        "title": "WHERE",
         "info": "I live in Gdańsk / Poland. I am currently looking for my first IT job.",
         "info2": "Contact me:",
         "button": "SEND",
@@ -154,7 +150,7 @@ app.get("/api/language/eng", (req, res) => {
         "title": "WHERE",
       },
       "projects": {
-        "title": "PROJECTS?",
+        "title": "PROJECTS",
         "button": "LEARN MORE",
         "number": "No",
       },
@@ -181,10 +177,6 @@ app.get("/api/language/eng", (req, res) => {
         },
         {
           "id": 6,
-          "desc": "Information website of an elegant restaurant. Make reservation in Dine!"
-        },
-        {
-          "id": 7,
           "desc": "Defend town and destroy aliens! Shoot alien ships and collect capsules to lure The Mothership. Win in the shortest possible time and add your score to leaderboard."
         }
       ],

@@ -8,13 +8,14 @@ const initialState = {
       title: 'watchmore',
       date: '007/0023',
       img: '/assets/covers/1.webp',
-      web: 'http://watchmore.litewskidev.usermd.net',
+      web: 'https://watchmore.litewskidev.usermd.net',
       moc1: '/assets/mocs/watchMOC1.webp',
       moc2: '/assets/mocs/watchMOC2.webp',
       techs: [
         '/assets/icons/react.svg',
         '/assets/icons/redux.svg',
         '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
         '/assets/icons/firebase.svg',
         '/assets/icons/responsive-design.svg'
       ],
@@ -27,7 +28,7 @@ const initialState = {
       title: 'pathfinder',
       date: '004/0023',
       img: '/assets/covers/2.webp',
-      web: 'http://pathfinder.litewskidev.usermd.net',
+      web: 'https://pathfinder.litewskidev.usermd.net',
       moc1: '/assets/mocs/pathMOC1.webp',
       moc2: '/assets/mocs/pathMOC2.webp',
       techs: [
@@ -45,13 +46,14 @@ const initialState = {
       title: 'audiophile',
       date: '005/0023',
       img: '/assets/covers/3.webp',
-      web: 'http://audiophile.litewskidev.usermd.net',
+      web: 'https://audiophile.litewskidev.usermd.net',
       moc1: '/assets/mocs/audioMOC1.webp',
       moc2: '/assets/mocs/audioMOC2.webp',
       techs: [
         '/assets/icons/react.svg',
         '/assets/icons/redux.svg',
         '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
         '/assets/icons/expressjs.svg',
         '/assets/icons/responsive-design.svg'
       ],
@@ -64,7 +66,7 @@ const initialState = {
       title: 'memory',
       date: '006/0023',
       img: '/assets/covers/4.webp',
-      web: 'http://memory.litewskidev.usermd.net',
+      web: 'https://memory.litewskidev.usermd.net',
       moc1: '/assets/mocs/memoryMOC1.webp',
       moc2: '/assets/mocs/memoryMOC2.webp',
       techs: [
@@ -82,13 +84,14 @@ const initialState = {
       title: 'miaumamia',
       date: '001/0023',
       img: '/assets/covers/5.webp',
-      web: 'http://miaumamia.litewskidev.usermd.net',
+      web: 'https://miaumamia.litewskidev.usermd.net',
       moc1: '/assets/mocs/miaumaMOC1.webp',
       moc2: '/assets/mocs/miaumaMOC2.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
         '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
         '/assets/icons/expressjs.svg',
         '/assets/icons/responsive-design.svg'
       ],
@@ -96,34 +99,18 @@ const initialState = {
     },
     {
       id: 6,
-      tech: 'react',
-      title: 'dine',
-      date: '003/0023',
-      img: '/assets/covers/6.webp',
-      web: 'http://dine.litewskidev.usermd.net',
-      moc1: '/assets/mocs/dineMOC1.webp',
-      moc2: '/assets/mocs/dineMOC2.webp',
-      techs: [
-        '/assets/icons/react.svg',
-        '/assets/icons/redux.svg',
-        '/assets/icons/sass.svg',
-        '/assets/icons/responsive-design.svg'
-      ],
-      git: 'https://github.com/litewskidev/dine-restaurant'
-    },
-    {
-      id: 7,
       tech: 'javascript',
       title: 'invaders',
       date: '009/0023',
       img: '/assets/covers/7.webp',
-      web: 'http://invaders.litewskidev.usermd.net/',
+      web: 'https://invaders.litewskidev.usermd.net',
       moc1: '/assets/mocs/invadersMOC1.webp',
       moc2: '/assets/mocs/invadersMOC2.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
         '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
         '/assets/icons/firebase.svg',
         '/assets/icons/responsive-design.svg'
       ],
