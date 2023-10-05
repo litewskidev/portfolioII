@@ -13,18 +13,17 @@ const NewHero = ({ data }) => {
       <div className='hero__main'>
         <div className='hero__main__top'>
           <div className='main__top__left'>
-            <p>{data.home?.title}<br />adrian</p>
-            <p>{data.home?.subtitle}</p>
-            <p>{data.home?.subtitle_2}</p>
+            <p>web<br />adrian</p>
+            <p>dev</p>
+            <p>eloper</p>
           </div>
           <div className='main__top__right'>
             <img src={process.env.PUBLIC_URL + '/assets/arty/7.webp'} alt='face' />
           </div>
         </div>
-
         <div className='hero__main__bottom'>
           <div className='main__bottom__left'>
-            <p>front-end developer<br />{data.home?.based}</p>
+            <p>{data.home?.based}</p>
             <button onClick={handleGetToKnow}>{data.home?.button}</button>
           </div>
           <div className='hero__social'>

@@ -19,20 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 10%;
   height: 3rem;
   background-color: $raven;
-}
-
-.navbar__top__logo {
-  display: flex;
-  align-items: center;
-
-  img {
-    width: 2rem;
-    height: 2rem;
-    background-color: $persian-red;
-  }
 }
 
 .navbar__links__container {
@@ -44,21 +33,22 @@
   width: 100%;
   list-style-type: none;
   margin: 0;
+  padding: 0;
   display: flex;
   gap: 3%;
 
   button {
     background-color: transparent;
     border: none;
-    color: $cosmic-latte;
+    color: $white;
     font-family: $font-text;
     font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: .09rem;
+    font-weight: 200;
     cursor: pointer;
+    filter: brightness(1.5);
 
     &:hover {
-      color: $tan;
+      color: $mustard;
     }
   }
 }
@@ -70,42 +60,29 @@
   display: flex;
   align-items: center;
   color: $cosmic-latte;
-  border: 1px solid $cosmic-latte;
   padding: .1rem;
   cursor: pointer;
-  font-family: "Alyrak";
-  font-weight: 500;
+  font-family: $font-head;
   font-size: 1rem;
 }
 
 .navbar__top__language__pl {
   width: 50%;
   text-align: center;
-
-  &:hover {
-    color: $tan;
-  }
 }
 
 .navbar__top__language__eng {
   width: 50%;
   text-align: center;
-
-  &:hover {
-    color: $tan;
-  }
 }
 
 .clickedPl, .clickedEng {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $persian-red;
+  background-color: $mustard;
   height: 100%;
-
-  &:hover {
-    color: $cosmic-latte;
-  }
+  color: $raven;
 }
 
 @media (max-width: 540px) {
@@ -148,7 +125,7 @@
 
   .dropdown__container {
     position: absolute;
-    top: 2.5rem;
+    top: 3rem;
     left: 0;
     background-color: $cosmic-latte;
     height: 100vh;
@@ -174,8 +151,7 @@
     li button {
       background-color: transparent;
       border: none;
-      font-family: $font-text;
-      font-weight: 800;
+      font-family: $font-head;
       color: $eerie-black;
       line-height: 0;
       font-size: 1.5rem;
@@ -195,7 +171,7 @@
   }
 
   .navbar__top__container {
-    padding: 0 1rem;
+    padding: 0 5%;
   }
 
   .navbar__links__container {

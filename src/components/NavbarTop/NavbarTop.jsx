@@ -49,11 +49,7 @@ const NavbarTop = ({ data }) => {
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#projects", ease: "power1.out"});
-  };
-
-  const handleSkillsScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#skills", ease: "power1.out"});
+    gsap.to(window, {duration: 2, scrollTo: "#portfolio", ease: "power1.out"});
   };
 
   const handleContactScroll = () => {
@@ -68,22 +64,13 @@ const NavbarTop = ({ data }) => {
             <div className='dropdown__btn__inner firstHam'></div>
             <div className='dropdown__btn__inner thirdHam'></div>
           </div>
-          <div className='navbar__top__logo'>
-            <img src={process.env.PUBLIC_URL + '/assets/logo/ldlogo.webp'} alt='logo'/>
-          </div>
           <nav className='navbar__links__container'>
             <ul className='navbar__links'>
-              <li>
-                <button onClick={handleHomeScroll}>{data.navbar?.home}</button>
-              </li>
               <li>
                 <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
               </li>
               <li>
                 <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
-              </li>
-              <li>
-                <button onClick={handleSkillsScroll}>{data.navbar?.skills}</button>
               </li>
               <li>
                 <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
@@ -103,22 +90,13 @@ const NavbarTop = ({ data }) => {
           <nav className='dropdown__container' ref={dropdownRef}>
             <ul className='dropdown__links'>
               <li>
-                <button onClick={handleHomeScroll}>{data.navbar?.home}</button>
-              </li>
-              <li>
                 <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
               </li>
               <li>
                 <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
               </li>
               <li>
-                <button onClick={handleSkillsScroll}>{data.navbar?.skills}</button>
-              </li>
-              <li>
                 <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
-              </li>
-              <li>
-                <img src={process.env.PUBLIC_URL + '/assets/logo/ldlogo.webp'} alt='logo'/>
               </li>
             </ul>
           </nav>

@@ -50,7 +50,7 @@
   color: $cosmic-latte;
 
   h1 {
-    font-family: 'Alyrak';
+    font-family: $font-head;
     font-weight: 500;
     font-size: 5rem;
   }
@@ -133,7 +133,7 @@
 
 //  MODAL
 .project__modal {
-  margin-top: 3.063rem;
+  margin-top: 3rem;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -166,7 +166,7 @@
   }
 
   .project__modal {
-    margin-top: 2.563rem;
+    margin-top: 2.5rem;
   }
 
   .project__modal__inner {

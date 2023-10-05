@@ -4,6 +4,25 @@ const initialState = {
   projects: [
     {
       id: 1,
+      tech: 'javascript',
+      title: 'invaders',
+      date: '009/0023',
+      img: '/assets/covers/7.webp',
+      web: 'https://invaders.litewskidev.usermd.net',
+      moc1: '/assets/mocs/invadersMOC1.webp',
+      moc2: '/assets/mocs/invadersMOC2.webp',
+      techs: [
+        '/assets/icons/js.svg',
+        '/assets/icons/html5.svg',
+        '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
+        '/assets/icons/firebase.svg',
+        '/assets/icons/responsive-design.svg'
+      ],
+      git: 'https://github.com/litewskidev/invaders-game'
+    },
+    {
+      id: 2,
       tech: 'react',
       title: 'watchmore',
       date: '007/0023',
@@ -23,7 +42,7 @@ const initialState = {
       git: 'https://github.com/litewskidev/watchmore-app'
     },
     {
-      id: 2,
+      id: 3,
       tech: 'javascript',
       title: 'pathfinder',
       date: '004/0023',
@@ -41,7 +60,7 @@ const initialState = {
       git: 'https://github.com/litewskidev/pathfinder-app'
     },
     {
-      id: 3,
+      id: 4,
       tech: 'react',
       title: 'audiophile',
       date: '005/0023',
@@ -61,7 +80,7 @@ const initialState = {
       git: 'https://github.com/litewskidev/audiophile-ecom'
     },
     {
-      id: 4,
+      id: 5,
       tech: 'javascript',
       title: 'memory',
       date: '006/0023',
@@ -79,7 +98,7 @@ const initialState = {
       git: 'https://github.com/litewskidev/memory-game'
     },
     {
-      id: 5,
+      id: 6,
       tech: 'javascript',
       title: 'miaumamia',
       date: '001/0023',
@@ -96,25 +115,6 @@ const initialState = {
         '/assets/icons/responsive-design.svg'
       ],
       git: 'https://github.com/litewskidev/project-pizzeria'
-    },
-    {
-      id: 6,
-      tech: 'javascript',
-      title: 'invaders',
-      date: '009/0023',
-      img: '/assets/covers/7.webp',
-      web: 'https://invaders.litewskidev.usermd.net',
-      moc1: '/assets/mocs/invadersMOC1.webp',
-      moc2: '/assets/mocs/invadersMOC2.webp',
-      techs: [
-        '/assets/icons/js.svg',
-        '/assets/icons/html5.svg',
-        '/assets/icons/sass.svg',
-        '/assets/icons/node-js.svg',
-        '/assets/icons/firebase.svg',
-        '/assets/icons/responsive-design.svg'
-      ],
-      git: 'https://github.com/litewskidev/invaders-game'
     }
   ]
 };

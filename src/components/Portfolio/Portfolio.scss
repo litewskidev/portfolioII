@@ -1,0 +1,45 @@
+@import '../../styles/settings.scss';
+
+.portfolio__wrapper {
+  background-color: $cosmic-latte;
+  padding: 7% 10%;
+}
+
+.portfolio__title {
+  p {
+    font-family: $font-head;
+    font-size: 10rem;
+    padding-bottom: 1rem;
+    color: $eerie-black;
+  }
+}
+
+.portfolio__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portfolio__project__container {
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 540px) {
+
+  .portfolio__title {
+    p {
+      font-size: 3.5rem;
+    }
+  }
+
+  .portfolio__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .portfolio__wrapper {
+    padding: 15% 5%;
+  }
+}

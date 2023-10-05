@@ -80,10 +80,10 @@ const Projects = ( {data} ) => {
           </div>
         </div>
         <div id='project-modal' className='project__modal'>
-        <div className='project__modal__inner'>
-          <ProjectModal id={projectId} data={data} />
+          <div className='project__modal__inner'>
+            <ProjectModal id={projectId} data={data} />
+          </div>
         </div>
-      </div>
       </div>
     </section>
   )

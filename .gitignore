@@ -12,9 +12,6 @@
 /build
 /public/assets
 /.vscode
-alyrak.woff
-alyrak.woff2
-alyrak.ttf
 .env
 
 # misc

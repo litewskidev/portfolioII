@@ -28,15 +28,11 @@ const How = ({ data }) => {
         <p>{data.how?.info}</p>
         <p>{data.how?.info2}</p>
         <div className='how__qr' ref={qrCodeRef}>
-          <a href='https://github.com/litewskidev' target="_blank" rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/githubqr.svg'} alt='github'/></a>
+          <a href='https://github.com/litewskidev' target="_blank" rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>
         </div>
       </div>
       <div className='how__image'>
         <img src={process.env.PUBLIC_URL + '/assets/images/persona1920.webp'} alt='persona art'/>
-        <img src={process.env.PUBLIC_URL + '/assets/images/overlay.webp'} alt='old overlay' />
-      </div>
-      <div className='how__underlay'>
-        <img src={process.env.PUBLIC_URL + 'assets/images/dust1-1920.webp'} alt='overlay dust'/>
       </div>
     </section>
   )

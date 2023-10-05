@@ -3,7 +3,6 @@ import './Skills.scss';
 const Skills = ({ data }) => {
   return(
     <section id='skills'>
-      <h1>{data.skills?.title}</h1>
       <div className='skills__container'>
         <div className='skills__box'>
           <img src={process.env.PUBLIC_URL + '/assets/icons/js.svg'} alt="JavaScript" />
