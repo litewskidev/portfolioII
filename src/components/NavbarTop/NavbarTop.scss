@@ -18,14 +18,10 @@
 .navbar__top__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 2rem;
   padding: 0 10%;
   height: 3rem;
-  background-color: $raven;
-}
-
-.navbar__links__container {
-  width: 100%;
   background-color: $raven;
 }
 
@@ -35,12 +31,12 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 3%;
+  gap: 2rem;
 
   button {
     background-color: transparent;
     border: none;
-    color: $white;
+    color: $cosmic-latte;
     font-family: $font-text;
     font-size: 1rem;
     font-weight: 200;
@@ -59,30 +55,42 @@
   background-color: inherit;
   display: flex;
   align-items: center;
-  color: $cosmic-latte;
   padding: .1rem;
   cursor: pointer;
   font-family: $font-head;
   font-size: 1rem;
 }
 
+
 .navbar__top__language__pl {
   width: 50%;
   text-align: center;
+
+  &:hover {
+    color: $mustard;
+  }
 }
 
 .navbar__top__language__eng {
   width: 50%;
   text-align: center;
+
+  &:hover {
+    color: $mustard;
+  }
 }
 
 .clickedPl, .clickedEng {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $mustard;
+  background-color: $cosmic-latte;
   height: 100%;
   color: $raven;
+
+  &:hover {
+    color: $raven;
+  }
 }
 
 @media (max-width: 540px) {
@@ -105,7 +113,6 @@
       background-color: $cosmic-latte;
       width: 2rem;
       height: .25rem;
-      border-radius: 3rem;
       transition: all .4s ease;
     }
   }
@@ -113,23 +120,23 @@
   .navbar__top__dropdown__btn.on {
     .firstHam {
       transform: rotate(45deg);
-      background-color: $jasper;
+      background-color: $mustard;
     }
 
     .thirdHam {
       margin-top: -.55rem;
       transform: rotate(-45deg);
-      background-color: $jasper;
+      background-color: $mustard;
     }
   }
 
   .dropdown__container {
     position: absolute;
-    top: 3rem;
+    top: 2.5rem;
     left: 0;
     background-color: $cosmic-latte;
     height: 100vh;
-    width: 15%;
+    width: 20%;
     transform: translateX(-101%);
     transition: transform .4s ease;
   }
@@ -153,21 +160,15 @@
       border: none;
       font-family: $font-head;
       color: $eerie-black;
-      line-height: 0;
       font-size: 1.5rem;
       transform: rotate(-90deg);
-    }
-
-    li img {
-      width: 2.5rem;
-      height: 2.5rem;
-      background-color: $persian-red;
-      padding: .1rem;
+      letter-spacing: .1rem;
     }
   }
 
   .navbar__top__container {
     height: 2.5rem;
+    justify-content: space-between;
   }
 
   .navbar__top__container {
@@ -179,6 +180,6 @@
   }
 
   .navbar__top__language__switch {
-    height: 1.7rem;
+    height: 1.6rem;
   }
 }

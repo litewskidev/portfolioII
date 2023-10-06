@@ -2,15 +2,19 @@
 
 .portfolio__wrapper {
   background-color: $cosmic-latte;
-  padding: 7% 10%;
+  overflow: hidden;
+  padding: 3rem 10%;
 }
 
 .portfolio__title {
-  p {
+  z-index: 1;
+
+  h1 {
     font-family: $font-head;
     font-size: 10rem;
-    padding-bottom: 1rem;
+    font-weight: 400;
     color: $eerie-black;
+    letter-spacing: .1rem;
   }
 }
 
@@ -23,23 +27,23 @@
 .portfolio__project__container {
   width: 100%;
   display: flex;
+  align-items: center;
+  z-index: 2;
 }
 
 @media (max-width: 540px) {
 
+  .portfolio__wrapper {
+    padding: 6rem 5%;
+  }
+
   .portfolio__title {
-    p {
+    h1 {
       font-size: 3.5rem;
     }
   }
 
   .portfolio__container {
-    display: flex;
-    flex-direction: column;
     gap: 4rem;
-  }
-
-  .portfolio__wrapper {
-    padding: 15% 5%;
   }
 }

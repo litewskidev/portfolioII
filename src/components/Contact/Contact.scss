@@ -1,67 +1,77 @@
 @import '../../styles/settings.scss';
 
 .contact__wrapper {
-  min-height: 100vh;
   background-color: $raven;
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   position: relative;
   overflow: hidden;
+  padding: 10%;
+}
 
+.contact__container {
+  display: flex;
+  gap: 10%;
+}
+
+.contact__image {
+  width: 45%;
+  background-color: $cosmic-latte;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    filter: saturate(0) sepia(.1) contrast(.9);
+    transform: scaleX(-1);
+  }
+}
+
+.contact__info {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__desc {
   h1 {
     font-family: $font-head;
-    font-size: 6rem;
-    font-weight: 500;
-    color: $cosmic-latte;
-    filter: brightness(1.1);
+    font-size: 10rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
   }
 
   p {
-    font-family: $font-text;
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: $cosmic-latte;
+    text-transform: uppercase;
   }
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  width: 30%;
-  position: relative;
 
   button {
-    padding: .5rem 4rem;
-    background-color: inherit;
-    border: 1px dotted $cosmic-latte;
-    border-bottom: 1px dotted $cosmic-latte;
+    padding: .5rem;
+    background-color: transparent;
+    border: 1px solid $cosmic-latte;
     font-family: $font-text;
-    font-weight: 200;
     font-size: 1rem;
     color: $cosmic-latte;
     text-transform: uppercase;
     cursor: pointer;
-    margin-top: 25%;
 
     &:hover {
       background-color: $mustard;
-      border: 1px dotted $raven;
+      border: 1px solid $raven;
       color: $raven;
-      font-weight: 400;
     }
-  }
-
-  img {
-    width: 90%;
-    position: absolute;
-    top: 7.5rem;
-    z-index: 0;
-    filter: saturate(.5) sepia(.15);
   }
 }
 
@@ -69,105 +79,78 @@
   font-family: $font-text;
   font-size: 1rem;
   font-weight: 200;
-  width: 70%;
-  border: 1px dotted $cosmic-latte;
+  width: 100%;
+  border: 1px solid $cosmic-latte;
   outline: none;
-  padding: .15rem .8rem;
+  padding: .5rem 1rem;
   background: inherit;
   color: $cosmic-latte;
 
   &::placeholder {
     color: $cosmic-latte;
-    opacity: .4;
+    opacity: .5;
   }
 }
 
-.contact__form__message {
-  margin-top: 20%;
-  margin-bottom: 2rem;
-  width: 65%;
-  padding-bottom: 30%;
-  z-index: 1;
-  border: none;
-}
-
-.contact__modal.sent {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
 .contact__modal {
-  width: 40%;
-  background-color: $jasper;
-  padding: .5rem 1rem;
-  border-radius: .5rem;
   position: absolute;
-  bottom: 15%;
+  width: 30%;
+  background-color: $mustard;
+  padding: .5rem 1rem;
+  bottom: 10%;
   left: 50%;
   z-index: 99;
   transform: translateX(-50%) translateY(400%);
   opacity: 0;
-  transition: all .4s ease;
+  transition: transform .4s ease-in-out;
 
   p {
+    color: $eerie-black;
     text-align: center;
-    font-family: $font-text;
-    font-size: 1.5rem;
-    font-weight: 200;
+  }
+
+  &.send {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 }
 
 @media (max-width: 540px) {
   .contact__wrapper {
-    gap: 2rem;
-    padding-top: 3rem;
+    height: 100vh;
+    padding: 5%;
+  }
 
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .contact__image {
+    width: 100%;
+    padding: 5rem 0;
+
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .contact__info {
+    width: 100%;
+  }
+
+  .contact__desc {
     h1 {
       font-size: 4rem;
     }
-
-    p {
-      font-size: 1rem;
-      text-align: center;
-      width: 90%;
-    }
-
-    p:last-of-type {
-      padding: 0 10%;
-      text-align: center;
-    }
-  }
-
-  .contact__form {
-    gap: 1rem;
-    width: 100%;
-    padding-bottom: 2rem;
-
-    button {
-      margin-top: 15%;
-      font-size: 1rem;
-      padding: .5rem 3.5rem;
-    }
-
-    img {
-      width: 80%;
-    }
-  }
-
-  .contact__form__text, .contact__form__message {
-    font-size: 1rem;
-    width: 70%;
-    padding: .1rem .5rem;
-  }
-
-  .contact__form__message {
-    margin-top: 20%;
-    margin-bottom: 3rem;
-    width: 60%;
-    padding-bottom: 25%;
   }
 
   .contact__modal {
     width: 90%;
+
+    p {
+      font-size: .9rem;
+    }
   }
 }

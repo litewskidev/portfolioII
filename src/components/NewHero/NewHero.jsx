@@ -1,21 +1,32 @@
 import { gsap } from 'gsap';
+import { useEffect } from 'react';
 import './NewHero.scss';
 
 const NewHero = ({ data }) => {
-
   const handleGetToKnow = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
   };
+
+  useEffect(()=> {
+    const texts = gsap.utils.toArray(".logo__text");
+
+    gsap.fromTo(texts, {x: "100%"}, {x: 0, duration: 1, delay: .3, ease: "power1.out",
+    stagger: {
+      each: .1,
+      from: 0
+    }
+    });
+  }, []);
 
   return(
     <section id='home' className='hero__wrapper'>
-    <div className='hero__container'>
-      <div className='hero__main'>
+      <div className='hero__container'>
         <div className='hero__main__top'>
           <div className='main__top__left'>
-            <p>web<br />adrian</p>
-            <p>dev</p>
-            <p>eloper</p>
+            <p className='logo__text'>web</p>
+            <p className='logo__text'>adri<span>a</span>n</p>
+            <p className='logo__text'>dev</p>
+            <p className='logo__text'>eloper</p>
           </div>
           <div className='main__top__right'>
             <img src={process.env.PUBLIC_URL + '/assets/arty/7.webp'} alt='face' />
@@ -32,8 +43,7 @@ const NewHero = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 };
 

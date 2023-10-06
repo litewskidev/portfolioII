@@ -16,16 +16,15 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .enter__box {
   width: 100%;
   height: 100%;
-  background-color: $jasper;
+  background-color: $cosmic-latte;
 }
 
 @media (max-width: 540px) {
-  .desktop {
-    display: none;
-  }
+
 }

@@ -8,9 +8,9 @@ Check out my Portfolio.
 - React Router
 - Redux
 - GSAP
+- Node
 - Express
 - Sass
-- CSS Flexbox
 
 # Layouts:
 - Mobile
@@ -18,4 +18,4 @@ Check out my Portfolio.
 - Desktop
 
 # Links:
-- Live Site URL: http://portfolio.litewskidev.usermd.net/
+- Live Site URL: https://portfolio.litewskidev.usermd.net

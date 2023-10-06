@@ -1,34 +1,54 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getAllProjects } from '../../redux/projectsRedux';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import ProjectModal from '../ProjectModal/ProjectModal';
+import { getAllProjects } from '../../redux/projectsRedux.js';
+import ProjectCard from '../ProjectCard/ProjectCard.jsx';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './Portfolio.scss';
+import gsap from 'gsap';
+gsap.registerPlugin(ScrollTrigger);
 
-const Portfolio = ({ data }) => {
+const Portfolio = () => {
 
   const [projectId, setProjectId] = useState(1);
   const projects = useSelector(getAllProjects);
 
+  const portfolioTitleRef = useRef(null);
+  const portfolioTriggerRef = useRef(null);
+
+  useEffect(() => {
+    const title = portfolioTitleRef.current;
+    const trigger = portfolioTriggerRef.current;
+
+    gsap.fromTo(title, { y: '100%' }, { scrollTrigger: {
+      trigger: trigger,
+      start: '0% 70%'
+    },
+    y: 0,
+    duration: 1,
+    ease: 'power1.out'
+    });
+  }, []);
+
   return(
     <section id='portfolio'>
       <div className='portfolio__wrapper'>
-        <div className='portfolio__title'>
-          <p>PORTFOLIO</p>
+        <div className='portfolio__title' ref={portfolioTitleRef}>
+          <h1>PORTFO<span>L</span>IO</h1>
         </div>
-        <div className='portfolio__container'>
+        <div className='portfolio__container' ref={portfolioTriggerRef}>
           {projects.map((project) => (
-            <div id='project-container' className='portfolio__project__container' key={project.id}>
-              <ProjectCard id={project.id} setId={setProjectId} />
-            </div>
+            (projects.indexOf(project) % 2 === 0) ? (
+              <div id='project-container' className='portfolio__project__container' key={project.id}>
+                <ProjectCard id={project.id} setId={setProjectId} cardClass={'project__card__container__odd'} />
+              </div>
+            ) : (
+              <div id='project-container' className='portfolio__project__container' key={project.id}>
+                <ProjectCard id={project.id} setId={setProjectId} cardClass={'project__card__container'} />
+              </div>
+            )
           ))}
         </div>
       </div>
-      <div id='project-modal' className='project__modal'>
-          <div className='project__modal__inner'>
-            <ProjectModal id={projectId} data={data} />
-          </div>
-        </div>
     </section>
   );
 };

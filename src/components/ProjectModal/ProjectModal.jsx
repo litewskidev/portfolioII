@@ -1,7 +1,7 @@
 import { shallowEqual, useSelector } from 'react-redux';
 import { getProject } from '../../redux/projectsRedux.js';
-import './ProjectModal.scss';
 import { getProjectDesc } from '../../redux/languageRedux.js';
+import './ProjectModal.scss';
 
 const ProjectModal = ({ id, data }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
@@ -56,7 +56,7 @@ const ProjectModal = ({ id, data }) => {
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default ProjectModal;

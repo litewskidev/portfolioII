@@ -1,9 +1,9 @@
 import { shallowEqual, useSelector } from 'react-redux';
 import { getProject } from '../../redux/projectsRedux.js';
-import './ProjectCard.scss';
 import { getProjectDesc } from '../../redux/languageRedux.js';
+import './ProjectCard.scss';
 
-const ProjectCard = ({ id, setId }) => {
+const ProjectCard = ({ id, setId, cardClass }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
   const projectDesc = useSelector(state => getProjectDesc(state, id));
 
@@ -16,7 +16,7 @@ const ProjectCard = ({ id, setId }) => {
 
   return(
     <section id='project-card' className='project__card__wrapper'>
-      <div id='card-container' className='project__card__container'>
+      <div id='card-container' className={cardClass}>
         <div className='project__card__images'>
           <div className='project__card__img img__1'>
             <img src={process.env.PUBLIC_URL + project[0].moc1} />
@@ -47,7 +47,7 @@ const ProjectCard = ({ id, setId }) => {
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default ProjectCard;

@@ -7,20 +7,19 @@ const Enter = () => {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    const boxs = gsap.utils.toArray(".enter__box");
+    const boxes = gsap.utils.toArray(".enter__box");
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(boxs, {rotateY: 90, duration: 0.3, delay: 0.5,
+    tl.to(boxes, {x: '-100%', duration: .4, delay: .1, ease: "expo.out",
       stagger: {
-        each: 0.03,
-        from: 0,
-        ease: "none"
+        each: .1,
+        from: 0
       }
     });
 
     setTimeout(() => {
     enterWrapper.classList.add('enter__off');
-    }, 1500);
+    }, 1450);
   }, []);
 
   return(
@@ -38,27 +37,9 @@ const Enter = () => {
         <div className='enter__box'></div>
         <div className='enter__box'></div>
         <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
-        <div className='enter__box desktop'></div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Enter;

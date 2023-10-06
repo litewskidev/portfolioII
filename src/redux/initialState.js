@@ -4,22 +4,23 @@ const initialState = {
   projects: [
     {
       id: 1,
-      tech: 'javascript',
-      title: 'invaders',
-      date: '009/0023',
-      img: '/assets/covers/7.webp',
-      web: 'https://invaders.litewskidev.usermd.net',
-      moc1: '/assets/mocs/invadersMOC1.webp',
-      moc2: '/assets/mocs/invadersMOC2.webp',
+      tech: 'react',
+      title: 'audiophile',
+      date: '005/0023',
+      img: '/assets/covers/3.webp',
+      web: 'https://audiophile.litewskidev.usermd.net',
+      moc1: '/assets/mocs/audioMOC1.webp',
+      moc2: '/assets/mocs/audioMOC2.webp',
       techs: [
-        '/assets/icons/js.svg',
-        '/assets/icons/html5.svg',
+        '/assets/icons/react.svg',
+        '/assets/icons/redux.svg',
         '/assets/icons/sass.svg',
         '/assets/icons/node-js.svg',
-        '/assets/icons/firebase.svg',
+        '/assets/icons/expressjs.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      git: 'https://github.com/litewskidev/invaders-game'
+      desc: 'Multi-page E-commerce App for audiophiles. Category and product pages. Cart with quantity input. Checkout page, confirming order modal with order ID and ordered products dropdown.',
+      git: 'https://github.com/litewskidev/audiophile-ecom'
     },
     {
       id: 2,
@@ -44,6 +45,24 @@ const initialState = {
     {
       id: 3,
       tech: 'javascript',
+      title: 'memory',
+      date: '006/0023',
+      img: '/assets/covers/4.webp',
+      web: 'https://memory.litewskidev.usermd.net',
+      moc1: '/assets/mocs/memoryMOC1.webp',
+      moc2: '/assets/mocs/memoryMOC2.webp',
+      techs: [
+        '/assets/icons/js.svg',
+        '/assets/icons/html5.svg',
+        '/assets/icons/sass.svg',
+        '/assets/icons/responsive-design.svg'
+      ],
+      desc: 'Try to match pairs. Solo or multiplayer (up to 4 Players) game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid.',
+      git: 'https://github.com/litewskidev/memory-game'
+    },
+    {
+      id: 4,
+      tech: 'javascript',
       title: 'pathfinder',
       date: '004/0023',
       img: '/assets/covers/2.webp',
@@ -60,42 +79,23 @@ const initialState = {
       git: 'https://github.com/litewskidev/pathfinder-app'
     },
     {
-      id: 4,
-      tech: 'react',
-      title: 'audiophile',
-      date: '005/0023',
-      img: '/assets/covers/3.webp',
-      web: 'https://audiophile.litewskidev.usermd.net',
-      moc1: '/assets/mocs/audioMOC1.webp',
-      moc2: '/assets/mocs/audioMOC2.webp',
-      techs: [
-        '/assets/icons/react.svg',
-        '/assets/icons/redux.svg',
-        '/assets/icons/sass.svg',
-        '/assets/icons/node-js.svg',
-        '/assets/icons/expressjs.svg',
-        '/assets/icons/responsive-design.svg'
-      ],
-      desc: 'Multi-page E-commerce App for audiophiles. Category and product pages. Cart with quantity input. Checkout page, confirming order modal with order ID and ordered products dropdown.',
-      git: 'https://github.com/litewskidev/audiophile-ecom'
-    },
-    {
       id: 5,
       tech: 'javascript',
-      title: 'memory',
-      date: '006/0023',
-      img: '/assets/covers/4.webp',
-      web: 'https://memory.litewskidev.usermd.net',
-      moc1: '/assets/mocs/memoryMOC1.webp',
-      moc2: '/assets/mocs/memoryMOC2.webp',
+      title: 'invaders',
+      date: '009/0023',
+      img: '/assets/covers/7.webp',
+      web: 'https://invaders.litewskidev.usermd.net',
+      moc1: '/assets/mocs/invadersMOC1.webp',
+      moc2: '/assets/mocs/invadersMOC2.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
         '/assets/icons/sass.svg',
+        '/assets/icons/node-js.svg',
+        '/assets/icons/firebase.svg',
         '/assets/icons/responsive-design.svg'
       ],
-      desc: 'Try to match pairs. Solo or multiplayer (up to 4 Players) game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid.',
-      git: 'https://github.com/litewskidev/memory-game'
+      git: 'https://github.com/litewskidev/invaders-game'
     },
     {
       id: 6,

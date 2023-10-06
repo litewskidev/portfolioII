@@ -40,20 +40,16 @@ const NavbarTop = ({ data }) => {
     dropdown.classList.toggle('show');
   };
 
-  const handleHomeScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#home", ease: "power1.out"});
-  };
-
   const handleAboutScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#portfolio", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#portfolio", ease: "power1.out"});
   };
 
   const handleContactScroll = () => {
-    gsap.to(window, {duration: 2, scrollTo: "#contact", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#contact", ease: "power1.out"});
   };
 
   return(
@@ -103,7 +99,7 @@ const NavbarTop = ({ data }) => {
         </div>
       </div>
     </header>
-  )
+  );
 };
 
 export default NavbarTop;

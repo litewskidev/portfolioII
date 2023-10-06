@@ -7,18 +7,11 @@
   align-items: center;
   gap: .2rem;
   background-color: $raven;
-
-  p:first-of-type {
-    margin-top: .2rem;
-  }
+  padding: 1%;
 
   p {
-    font-family: $font-text;
     font-size: .9rem;
-    font-weight: 500;
-    font-style: italic;
     color: $cosmic-latte;
-    line-height: 1;
   }
 }
 
