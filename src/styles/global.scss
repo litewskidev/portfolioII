@@ -26,19 +26,20 @@ html::-webkit-scrollbar-thumb:hover {
 body {
   padding: 0;
   margin: 0;
-  background-color: $raven;
+  background-color: $cosmic-latte;
   font-family: $font-text;
   color: $cosmic-latte;
 }
 
 span {
   color: $mustard;
-  //filter: brightness(1.1);
 }
 
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
+  line-height: 1.6;
+  color: $eerie-black;
 }
 
 a {

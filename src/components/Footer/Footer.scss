@@ -4,21 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: .2rem;
-  background-color: $raven;
+  background-color: $eerie-black;
   padding: 1%;
 
   p {
-    font-size: .9rem;
+    font-size: 1rem;
     color: $cosmic-latte;
-  }
-}
-
-@media(max-width: 540px) {
-  .footer__wrapper {
-    p {
-      font-size: .6rem;
-    }
   }
 }

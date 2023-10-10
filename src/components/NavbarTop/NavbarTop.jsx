@@ -41,15 +41,15 @@ const NavbarTop = ({ data }) => {
   };
 
   const handleAboutScroll = () => {
-    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: .5, scrollTo: "#about", ease: "power1.out"});
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 1.5, scrollTo: "#portfolio", ease: "power1.out"});
+    gsap.to(window, {duration: .5, scrollTo: "#portfolio", ease: "power1.out"});
   };
 
   const handleContactScroll = () => {
-    gsap.to(window, {duration: 1.5, scrollTo: "#contact", ease: "power1.out"});
+    gsap.to(window, {duration: .5, scrollTo: "#contact", ease: "power1.out"});
   };
 
   return(

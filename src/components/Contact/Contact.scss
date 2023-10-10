@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .contact__wrapper {
-  background-color: $raven;
+  background-color: $eerie-black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +18,7 @@
 }
 
 .contact__image {
+  border: 1px solid $raven;
   width: 45%;
   background-color: $cosmic-latte;
   padding: 3rem;
@@ -41,14 +42,19 @@
 
 .contact__desc {
   h1 {
+    color: $cosmic-latte;
     font-family: $font-head;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 400;
-    letter-spacing: .1rem;
   }
 
   p {
+    color: $cosmic-latte;
     text-transform: uppercase;
+  }
+
+  p:last-of-type {
+    color: $mustard;
   }
 }
 
@@ -80,15 +86,15 @@
   font-size: 1rem;
   font-weight: 200;
   width: 100%;
-  border: 1px solid $cosmic-latte;
+  border: none;
   outline: none;
   padding: .5rem 1rem;
-  background: inherit;
-  color: $cosmic-latte;
+  background: $cosmic-latte;
+  color: $eerie-black;
 
   &::placeholder {
-    color: $cosmic-latte;
-    opacity: .5;
+    color: $eerie-black;
+    opacity: .6;
   }
 }
 
@@ -117,8 +123,8 @@
 
 @media (max-width: 540px) {
   .contact__wrapper {
-    height: 100vh;
-    padding: 5%;
+    min-height: 100vh;
+    padding: 6rem 5%;
   }
 
   .contact__container {
@@ -143,6 +149,11 @@
   .contact__desc {
     h1 {
       font-size: 4rem;
+    }
+
+    p:last-of-type {
+      font-size: .8rem;
+      margin-bottom: 1rem;
     }
   }
 

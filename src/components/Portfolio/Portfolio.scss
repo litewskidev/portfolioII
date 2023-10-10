@@ -14,7 +14,6 @@
     font-size: 10rem;
     font-weight: 400;
     color: $eerie-black;
-    letter-spacing: .1rem;
   }
 }
 
@@ -34,7 +33,7 @@
 @media (max-width: 540px) {
 
   .portfolio__wrapper {
-    padding: 6rem 5%;
+    padding: 3rem 5%;
   }
 
   .portfolio__title {

@@ -10,16 +10,16 @@ const Enter = () => {
     const boxes = gsap.utils.toArray(".enter__box");
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(boxes, {x: '-100%', duration: .4, delay: .1, ease: "expo.out",
+    tl.to(boxes, {x: '-100%', duration: .5, delay: .1, ease: "expo.out",
       stagger: {
-        each: .1,
+        each: .15,
         from: 0
       }
     });
 
     setTimeout(() => {
     enterWrapper.classList.add('enter__off');
-    }, 1450);
+    }, 1650);
   }, []);
 
   return(

@@ -5,8 +5,7 @@ const Footer = () => {
     <footer id='footer'>
       <a href='https://github.com/litewskidev' target="_blank" rel='noreferrer'>
         <div className='footer__wrapper'>
-          <p>&#169;</p>
-          <p>Adrian Litewski</p>
+          <p>レポジトリウム</p>
         </div>
       </a>
     </footer>

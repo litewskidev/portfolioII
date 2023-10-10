@@ -33,7 +33,7 @@ app.get("/api/language/pl", (req, res) => {
         "two" : "Zawsze myślałem o wszystkim pod kątem tego, jak to działa. Co sprawia, że coś dzieje się w ten, a nie inny sposób? Chciałbym częściej zadawać to pytanie, szukać odpowiedzi i rozwijać krytyczne myślenie. Pracując z grupą osób równie pasjonujących się tematem, budować profesjonalne projekty. Zaspokajając potrzebę tworzenia, brać odpowiedzialność za powierzone zadania i osiągać cele. Stając się specjalistą w danej dziedzinie, udowodnić sobie i innym, ile jestem wart."
       },
       "skills": {
-        "title": "tworzę strony internetowe za pomocą",
+        "title": "tworzę strony internetowe z pomocą",
       },
       "how": {
         "info": "Zawsze dbam o przejrzystość kodu, świetny design, responsywność oraz doświadczenie użytkownika.",

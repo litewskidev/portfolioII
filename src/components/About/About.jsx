@@ -14,10 +14,10 @@ const About = ({ data }) => {
 
     gsap.fromTo(title, { y: '100%' }, { scrollTrigger: {
       trigger: trigger,
-      start: '0% 80%'
+      start: '0% 70%'
     },
     y: 0,
-    duration: 1,
+    duration: .5,
     ease: 'power1.out'
     });
   }, []);
@@ -35,6 +35,7 @@ const About = ({ data }) => {
           </div>
         </div>
         <div className='about__image'>
+          <p>すべてを行うのを待って何もしないよりは、何かをした方が良いのです。</p>
           <img src={process.env.PUBLIC_URL + '/assets/images/persona1920.webp'} alt='persona art'/>
         </div>
       </div>

@@ -46,6 +46,7 @@ const Contact = ({ data }) => {
           <div className='contact__desc'>
             <h1>{data.contact?.title}<span>{data.contact?.title2}</span>{data.contact?.title3}</h1>
             <p>{data.contact?.info2}</p>
+            <p>何か特別なものを作りましょう</p>
           </div>
           <form className='contact__form' onSubmit={handleSubmit}>
             <input className='contact__form__text'

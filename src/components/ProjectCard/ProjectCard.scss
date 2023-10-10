@@ -24,6 +24,7 @@
   display: flex;
 
   img {
+    border: 1px solid $raven;
     width: 100%;
     background-color: $eerie-black;
     padding: 2rem;
@@ -44,7 +45,6 @@
     font-size: 2rem;
     color: $eerie-black;
     text-transform: uppercase;
-    letter-spacing: .1rem;
   }
 }
 
@@ -67,7 +67,7 @@
   }
 
   &:hover {
-    filter: invert(80%) sepia(54%) saturate(698%) hue-rotate(326deg) brightness(130%) contrast(90%);
+    filter: invert(24%) sepia(68%) saturate(1841%) hue-rotate(341deg) brightness(101%) contrast(100%);
   }
 }
 
