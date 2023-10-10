@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .contact__wrapper {
-  background-color: $eerie-black;
+  background-color: $raven;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +10,7 @@
   position: relative;
   overflow: hidden;
   padding: 10%;
+  margin-top: 6rem;
 }
 
 .contact__container {
@@ -18,7 +19,6 @@
 }
 
 .contact__image {
-  border: 1px solid $raven;
   width: 45%;
   background-color: $cosmic-latte;
   padding: 3rem;
@@ -44,7 +44,7 @@
   h1 {
     color: $cosmic-latte;
     font-family: $font-head;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 400;
   }
 
@@ -54,7 +54,8 @@
   }
 
   p:last-of-type {
-    color: $mustard;
+    color: $jasper;
+    margin-bottom: 1rem;
   }
 }
 
@@ -71,12 +72,12 @@
     font-size: 1rem;
     color: $cosmic-latte;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: crosshair;
 
     &:hover {
-      background-color: $mustard;
-      border: 1px solid $raven;
-      color: $raven;
+      background-color: $jasper;
+      border: 1px solid $jasper;
+      color: $eerie-black;
     }
   }
 }
@@ -101,7 +102,7 @@
 .contact__modal {
   position: absolute;
   width: 30%;
-  background-color: $mustard;
+  background-color: $jasper;
   padding: .5rem 1rem;
   bottom: 10%;
   left: 50%;
@@ -125,6 +126,7 @@
   .contact__wrapper {
     min-height: 100vh;
     padding: 6rem 5%;
+    margin-top: 0;
   }
 
   .contact__container {
@@ -148,11 +150,10 @@
 
   .contact__desc {
     h1 {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
 
     p:last-of-type {
-      font-size: .8rem;
       margin-bottom: 1rem;
     }
   }

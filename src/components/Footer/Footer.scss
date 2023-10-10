@@ -1,14 +1,15 @@
 @import '../../styles/settings.scss';
 
 .footer__wrapper {
-  width: 100%;
+  //width: 100%;
   display: flex;
   justify-content: center;
-  background-color: $eerie-black;
+  background-color: $raven;
   padding: 1%;
 
   p {
     font-size: 1rem;
     color: $cosmic-latte;
+    cursor: crosshair;
   }
 }

@@ -16,26 +16,30 @@ const Portfolio = () => {
   const portfolioTriggerRef = useRef(null);
 
   useEffect(() => {
-    const title = portfolioTitleRef.current;
-    const trigger = portfolioTriggerRef.current;
+    const portfolioTitle = portfolioTitleRef.current;
+    const portfolioTrigger = portfolioTriggerRef.current;
 
-    gsap.fromTo(title, { y: '100%' }, { scrollTrigger: {
-      trigger: trigger,
-      start: '0% 70%'
+    gsap.fromTo(portfolioTitle, { y: 0 }, { scrollTrigger: {
+      trigger: portfolioTrigger,
+      start: '1% 35%',
+      toggleActions: "play none none reverse"
     },
-    y: 0,
-    duration: .5,
-    ease: 'power1.out'
+    y: '-50%',
+    ease: 'sine.out',
+    duration: 1
     });
   }, []);
 
   return(
     <section id='portfolio'>
       <div className='portfolio__wrapper'>
-        <div className='portfolio__title' ref={portfolioTitleRef}>
-          <h1>PORTFO<span>L</span>IO</h1>
+        <div className='portfolio__title' ref={portfolioTriggerRef}>
+          <div  ref={portfolioTitleRef}>
+            <p>ポートフォリオン</p>
+            <p>PORTFOLIO</p>
+          </div>
         </div>
-        <div className='portfolio__container' ref={portfolioTriggerRef}>
+        <div className='portfolio__container'>
           {projects.map((project) => (
             (projects.indexOf(project) % 2 === 0) ? (
               <div id='project-container' className='portfolio__project__container' key={project.id}>

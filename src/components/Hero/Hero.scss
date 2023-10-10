@@ -1,0 +1,170 @@
+@import '../../styles/settings.scss';
+
+.hero2__wrapper {
+  min-height: 100vh;
+  padding: 3rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero2__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero2__header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid $eerie-black;
+  z-index: 2;
+}
+
+.hero2__header__left {
+  width: 50%;
+  background-color: $cosmic-latte;
+
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.hero2__header__right {
+  width: 50%;
+  background-color: $raven;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    height: 50rem;
+    filter: contrast(1.3) sepia(.1);
+  }
+}
+
+.hero2__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  h1 {
+    font-family: $font-head;
+    font-size: 6rem;
+    line-height: 1.3;
+  }
+}
+
+.hero2__title__social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    display: flex;
+    width: 4rem;
+    cursor: crosshair;
+
+    &:hover {
+      filter: invert(30%) sepia(77%) saturate(728%) hue-rotate(325deg) brightness(95%) contrast(85%);
+    }
+  }
+}
+
+.hero2__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.hero2__desc__prof {
+  h2 {
+    text-transform: uppercase;
+    font-family: $font-head;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+
+.hero2__desc__button {
+  button {
+    width: 42.5rem;
+    background-color: transparent;
+    padding: .5rem;
+    border: 1px solid $eerie-black;
+    font-family: $font-head;
+    font-size: 1.5rem;
+    color: $eerie-black;
+    text-transform: uppercase;
+    cursor: crosshair;
+
+    &:hover {
+      background-color: $jasper;
+      border: 1px solid $jasper;
+      color: $eerie-black;
+      filter: brightness(1.1);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .hero2__wrapper {
+    padding: 2.5rem 5%;
+    align-items: normal;
+  }
+
+  .hero2__container {
+    //padding-top: 2.5rem;
+    justify-content: space-around;
+  }
+
+  .hero2__header__left {
+    p {
+      font-size: .7rem;
+    }
+  }
+
+  .hero2__header__right {
+    img {
+      height: 25rem;
+    }
+  }
+
+.hero2__title {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.hero2__title__social {
+  gap: 1rem;
+
+  img {
+    width: 2.5rem;
+  }
+}
+
+.hero2__desc {
+  gap: .5rem;
+}
+
+.hero2__desc__prof {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+  .hero2__desc__button {
+    width: 100%;
+
+    button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+}

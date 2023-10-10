@@ -19,10 +19,7 @@ const ProjectCard = ({ id, setId, cardClass }) => {
       <div id='card-container' className={cardClass}>
         <div className='project__card__images'>
           <div className='project__card__img img__1'>
-            <img src={process.env.PUBLIC_URL + project[0].moc1} />
-          </div>
-          <div className='project__card__img img__2'>
-            <img src={process.env.PUBLIC_URL + project[0].moc2} />
+            <img src={process.env.PUBLIC_URL + project[0].moc1} alt='project mockup'/>
           </div>
         </div>
         <div className='project__card__info'>
@@ -37,12 +34,15 @@ const ProjectCard = ({ id, setId, cardClass }) => {
             </div>
           </div>
           <div className='project__card__links__container'>
-            <div className='project__card__link'>
-              <a href={project[0].web} target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/link-solid.svg'} alt='link'/></a>
+            <div className='project__card__links__container__inner'>
+              <div className='project__card__link'>
+                <a href={project[0].web} target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/link-solid.svg'} alt='link'/></a>
+              </div>
+              <div className='project__card__link'>
+                <a href={project[0].git} target="_blank" rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>
+              </div>
             </div>
-            <div className='project__card__link'>
-              <a href={project[0].git} target="_blank" rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github'/></a>
-            </div>
+            <p>見てみな</p>
           </div>
         </div>
       </div>

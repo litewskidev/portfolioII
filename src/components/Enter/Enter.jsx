@@ -7,35 +7,19 @@ const Enter = () => {
 
   useEffect(() => {
     const tl = gsap.timeline();
-    const boxes = gsap.utils.toArray(".enter__box");
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(boxes, {x: '-100%', duration: .5, delay: .1, ease: "expo.out",
-      stagger: {
-        each: .15,
-        from: 0
-      }
+    tl.to(enterWrapper, {y: '100%', duration: 1, delay: .1, ease: "sine.out"
     });
 
     setTimeout(() => {
     enterWrapper.classList.add('enter__off');
-    }, 1650);
+    }, 1600);
   }, []);
 
   return(
     <div id='enter' className='enter__wrapper' ref={enterWrapperRef}>
       <div className='enter__container'>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
-        <div className='enter__box'></div>
         <div className='enter__box'></div>
       </div>
     </div>

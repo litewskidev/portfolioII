@@ -21,7 +21,7 @@ const Skills = ({ data }) => {
           <div className='skills__box'>
             <img src={process.env.PUBLIC_URL + '/assets/icons/react.svg'} alt="React" />
             <p>React</p>
-            <p className='skill__hover'>反応します</p>
+            <p className='skill__hover'>リアクト</p>
           </div>
           <div className='skills__box'>
             <img src={process.env.PUBLIC_URL + '/assets/icons/redux.svg'} alt="Redux" />

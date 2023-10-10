@@ -35,6 +35,7 @@
   border-top: 1px solid $eerie-black;
   padding: .5rem 10%;
   height: 4rem;
+  cursor: crosshair;
 
   img {
     width: 3rem;
@@ -57,11 +58,11 @@
   &:hover {
     p {
       letter-spacing: .2rem;
-      color: $mustard;
+      color: $jasper;
     }
 
     img {
-      filter: invert(24%) sepia(68%) saturate(1841%) hue-rotate(341deg) brightness(101%) contrast(100%);
+      filter: invert(30%) sepia(77%) saturate(728%) hue-rotate(325deg) brightness(95%) contrast(85%);
     }
 
     .skill__hover {

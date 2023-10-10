@@ -9,27 +9,31 @@ const About = ({ data }) => {
   const aboutTriggerRef = useRef(null);
 
   useEffect(() => {
-    const title = aboutTitleRef.current;
-    const trigger = aboutTriggerRef.current;
+    const aboutTitle = aboutTitleRef.current;
+    const aboutTrigger = aboutTriggerRef.current;
 
-    gsap.fromTo(title, { y: '100%' }, { scrollTrigger: {
-      trigger: trigger,
-      start: '0% 70%'
+    gsap.fromTo(aboutTitle, { y: "-4%" }, { scrollTrigger: {
+      trigger: aboutTrigger,
+      start: '1% 35%',
+      toggleActions: "play none none reverse"
     },
-    y: 0,
-    duration: .5,
-    ease: 'power1.out'
+    y: '-50%',
+    ease: 'sine.out',
+    duration: 1
     });
   }, []);
 
   return(
     <section id='about'>
       <div className='about__wrapper'>
-        <div className='about__title' ref={aboutTitleRef}>
-          <h1>{data.about?.title}<span>{data.about?.title2}</span>{data.about?.title3}</h1>
+        <div className='about__title' ref={aboutTriggerRef}>
+          <div ref={aboutTitleRef}>
+            <p>私のこと</p>
+            <p>{data.about?.title}</p>
+          </div>
         </div>
         <div className='about__info__container'>
-          <div className='about__info' ref={aboutTriggerRef}>
+          <div className='about__info'>
             <p>{data.about?.one}</p>
             <p>{data.about?.two}</p>
           </div>

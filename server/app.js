@@ -22,18 +22,17 @@ app.get("/api/language/pl", (req, res) => {
         "title": "WEB",
         "subtitle": "DEV",
         "subtitle_2": "ELOPER",
-        "based": "mieszkający w gdańsku",
+        "from": "tworzę strony internetowe",
+        "based": "w gdańsku / polska",
         "button": "poznaj mnie"
       },
       "about": {
-        "title": "O MN",
-        "title2" : "I",
-        "title3": "E",
+        "title": "O MNIE",
         "one": "Cześć! Nazywam się Adrian Litewski.",
         "two" : "Zawsze myślałem o wszystkim pod kątem tego, jak to działa. Co sprawia, że coś dzieje się w ten, a nie inny sposób? Chciałbym częściej zadawać to pytanie, szukać odpowiedzi i rozwijać krytyczne myślenie. Pracując z grupą osób równie pasjonujących się tematem, budować profesjonalne projekty. Zaspokajając potrzebę tworzenia, brać odpowiedzialność za powierzone zadania i osiągać cele. Stając się specjalistą w danej dziedzinie, udowodnić sobie i innym, ile jestem wart."
       },
       "skills": {
-        "title": "tworzę strony internetowe z pomocą",
+        "title": "pracuję z pomocą",
       },
       "how": {
         "info": "Zawsze dbam o przejrzystość kodu, świetny design, responsywność oraz doświadczenie użytkownika.",
@@ -43,9 +42,7 @@ app.get("/api/language/pl", (req, res) => {
         "quote": "Lepiej jest zrobić cokolwiek niż nic nie robić i czekać na zrobienie wszystkiego"
       },
       "contact": {
-        "title": "SKONT",
-        "title2" : "A",
-        "title3": "KTUJ SIĘ",
+        "title": "SKONTAKTUJ SIĘ",
         "info": "Mieszkam w Gdańsku. Aktualnie szukam swojej pierwszej pracy w branży IT.",
         "info2": "i pracujmy razem",
         "button": "WYŚLIJ",
@@ -107,18 +104,17 @@ app.get("/api/language/eng", (req, res) => {
         "title": "WEB",
         "subtitle": "DEV",
         "subtitle_2": "ELOPER",
-        "based": "based in gdańsk / poland",
+        "from": "i create websites",
+        "based": " in gdańsk / poland",
         "button": "get to know me"
       },
       "about": {
-        "title": "A",
-        "title2" : "B",
-        "title3": "OUT ME",
+        "title": "ABOUT ME",
         "one": "Hi! My name is Adrian Litewski.",
         "two" : "I have always thought about everything in terms of how it works. What makes something happen this way and not otherwise? I would like to ask this question more often, look for answers and develop critical thinking. By working with a group of people who are equally passionate about the topic, build professional projects. By satisfying the need to create, take responsibility for assigned tasks and achieve goals. By becoming a specialist in a given field, prove to myself and others how much I am worth."
       },
       "skills": {
-        "title": "I create websites with",
+        "title": "i work with",
       },
       "how": {
         "info": "I always care about clear code, cool design, responsiveness and user experience.",
@@ -128,9 +124,7 @@ app.get("/api/language/eng", (req, res) => {
         "quote": "It is better to do something than to do nothing while waiting to do everything"
       },
       "contact": {
-        "title": "GET ",
-        "title2" : "I",
-        "title3": "N TOUCH",
+        "title": "GET IN TOUCH",
         "info": "I live in Gdańsk / Poland. I am currently looking for my first IT job.",
         "info2": "and let's work together",
         "button": "SEND",

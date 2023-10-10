@@ -38,10 +38,10 @@
     border: none;
     font-family: $font-text;
     font-size: 1rem;
-    cursor: pointer;
+    cursor: crosshair;
 
     &:hover {
-      color: $mustard;
+      color: $jasper;
     }
   }
 }
@@ -52,7 +52,7 @@
   display: flex;
   align-items: center;
   padding: .1rem;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 
@@ -62,7 +62,7 @@
   color: $eerie-black;
 
   &:hover {
-    color: $mustard;
+    color: $jasper;
   }
 }
 
@@ -106,13 +106,13 @@
   .navbar__top__dropdown__btn.on {
     .firstHam {
       transform: rotate(45deg);
-      background-color: $mustard;
+      background-color: $jasper;
     }
 
     .thirdHam {
       margin-top: -.55rem;
       transform: rotate(-45deg);
-      background-color: $mustard;
+      background-color: $jasper;
     }
   }
 

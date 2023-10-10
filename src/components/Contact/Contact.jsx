@@ -44,7 +44,7 @@ const Contact = ({ data }) => {
         </div>
         <div className='contact__info'>
           <div className='contact__desc'>
-            <h1>{data.contact?.title}<span>{data.contact?.title2}</span>{data.contact?.title3}</h1>
+            <h1>{data.contact?.title}</h1>
             <p>{data.contact?.info2}</p>
             <p>何か特別なものを作りましょう</p>
           </div>

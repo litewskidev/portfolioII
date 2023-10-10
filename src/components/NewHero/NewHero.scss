@@ -62,11 +62,11 @@
     font-size: 1.3rem;
     color: $eerie-black;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: crosshair;
 
     &:hover {
-      background-color: $mustard;
-      border: 1px solid $mustard;
+      background-color: $jasper;
+      border: 1px solid $jasper;
       color: $eerie-black;
       filter: brightness(1.1);
     }

@@ -7,7 +7,7 @@
   align-items: flex-start;
   gap: 3rem;
   overflow: hidden;
-  padding: 3rem 10%;
+  padding: 6rem 10%;
   min-height: 100vh;
 }
 
@@ -19,12 +19,18 @@
 
 .about__title {
   z-index: 1;
-  margin-bottom: -3rem;
+  margin-bottom: -1rem;
+  overflow-y: hidden;
+  height: 10rem;
 
-  h1 {
+  p {
     font-family: $font-head;
-    font-size: 10rem;
-    font-weight: 400;
+    font-size: 8rem;
+    color: $jasper;
+    font-weight: 200;
+  }
+
+  p:last-of-type {
     color: $eerie-black;
   }
 }
@@ -36,8 +42,6 @@
 
   p {
     font-size: 1.3rem;
-    color: $raven;
-    opacity: .75;
   }
 }
 
@@ -51,20 +55,19 @@
   p {
     width: 1%;
     font-size: 1.3rem;
-    color: $mustard;
+    color: $jasper;
   }
 
   img {
-    border: 1px solid $raven;
     width: 70%;
-    filter: brightness(2) saturate(0) sepia(.1) contrast(.9);
+    filter: brightness(2) saturate(0) sepia(.1);
   }
 }
 
 @media (max-width: 540px) {
 
   .about__wrapper {
-    padding: 3rem 5%;
+    padding: 6rem 5%;
   }
 
   .about__info__container {
@@ -72,8 +75,10 @@
   }
 
   .about__title {
-    h1 {
-      font-size: 3.5rem;
+    height: 6rem;
+
+    p {
+      font-size: 4rem;
     }
   }
 
@@ -86,10 +91,11 @@
   }
 
   .about__image {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 
     p {
-      width: 100%;
+      width: 50%;
       font-size: 1rem;
     }
 
