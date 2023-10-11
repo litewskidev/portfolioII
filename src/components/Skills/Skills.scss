@@ -1,10 +1,10 @@
 @import '../../styles/settings.scss';
 
 .skills__wrapper {
-  background-color: $cosmic-latte;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
   gap: 2rem;
   overflow: hidden;
   padding: 6rem 0;
@@ -12,13 +12,24 @@
 
 .skills__title {
   padding: 0 10%;
+  overflow-y: hidden;
+  height: 5.5rem;
+  text-transform: uppercase;
 
-  h1 {
+  p {
     font-family: $font-head;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 5rem;
+    color: $jasper;
+    line-height: 1.25;
+  }
+
+  p:first-of-type {
+    letter-spacing: -.5rem;
+    font-size: 4rem;
+  }
+
+  p:last-of-type {
     color: $eerie-black;
-    text-transform: uppercase;
   }
 }
 
@@ -29,35 +40,35 @@
 }
 
 .skills__box {
+  border-top: 1px solid $eerie-black;
+  height: 4.5rem;
   display: flex;
   align-items: center;
   gap: 6rem;
-  border-top: 1px solid $eerie-black;
   padding: .5rem 10%;
-  height: 4rem;
+  text-transform: uppercase;
   cursor: crosshair;
 
-  img {
-    width: 3rem;
-  }
-
-  p {
-    font-size: 1.3rem;
-    color: $eerie-black;
-  }
-
-  .skill__hover {
-    transition: all .3s ease-in-out;
-    opacity: 0;
-  }
 
   &:last-of-type {
     border-bottom: 1px solid $eerie-black;
   }
 
+  img {
+    transition: all .1s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  p {
+    transition: all .3s ease-in-out;
+    font-size: 1.3rem;
+    color: $eerie-black;
+  }
+
   &:hover {
     p {
-      letter-spacing: .2rem;
+      letter-spacing: .25rem;
       color: $jasper;
     }
 
@@ -71,22 +82,36 @@
   }
 }
 
+.skill__hover {
+  opacity: 0;
+}
+
 @media (max-width: 540px) {
 
   .skills__wrapper {
     align-items: center;
+    padding: 3rem 0;
   }
 
   .skills__title {
-    padding: 0 5%;
+    height: 3rem;
+
+    p:first-of-type {
+      font-size: 2rem;
+    }
+
+    p:last-of-type {
+      font-size: 3rem;
+    }
   }
 
   .skills__box {
-    gap: 1rem;
+    gap: 3rem;
     height: 3rem;
 
     img {
       width: 2rem;
+      height: 2rem;
     }
 
     p {

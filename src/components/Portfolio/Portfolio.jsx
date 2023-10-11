@@ -35,7 +35,7 @@ const Portfolio = () => {
       <div className='portfolio__wrapper'>
         <div className='portfolio__title' ref={portfolioTriggerRef}>
           <div  ref={portfolioTitleRef}>
-            <p>ポートフォリオン</p>
+            <p>ポートフォリオ</p>
             <p>PORTFOLIO</p>
           </div>
         </div>

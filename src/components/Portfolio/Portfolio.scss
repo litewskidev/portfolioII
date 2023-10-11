@@ -23,6 +23,10 @@
     font-weight: 200;
   }
 
+  p:first-of-type {
+    letter-spacing: -.5rem;
+  }
+
   p:last-of-type {
     color: $eerie-black;
   }

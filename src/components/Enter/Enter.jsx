@@ -9,7 +9,7 @@ const Enter = () => {
     const tl = gsap.timeline();
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(enterWrapper, {y: '100%', duration: 1, delay: .1, ease: "sine.out"
+    tl.to(enterWrapper, {y: '100%', duration: 1.5, delay: .1, ease: "sine.out"
     });
 
     setTimeout(() => {

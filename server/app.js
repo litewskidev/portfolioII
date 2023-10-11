@@ -32,7 +32,7 @@ app.get("/api/language/pl", (req, res) => {
         "two" : "Zawsze myślałem o wszystkim pod kątem tego, jak to działa. Co sprawia, że coś dzieje się w ten, a nie inny sposób? Chciałbym częściej zadawać to pytanie, szukać odpowiedzi i rozwijać krytyczne myślenie. Pracując z grupą osób równie pasjonujących się tematem, budować profesjonalne projekty. Zaspokajając potrzebę tworzenia, brać odpowiedzialność za powierzone zadania i osiągać cele. Stając się specjalistą w danej dziedzinie, udowodnić sobie i innym, ile jestem wart."
       },
       "skills": {
-        "title": "pracuję z pomocą",
+        "title": "pracuję z",
       },
       "how": {
         "info": "Zawsze dbam o przejrzystość kodu, świetny design, responsywność oraz doświadczenie użytkownika.",
@@ -114,7 +114,7 @@ app.get("/api/language/eng", (req, res) => {
         "two" : "I have always thought about everything in terms of how it works. What makes something happen this way and not otherwise? I would like to ask this question more often, look for answers and develop critical thinking. By working with a group of people who are equally passionate about the topic, build professional projects. By satisfying the need to create, take responsibility for assigned tasks and achieve goals. By becoming a specialist in a given field, prove to myself and others how much I am worth."
       },
       "skills": {
-        "title": "i work with",
+        "title": "I work with",
       },
       "how": {
         "info": "I always care about clear code, cool design, responsiveness and user experience.",

@@ -12,7 +12,7 @@ const About = ({ data }) => {
     const aboutTitle = aboutTitleRef.current;
     const aboutTrigger = aboutTriggerRef.current;
 
-    gsap.fromTo(aboutTitle, { y: "-4%" }, { scrollTrigger: {
+    gsap.fromTo(aboutTitle, { y: 0 }, { scrollTrigger: {
       trigger: aboutTrigger,
       start: '1% 35%',
       toggleActions: "play none none reverse"
@@ -39,8 +39,10 @@ const About = ({ data }) => {
           </div>
         </div>
         <div className='about__image'>
-          <p>すべてを行うのを待って何もしないよりは、何かをした方が良いのです。</p>
-          <img src={process.env.PUBLIC_URL + '/assets/images/persona1920.webp'} alt='persona art'/>
+          <div className='about__image__inner'>
+            <img src={process.env.PUBLIC_URL + '/assets/images/persona1920.webp'} alt='persona art'/>
+            <p>すべてを行うのを待って何もしないよりは、何かをした方が良いのです。</p>
+          </div>
         </div>
       </div>
     </section>

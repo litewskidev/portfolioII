@@ -3,7 +3,7 @@ import { getProject } from '../../redux/projectsRedux.js';
 import { getProjectDesc } from '../../redux/languageRedux.js';
 import './ProjectCard.scss';
 
-const ProjectCard = ({ id, setId, cardClass }) => {
+const ProjectCard = ({ id, setId }) => {
   const project = useSelector(state => getProject(state, id), shallowEqual);
   const projectDesc = useSelector(state => getProjectDesc(state, id));
 
@@ -16,7 +16,7 @@ const ProjectCard = ({ id, setId, cardClass }) => {
 
   return(
     <section id='project-card' className='project__card__wrapper'>
-      <div id='card-container' className={cardClass}>
+      <div className='project__card__container'>
         <div className='project__card__images'>
           <div className='project__card__img img__1'>
             <img src={process.env.PUBLIC_URL + project[0].moc1} alt='project mockup'/>

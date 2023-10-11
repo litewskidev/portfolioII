@@ -3,10 +3,8 @@
 .contact__wrapper {
   background-color: $raven;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   position: relative;
   overflow: hidden;
   padding: 10%;
@@ -19,28 +17,30 @@
 }
 
 .contact__image {
-  width: 45%;
+  width: 40%;
   background-color: $cosmic-latte;
-  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6rem;
 
   img {
     width: 100%;
-    filter: saturate(0) sepia(.1) contrast(.9);
+    filter: saturate(0) sepia(.1) contrast(.9) brightness(.9);
     transform: scaleX(-1);
   }
 }
 
 .contact__info {
-  width: 55%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .contact__desc {
+  text-transform: uppercase;
+
   h1 {
     color: $cosmic-latte;
     font-family: $font-head;
@@ -50,7 +50,6 @@
 
   p {
     color: $cosmic-latte;
-    text-transform: uppercase;
   }
 
   p:last-of-type {
@@ -83,15 +82,13 @@
 }
 
 .contact__form__text, .contact__form__message {
+  background: $cosmic-latte;
+  color: $eerie-black;
   font-family: $font-text;
   font-size: 1rem;
-  font-weight: 200;
-  width: 100%;
   border: none;
   outline: none;
   padding: .5rem 1rem;
-  background: $cosmic-latte;
-  color: $eerie-black;
 
   &::placeholder {
     color: $eerie-black;
@@ -131,8 +128,7 @@
 
   .contact__container {
     flex-direction: column;
-    align-items: center;
-    gap: 5%;
+    gap: 1rem;
   }
 
   .contact__image {
@@ -140,6 +136,7 @@
     padding: 5rem 0;
 
     img {
+      width: 65%;
       transform: rotate(-90deg);
     }
   }
@@ -152,17 +149,15 @@
     h1 {
       font-size: 2.5rem;
     }
-
-    p:last-of-type {
-      margin-bottom: 1rem;
-    }
   }
 
   .contact__modal {
     width: 90%;
+    bottom: 5%;
+    padding: .5rem;
 
     p {
-      font-size: .9rem;
+      font-size: .8rem;
     }
   }
 }

@@ -45,7 +45,7 @@ const NavbarTop = ({ data }) => {
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#portfolio", ease: "power1.out"});
+    gsap.to(window, {duration: 1, scrollTo: "#projects", ease: "power1.out"});
   };
 
   const handleContactScroll = () => {
