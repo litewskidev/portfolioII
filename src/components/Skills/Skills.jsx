@@ -1,34 +1,11 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useRef } from 'react';
 import './Skills.scss';
-gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ data }) => {
-  const skillsTitleRef = useRef(null);
-  const skillsTriggerRef = useRef(null);
-
-  useEffect(() => {
-    const skillsTitle = skillsTitleRef.current;
-    const skillsTrigger = skillsTriggerRef.current;
-
-    gsap.fromTo(skillsTitle, { y: 0 }, { scrollTrigger: {
-      trigger: skillsTrigger,
-      start: '1% 35%',
-      toggleActions: "play none none reverse"
-    },
-    y: '-50%',
-    ease: 'sine.out',
-    duration: 1
-    });
-  }, []);
-
   return(
     <section id='skills'>
       <div className='skills__wrapper'>
-        <div className='skills__title' ref={skillsTriggerRef}>
-          <div ref={skillsTitleRef}>
-            <p>を使って仕事をしています</p>
+        <div className='skills__title'>
+          <div>
             <p>{data.skills?.title}</p>
           </div>
         </div>

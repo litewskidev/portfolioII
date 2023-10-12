@@ -38,6 +38,8 @@
   justify-content: flex-start;
 
   img {
+    border: 1px solid $eerie-black;
+    border-bottom: none;
     height: 50rem;
     filter: contrast(1.3) sepia(.1);
   }
@@ -52,7 +54,7 @@
   h1 {
     font-family: $font-head;
     font-size: 6rem;
-    line-height: 1.3;
+    line-height: 1.2;
   }
 }
 
@@ -84,7 +86,7 @@
   h2 {
     text-transform: uppercase;
     font-family: $font-head;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 200;
   }
 }
@@ -96,7 +98,7 @@
     padding: .5rem;
     border: 1px solid $eerie-black;
     font-family: $font-head;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $eerie-black;
     text-transform: uppercase;
     cursor: crosshair;

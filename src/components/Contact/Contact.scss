@@ -19,6 +19,7 @@
 .contact__image {
   width: 40%;
   background-color: $cosmic-latte;
+  border: 1px solid $eerie-black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +45,7 @@
   h1 {
     color: $cosmic-latte;
     font-family: $font-head;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 400;
   }
 
@@ -72,6 +73,7 @@
     color: $cosmic-latte;
     text-transform: uppercase;
     cursor: crosshair;
+    transition: all .2s ease-in-out;
 
     &:hover {
       background-color: $jasper;
@@ -86,14 +88,18 @@
   color: $eerie-black;
   font-family: $font-text;
   font-size: 1rem;
-  border: none;
+  border: 1px solid $eerie-black;
   outline: none;
   padding: .5rem 1rem;
 
   &::placeholder {
     color: $eerie-black;
-    opacity: .6;
+    opacity: .5;
   }
+}
+
+.contact__form__message {
+  height: 10rem;
 }
 
 .contact__modal {
@@ -106,7 +112,7 @@
   z-index: 99;
   transform: translateX(-50%) translateY(400%);
   opacity: 0;
-  transition: transform .4s ease-in-out;
+  transition: transform .5s ease-in-out;
 
   p {
     color: $eerie-black;
@@ -122,7 +128,7 @@
 @media (max-width: 540px) {
   .contact__wrapper {
     min-height: 100vh;
-    padding: 6rem 5%;
+    padding: 3rem 5%;
     margin-top: 0;
   }
 
@@ -147,8 +153,16 @@
 
   .contact__desc {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
+  }
+
+  .contact__form__text, .contact__form__message {
+    font-size: .9rem;
+  }
+
+  .contact__form__message {
+    height: 5rem;
   }
 
   .contact__modal {

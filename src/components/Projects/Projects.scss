@@ -10,7 +10,7 @@
 }
 
 .projects__container {
-  overflow: hidden;
+  //overflow: hidden;
   display: flex;
   gap: 1rem;
 }
@@ -22,20 +22,27 @@
   gap: 1rem;
 }
 
+//  BOXES
 .projects__box {
+  background-color: $cosmic-latte;
   border: 1px solid $eerie-black;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: crosshair;
   padding-top: 1rem;
   position: relative;
 
   &:hover {
+
+    /*
+    .projects__box__mockup {
+      transform: translateY(-100%);
+      visibility: hidden;
+    }
+    */
+
     .projects__box__overlay {
       visibility: visible;
-      transform: translateX(0);
+      transform: translateY(0);
     }
   }
 }
@@ -52,15 +59,23 @@
   height: 100%;
 }
 
+.projects__box__mockup {
+  transition: all .8s ease-in-out;
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .projects__box__overlay {
-  transition: all .8s ease-out;
+  transition: all .8s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  transform: translateY(-100%);
   visibility: hidden;
-  transform: translateX(-100%);
 }
 
 @media (max-width: 540px) {

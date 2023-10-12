@@ -27,9 +27,6 @@ const MockupOverlay = ({ id }) => {
           </div>
         </div>
       </div>
-      <div className='mockupoverlay__call'>
-        <p>もっと見る</p>
-      </div>
     </div>
   );
 };

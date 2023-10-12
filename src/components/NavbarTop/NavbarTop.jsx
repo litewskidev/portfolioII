@@ -2,10 +2,8 @@ import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
 import { fetchLangEng, fetchLangPl } from '../../redux/languageRedux.js';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import './NavbarTop.scss';
-gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
 const NavbarTop = ({ data }) => {

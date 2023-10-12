@@ -12,24 +12,11 @@
 
 .skills__title {
   padding: 0 10%;
-  overflow-y: hidden;
-  height: 5.5rem;
-  text-transform: uppercase;
 
   p {
+    text-transform: uppercase;
     font-family: $font-head;
-    font-size: 5rem;
-    color: $jasper;
-    line-height: 1.25;
-  }
-
-  p:first-of-type {
-    letter-spacing: -.5rem;
-    font-size: 4rem;
-  }
-
-  p:last-of-type {
-    color: $eerie-black;
+    font-size: 3rem;
   }
 }
 
@@ -62,7 +49,7 @@
 
   p {
     transition: all .3s ease-in-out;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: $eerie-black;
   }
 
@@ -91,17 +78,12 @@
   .skills__wrapper {
     align-items: center;
     padding: 3rem 0;
+    gap: 1rem;
   }
 
   .skills__title {
-    height: 3rem;
-
-    p:first-of-type {
-      font-size: 2rem;
-    }
-
-    p:last-of-type {
-      font-size: 3rem;
+    p {
+      font-size: 2.1rem;
     }
   }
 
@@ -115,7 +97,7 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: .9rem;
     }
 
     p:last-of-type {

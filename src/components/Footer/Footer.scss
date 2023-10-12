@@ -1,15 +1,162 @@
 @import '../../styles/settings.scss';
 
 .footer__wrapper {
-  //width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: $raven;
-  padding: 1%;
+  padding: 3rem 10%;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__start {
+  width: 50%;
+}
+
+.footer__start__logo {
+  width: 15rem;
+  border-top: 3px solid $jasper;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   p {
+    padding: .22rem;
+    border: 1px solid $cosmic-latte;
+    border-radius: .1rem;
+    width: 2rem;
+    height: 2rem;
+    color: $cosmic-latte;
+    opacity: .6;
+  }
+
+  a {
     font-size: 1rem;
     color: $cosmic-latte;
     cursor: crosshair;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+      color: $jasper;
+    }
+  }
+}
+
+.footer__end {
+  width: 50%;
+  padding-top: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.footer__end__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 3rem;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-family: $font-text;
+    font-size: 1rem;
+    line-height: 1;
+    color: $cosmic-latte;
+    cursor: crosshair;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+      color: $jasper;
+    }
+  }
+}
+
+.footer__end__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    display: flex;
+    width: 2rem;
+    cursor: crosshair;
+    transition: all .1s ease-in-out;
+    filter: invert(1);
+
+    &:hover {
+      filter: invert(30%) sepia(77%) saturate(728%) hue-rotate(325deg) brightness(120%) contrast(85%);
+    }
+  }
+}
+
+.footer__copy {
+  width: 100%;
+
+  p {
+    color: $cosmic-latte;
+    opacity: .5;
+  }
+}
+
+@media(max-width: 540px) {
+  .footer__wrapper {
+    padding: 1.5rem 5%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer__start {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__start__logo {
+    border-top: 2px solid $jasper;
+    width: 10rem;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .footer__end {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer__end__links {
+    gap: 1rem;
+    height: fit-content;
+  }
+
+  .footer__end__socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer__copy {
+    text-align: center;
+    padding: 3rem 0;
+
+    p {
+      font-size: .8rem;
+    }
   }
 }

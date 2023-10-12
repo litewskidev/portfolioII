@@ -16,7 +16,6 @@ const Projects = () => {
   const boxSixRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline();
     const projectsTrigger = projectsTriggerRef.current;
     const boxOne = boxOneRef.current;
     const boxTwo = boxTwoRef.current;
@@ -24,6 +23,48 @@ const Projects = () => {
     const boxFour = boxFourRef.current;
     const boxFive = boxFiveRef.current;
     const boxSix = boxSixRef.current;
+
+    gsap.fromTo(boxOne, {x: '-2%', y: '-2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
+
+    gsap.fromTo(boxTwo, {x: '-2%', y: '2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
+
+    gsap.fromTo(boxThree, {y: '-2%'}, {y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
+
+    gsap.fromTo(boxFour, {y: '2%'}, {y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
+
+    gsap.fromTo(boxFive, {x: '2%', y: '-2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
+
+    gsap.fromTo(boxSix, {x: '2%', y: '2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+      scrollTrigger: {
+        trigger: projectsTrigger,
+        start: '0% 25%',
+        toggleActions: "play none none reverse"
+    }});
   }, []);
 
   return(
@@ -32,13 +73,17 @@ const Projects = () => {
         <div className='projects__container'>
           <div className='projects__col'>
             <div className='projects__box small' ref={boxOneRef}>
-              <Mockup id={1} />
+              <div className='projects__box__mockup'>
+                <Mockup id={1} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={1} />
               </div>
             </div>
             <div className='projects__box small' ref={boxTwoRef}>
-              <Mockup id={2} />
+              <div className='projects__box__mockup'>
+                <Mockup id={2} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={2} />
               </div>
@@ -46,13 +91,17 @@ const Projects = () => {
           </div>
           <div className='projects__col'>
             <div className='projects__box big' ref={boxThreeRef}>
-              <Mockup id={3} />
+              <div className='projects__box__mockup'>
+                <Mockup id={3} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={3} />
               </div>
             </div>
             <div className='projects__box medium' ref={boxFourRef}>
-              <Mockup id={4} />
+              <div className='projects__box__mockup'>
+                <Mockup id={4} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={4} />
               </div>
@@ -60,13 +109,17 @@ const Projects = () => {
           </div>
           <div className='projects__col'>
             <div className='projects__box medium' ref={boxFiveRef}>
-              <Mockup id={5} />
+              <div className='projects__box__mockup'>
+                <Mockup id={5} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={5} />
               </div>
             </div>
             <div className='projects__box big' ref={boxSixRef}>
-              <Mockup id={6} />
+              <div className='projects__box__mockup'>
+                <Mockup id={6} />
+              </div>
               <div className='projects__box__overlay'>
                 <MockupOverlay id={6} />
               </div>

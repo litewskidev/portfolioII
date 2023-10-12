@@ -22,11 +22,11 @@ const Hero = ({ data }) => {
     const homeBased = homeBasedRef.current;
     const heroSocial = heroSocialRef.current;
 
-    tl.fromTo(heroImg, {x: '-100%'}, {x: 0, delay: 1, duration: 1, ease: 'sine.out'})
-    .fromTo(heroTitle, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.out'})
-    .fromTo(heroDesc, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.out'}, '<')
-    .fromTo(homeBased, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.out'}, '<')
-    .fromTo(heroSocial, {y: '10%', opacity: 0}, {y: 0, opacity: 1, duration: 1, ease: 'sine.out'})
+    tl.fromTo(heroImg, {x: '-100%'}, {x: 0, delay: .8, duration: 1, ease: 'sine.in'})
+    .fromTo(heroTitle, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'})
+    .fromTo(heroDesc, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'}, '<')
+    .fromTo(homeBased, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'}, '<')
+    .fromTo(heroSocial, {y: '10%', opacity: 0}, {y: 0, opacity: 1, duration: 1, ease: 'sine.in'})
   }, []);
 
   return(

@@ -54,7 +54,8 @@ app.get("/api/language/pl", (req, res) => {
         "modal": "Dziekuję za wiadomość! Wkrótce się z Tobą skontaktuję."
       },
       "navbar": {
-        "about": "O MNIE",
+        "home": "STRONA GŁÓWNA",
+        "about": "OMNIE",
         "projects": "PORTFOLIO",
         "contact": "KONTAKT"
       },
@@ -136,6 +137,7 @@ app.get("/api/language/eng", (req, res) => {
         "modal": "Thank you for your message! I will contact you soon."
       },
       "navbar": {
+        "home": "HOME",
         "about": "ABOUT",
         "projects": "PORTFOLIO",
         "contact": "CONTACT"

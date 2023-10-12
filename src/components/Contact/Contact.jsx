@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import emailjs from 'emailjs-com';
 import './Contact.scss';
-gsap.registerPlugin(ScrollTrigger);
 
 const Contact = ({ data }) => {
   const contactModalRef = useRef(null);
@@ -13,7 +10,7 @@ const Contact = ({ data }) => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    emailjs.init(process.env.REACT_APP_USER_ID)
+    emailjs.init(process.env.REACT_APP_USER_ID);
   }, []);
 
   const handleSubmit = e => {
