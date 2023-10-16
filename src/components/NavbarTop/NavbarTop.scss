@@ -31,6 +31,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   gap: 2rem;
 
   button {
@@ -39,7 +40,7 @@
     font-family: $font-text;
     font-size: 1rem;
     cursor: crosshair;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &:hover {
       color: $jasper;
@@ -61,7 +62,7 @@
   width: 50%;
   text-align: center;
   color: $eerie-black;
-  transition: all .1s ease-in-out;
+  transition: all .2s ease-in-out;
 
   &:hover {
     color: $jasper;
@@ -144,6 +145,7 @@
     margin: 0;
 
     li button {
+      width: 5rem;
       background-color: transparent;
       border: none;
       font-family: $font-head;

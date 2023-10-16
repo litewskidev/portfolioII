@@ -24,42 +24,42 @@ const Projects = () => {
     const boxFive = boxFiveRef.current;
     const boxSix = boxSixRef.current;
 
-    gsap.fromTo(boxOne, {x: '-2%', y: '-2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxOne, {x: '-3%', y: '-3%'}, {x: 0, y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
         toggleActions: "play none none reverse"
     }});
 
-    gsap.fromTo(boxTwo, {x: '-2%', y: '2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxTwo, {x: '-3%', y: '3%'}, {x: 0, y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
         toggleActions: "play none none reverse"
     }});
 
-    gsap.fromTo(boxThree, {y: '-2%'}, {y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxThree, {y: '-3%'}, {y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
         toggleActions: "play none none reverse"
     }});
 
-    gsap.fromTo(boxFour, {y: '2%'}, {y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxFour, {y: '3%'}, {y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
         toggleActions: "play none none reverse"
     }});
 
-    gsap.fromTo(boxFive, {x: '2%', y: '-2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxFive, {x: '3%', y: '-3%'}, {x: 0, y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
         toggleActions: "play none none reverse"
     }});
 
-    gsap.fromTo(boxSix, {x: '2%', y: '2%'}, {x: 0, y: 0, duration: 1.5, ease: 'sine.in',
+    gsap.fromTo(boxSix, {x: '3%', y: '3%'}, {x: 0, y: 0, duration: 1.7, ease: 'sine.in',
       scrollTrigger: {
         trigger: projectsTrigger,
         start: '0% 25%',
@@ -72,7 +72,7 @@ const Projects = () => {
       <div className='projects__wrapper' ref={projectsTriggerRef}>
         <div className='projects__container'>
           <div className='projects__col'>
-            <div className='projects__box small' ref={boxOneRef}>
+            <div className='projects__box small orange' ref={boxOneRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={1} />
               </div>
@@ -80,7 +80,7 @@ const Projects = () => {
                 <MockupOverlay id={1} />
               </div>
             </div>
-            <div className='projects__box small' ref={boxTwoRef}>
+            <div className='projects__box small red' ref={boxTwoRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={2} />
               </div>
@@ -90,7 +90,7 @@ const Projects = () => {
             </div>
           </div>
           <div className='projects__col'>
-            <div className='projects__box big' ref={boxThreeRef}>
+            <div className='projects__box big blue' ref={boxThreeRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={3} />
               </div>
@@ -98,7 +98,7 @@ const Projects = () => {
                 <MockupOverlay id={3} />
               </div>
             </div>
-            <div className='projects__box medium' ref={boxFourRef}>
+            <div className='projects__box medium green' ref={boxFourRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={4} />
               </div>
@@ -108,7 +108,7 @@ const Projects = () => {
             </div>
           </div>
           <div className='projects__col'>
-            <div className='projects__box medium' ref={boxFiveRef}>
+            <div className='projects__box medium white' ref={boxFiveRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={5} />
               </div>
@@ -116,7 +116,7 @@ const Projects = () => {
                 <MockupOverlay id={5} />
               </div>
             </div>
-            <div className='projects__box big' ref={boxSixRef}>
+            <div className='projects__box big grey' ref={boxSixRef}>
               <div className='projects__box__mockup'>
                 <Mockup id={6} />
               </div>

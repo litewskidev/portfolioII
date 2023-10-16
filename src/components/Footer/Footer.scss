@@ -3,7 +3,6 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: $raven;
   padding: 3rem 10%;
 }
@@ -20,26 +19,12 @@
 .footer__start__logo {
   width: 15rem;
   border-top: 3px solid $jasper;
-  padding-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  p {
-    padding: .22rem;
-    border: 1px solid $cosmic-latte;
-    border-radius: .1rem;
-    width: 2rem;
-    height: 2rem;
-    color: $cosmic-latte;
-    opacity: .6;
-  }
+  padding-top: 3.5rem;
 
   a {
-    font-size: 1rem;
     color: $cosmic-latte;
     cursor: crosshair;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &:hover {
       color: $jasper;
@@ -49,7 +34,7 @@
 
 .footer__end {
   width: 50%;
-  padding-top: 3.3rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -61,20 +46,17 @@
   align-items: center;
   gap: 2rem;
   height: 3rem;
-  width: 100%;
   list-style-type: none;
   margin: 0;
-  padding: 0;
 
   button {
     background-color: transparent;
     border: none;
     font-family: $font-text;
     font-size: 1rem;
-    line-height: 1;
     color: $cosmic-latte;
     cursor: crosshair;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &:hover {
       color: $jasper;
@@ -85,13 +67,14 @@
 .footer__end__socials {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
   img {
     display: flex;
-    width: 2rem;
+    width: 3rem;
+    height: 3rem;
     cursor: crosshair;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     filter: invert(1);
 
     &:hover {
@@ -101,8 +84,6 @@
 }
 
 .footer__copy {
-  width: 100%;
-
   p {
     color: $cosmic-latte;
     opacity: .5;
@@ -129,7 +110,6 @@
   .footer__start__logo {
     border-top: 2px solid $jasper;
     width: 10rem;
-    gap: 1.5rem;
     align-items: center;
   }
 
@@ -137,23 +117,21 @@
     width: 100%;
     padding: 0;
     align-items: center;
-    gap: 3rem;
   }
 
   .footer__end__links {
     gap: 1rem;
     height: fit-content;
+    padding: 0;
   }
 
   .footer__end__socials {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .footer__copy {
     text-align: center;
-    padding: 3rem 0;
+    padding-top: 3rem;
 
     p {
       font-size: .8rem;

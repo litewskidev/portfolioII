@@ -3,11 +3,6 @@ import { useEffect, useRef } from 'react';
 import './Hero.scss';
 
 const Hero = ({ data }) => {
-
-  const handleGetToKnow = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
-  };
-
   const heroImgRef = useRef(null);
   const heroTitleRef = useRef(null);
   const heroDescRef = useRef(null);
@@ -29,6 +24,17 @@ const Hero = ({ data }) => {
     .fromTo(heroSocial, {y: '10%', opacity: 0}, {y: 0, opacity: 1, duration: 1, ease: 'sine.in'})
   }, []);
 
+  const handleGetToKnow = () => {
+    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+  };
+
+  let cvHref;
+  if(data?.lang === 'en') {
+    cvHref = '/assets/files/CV-EN.pdf'
+  } else {
+    cvHref = '/assets/files/CV-PL.pdf'
+  }
+
   return(
     <section id='hero'>
       <div className='hero2__wrapper'>
@@ -49,6 +55,9 @@ const Hero = ({ data }) => {
             <div className='hero2__title__social' ref={heroSocialRef}>
               <a href='https://www.linkedin.com/in/adrian-litewski-litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
               <a href='https://github.com/litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github icon' /></a>
+              <div className='hero2__title__social__cv'>
+                <a href={process.env.PUBLIC_URL + cvHref} download='CV'>CV</a>
+              </div>
             </div>
           </div>
           <div className='hero2__desc' ref={heroDescRef}>

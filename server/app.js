@@ -18,10 +18,8 @@ app.get("/api", (req, res) => {
 app.get("/api/language/pl", (req, res) => {
   res.json(
     {
+      "lang": "pl",
       "home": {
-        "title": "WEB",
-        "subtitle": "DEV",
-        "subtitle_2": "ELOPER",
         "from": "tworzę strony internetowe",
         "based": "w gdańsku / polska",
         "button": "poznaj mnie"
@@ -55,13 +53,15 @@ app.get("/api/language/pl", (req, res) => {
       },
       "navbar": {
         "home": "STRONA GŁÓWNA",
-        "about": "OMNIE",
+        "about": "O MNIE",
         "projects": "PORTFOLIO",
         "contact": "KONTAKT"
       },
       "projects": {
         "title": "PORTFOLIO",
-        "button": "WIĘCEJ"
+        "button": "WIĘCEJ",
+        "repo": "Repozytorium",
+        "live": "Podgląd"
       },
       "descriptions" : [
         {
@@ -101,10 +101,8 @@ app.get("/api/language/pl", (req, res) => {
 app.get("/api/language/eng", (req, res) => {
   res.json(
     {
+      "lang": "en",
       "home": {
-        "title": "WEB",
-        "subtitle": "DEV",
-        "subtitle_2": "ELOPER",
         "from": "i create websites",
         "based": " in gdańsk / poland",
         "button": "get to know me"
@@ -144,7 +142,9 @@ app.get("/api/language/eng", (req, res) => {
       },
       "projects": {
         "title": "PORTFOLIO",
-        "button": "LEARN MORE"
+        "button": "LEARN MORE",
+        "repo": "Repository",
+        "live": "Live View"
       },
       "descriptions" : [
         {

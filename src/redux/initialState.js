@@ -9,8 +9,7 @@ const initialState = {
       date: '005/0023',
       img: '/assets/covers/3.webp',
       web: 'https://audiophile.litewskidev.usermd.net',
-      moc1: '/assets/mocs/audioMOC1.webp',
-      moc2: '/assets/mocs/audioMOC2.webp',
+      moc1: '/assets/mocs/audiophileMOC.webp',
       techs: [
         '/assets/icons/react.svg',
         '/assets/icons/redux.svg',
@@ -29,8 +28,7 @@ const initialState = {
       date: '007/0023',
       img: '/assets/covers/1.webp',
       web: 'https://watchmore.litewskidev.usermd.net',
-      moc1: '/assets/mocs/watchMOC1.webp',
-      moc2: '/assets/mocs/watchMOC2.webp',
+      moc1: '/assets/mocs/watchmoreMOC.webp',
       techs: [
         '/assets/icons/react.svg',
         '/assets/icons/redux.svg',
@@ -49,8 +47,7 @@ const initialState = {
       date: '006/0023',
       img: '/assets/covers/4.webp',
       web: 'https://memory.litewskidev.usermd.net',
-      moc1: '/assets/mocs/memoryMOC1.webp',
-      moc2: '/assets/mocs/memoryMOC2.webp',
+      moc1: '/assets/mocs/memoryMOC.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
@@ -67,8 +64,7 @@ const initialState = {
       date: '004/0023',
       img: '/assets/covers/2.webp',
       web: 'https://pathfinder.litewskidev.usermd.net',
-      moc1: '/assets/mocs/pathMOC1.webp',
-      moc2: '/assets/mocs/pathMOC2.webp',
+      moc1: '/assets/mocs/pathfinderMOC.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
@@ -85,8 +81,7 @@ const initialState = {
       date: '009/0023',
       img: '/assets/covers/7.webp',
       web: 'https://invaders.litewskidev.usermd.net',
-      moc1: '/assets/mocs/invadersMOC1.webp',
-      moc2: '/assets/mocs/invadersMOC2.webp',
+      moc1: '/assets/mocs/invadersMOC.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',
@@ -104,8 +99,7 @@ const initialState = {
       date: '001/0023',
       img: '/assets/covers/5.webp',
       web: 'https://miaumamia.litewskidev.usermd.net',
-      moc1: '/assets/mocs/miaumaMOC1.webp',
-      moc2: '/assets/mocs/miaumaMOC2.webp',
+      moc1: '/assets/mocs/miaumamiaMOC.webp',
       techs: [
         '/assets/icons/js.svg',
         '/assets/icons/html5.svg',

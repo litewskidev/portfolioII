@@ -67,10 +67,46 @@
     display: flex;
     width: 3rem;
     cursor: crosshair;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &:hover {
       filter: invert(30%) sepia(77%) saturate(728%) hue-rotate(325deg) brightness(95%) contrast(85%);
+    }
+  }
+}
+
+.hero2__title__social__cv {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $raven;
+  cursor: crosshair;
+  transition: all .2s ease-in-out;
+
+  a {
+    color: $cosmic-latte;
+    font-family: $font-head;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: crosshair;
+  }
+
+  &:hover {
+    background-color: $jasper;
+  }
+
+  &.cv__white {
+    background-color: $cosmic-latte;
+
+    a {
+      color: $raven;
+    }
+
+    &:hover {
+      background-color: $jasper;
     }
   }
 }
@@ -151,9 +187,23 @@
   img {
     width: 2.5rem;
   }
+}
 
-  a:first-of-type {
-    //opacity: 0;
+.hero2__title__social__cv {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  &.cv__white {
+    width: 3rem;
+    height: 3rem;
+
+    a {
+      font-size: 1.7rem;
+    }
   }
 }
 
