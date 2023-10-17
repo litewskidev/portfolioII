@@ -12,6 +12,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: .5rem;
 }
 
 .hero2__header {
@@ -36,10 +37,10 @@
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
+  border: 1px solid $eerie-black;
+  border-bottom: none;
 
   img {
-    border: 1px solid $eerie-black;
-    border-bottom: none;
     height: 50rem;
     filter: contrast(1.3) sepia(.1);
   }
@@ -72,41 +73,13 @@
     &:hover {
       filter: invert(30%) sepia(77%) saturate(728%) hue-rotate(325deg) brightness(95%) contrast(85%);
     }
-  }
-}
 
-.hero2__title__social__cv {
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: $raven;
-  cursor: crosshair;
-  transition: all .2s ease-in-out;
-
-  a {
-    color: $cosmic-latte;
-    font-family: $font-head;
-    font-size: 1.7rem;
-    font-weight: 700;
-    cursor: crosshair;
-  }
-
-  &:hover {
-    background-color: $jasper;
-  }
-
-  &.cv__white {
-    background-color: $cosmic-latte;
-
-    a {
-      color: $raven;
+    a:first-of-type {
+      z-index: -1;
     }
 
-    &:hover {
-      background-color: $jasper;
+    a:last-of-type {
+      z-index: -1;
     }
   }
 }

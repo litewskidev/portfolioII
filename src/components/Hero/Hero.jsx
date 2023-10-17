@@ -1,31 +1,38 @@
 import { gsap } from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import './Hero.scss';
 
 const Hero = ({ data }) => {
+  const tl = useRef();
   const heroImgRef = useRef(null);
   const heroTitleRef = useRef(null);
   const heroDescRef = useRef(null);
   const homeBasedRef = useRef(null);
   const heroSocialRef = useRef(null);
+  const inIconRef = useRef(null);
+  const cvIconRef = useRef(null);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+  useLayoutEffect(() => {
     const heroImg = heroImgRef.current;
     const heroTitle = heroTitleRef.current;
     const heroDesc = heroDescRef.current;
     const homeBased = homeBasedRef.current;
     const heroSocial = heroSocialRef.current;
+    const inIcon = inIconRef.current;
+    const cvIcon = cvIconRef.current;
 
-    tl.fromTo(heroImg, {x: '-100%'}, {x: 0, delay: .8, duration: 1, ease: 'sine.in'})
+    tl.current = gsap.timeline()
+    .fromTo(heroImg, {x: '-100%'}, {x: 0, delay: .5, duration: 1.5, ease: 'sine.in'})
     .fromTo(heroTitle, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'})
     .fromTo(heroDesc, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'}, '<')
     .fromTo(homeBased, {opacity: 0}, {opacity: 1, duration: 1.5, ease: 'sine.in'}, '<')
     .fromTo(heroSocial, {y: '10%', opacity: 0}, {y: 0, opacity: 1, duration: 1, ease: 'sine.in'})
+    .fromTo(inIcon, {x: '100%', opacity: 0}, {x: 0, opacity: 1, duration: 1, delay: .5, ease: 'sine.in'})
+    .fromTo(cvIcon, {x: '-100%', opacity: 0}, {x: 0, opacity: 1, duration: 1, ease: 'sine.in'}, '<')
   }, []);
 
   const handleGetToKnow = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
   };
 
   let cvHref;
@@ -53,10 +60,10 @@ const Hero = ({ data }) => {
               <h1>adrian litewski</h1>
             </div>
             <div className='hero2__title__social' ref={heroSocialRef}>
-              <a href='https://www.linkedin.com/in/adrian-litewski-litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
+              <a href='https://www.linkedin.com/in/adrian-litewski-litewskidev' target='_blank' rel='noreferrer' ref={inIconRef}><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
               <a href='https://github.com/litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github icon' /></a>
-              <div className='hero2__title__social__cv'>
-                <a href={process.env.PUBLIC_URL + cvHref} download='CV'>CV</a>
+              <div className='hero2__title__social__cv' ref={cvIconRef}>
+                <a href={process.env.PUBLIC_URL + cvHref} download='CV-Adrian-Litewski'><img src={process.env.PUBLIC_URL + '/assets/icons/cv-icon.svg'} alt='cv icon' /></a>
               </div>
             </div>
           </div>

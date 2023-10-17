@@ -11,15 +11,17 @@
 
 .about__info__container {
   width: 50%;
-  z-index: 2;
-  background-color: $cosmic-latte;
+  z-index: 3;
+  //background-color: $cosmic-latte;
 }
 
 .about__title {
+  z-index: 1;
+
   h1 {
     font-family: $font-head;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 

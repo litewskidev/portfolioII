@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Mockup from '../Mockup/Mockup.jsx';
 import MockupOverlay from '../MockupOverlay/MockupOverlay.jsx';
@@ -15,7 +15,7 @@ const Projects = () => {
   const boxFiveRef = useRef(null);
   const boxSixRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const projectsTrigger = projectsTriggerRef.current;
     const boxOne = boxOneRef.current;
     const boxTwo = boxTwoRef.current;

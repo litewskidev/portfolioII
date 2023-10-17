@@ -14,7 +14,7 @@ const NavbarTop = ({ data }) => {
   const dropdownBtnRef = useRef(null);
   const dropdownRef = useRef(null);
 
-  const handlePl = e => {
+  const handlePl = (e) => {
     e.preventDefault();
     dispatch(fetchLangPl());
     const engBtn = langEnRef.current;
@@ -22,7 +22,7 @@ const NavbarTop = ({ data }) => {
     e.target.classList.add('clickedPl');
   };
 
-  const handleEng = e => {
+  const handleEng = (e) => {
     e.preventDefault();
     dispatch(fetchLangEng());
     const plBtn = langPlRef.current;
@@ -30,7 +30,7 @@ const NavbarTop = ({ data }) => {
     e.target.classList.add('clickedEng');
   };
 
-  const toggleDropdown = e => {
+  const toggleDropdown = (e) => {
     e.preventDefault();
     const dropdownBtn = dropdownBtnRef.current;
     const dropdown = dropdownRef.current;
@@ -39,15 +39,15 @@ const NavbarTop = ({ data }) => {
   };
 
   const handleAboutScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#projects", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#projects", ease: "power1.out"});
   };
 
   const handleContactScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#contact", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#contact", ease: "power1.out"});
   };
 
   return(
@@ -59,17 +59,20 @@ const NavbarTop = ({ data }) => {
             <div className='dropdown__btn__inner thirdHam'></div>
           </div>
           <nav className='navbar__links__container'>
-            <ul className='navbar__links'>
-              <li>
+            <div className='navbar__links'>
+              <div className='navbar__links__el'>
                 <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
-              </li>
-              <li>
+                <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
+              </div>
+              <div className='navbar__links__el'>
                 <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
-              </li>
-              <li>
+                <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
+              </div>
+              <div className='navbar__links__el'>
                 <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
-              </li>
-            </ul>
+                <button onClick={handleContactScroll}>{data.navbar?.contact}</button>
+              </div>
+            </div>
           </nav>
           <div className='navbar__top__info'>
             <div className='navbar__top__language__switch'>

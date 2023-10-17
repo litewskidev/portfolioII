@@ -5,15 +5,15 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const Footer = ({ data }) => {
   const handleAboutScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#about", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#about", ease: "power1.out"});
   };
 
   const handleProjectsScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#projects", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#projects", ease: "power1.out"});
   };
 
   const handleHomeScroll = () => {
-    gsap.to(window, {duration: 1, scrollTo: "#hero", ease: "power1.out"});
+    gsap.to(window, {duration: 1.5, scrollTo: "#hero", ease: "power1.out"});
   };
 
   let cvHref;
@@ -34,23 +34,23 @@ const Footer = ({ data }) => {
           </div>
           <div className='footer__end'>
             <nav className='footer__end__links__container'>
-              <ul className='footer__end__links'>
-                <li>
+              <div className='footer__end__links'>
+                <div>
                   <button onClick={handleHomeScroll}>{data.navbar?.home}</button>
-                </li>
-                <li>
+                </div>
+                <div>
                   <button onClick={handleProjectsScroll}>{data.navbar?.projects}</button>
-                </li>
-                <li>
+                </div>
+                <div>
                   <button onClick={handleAboutScroll}>{data.navbar?.about}</button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </nav>
             <div className='footer__end__socials'>
               <a href='https://www.linkedin.com/in/adrian-litewski-litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/linkedin.svg'} alt='linkedin icon' /></a>
               <a href='https://github.com/litewskidev' target='_blank' rel='noreferrer'><img src={process.env.PUBLIC_URL + '/assets/icons/github.svg'} alt='github icon' /></a>
               <div className='hero2__title__social__cv cv__white'>
-                <a href={process.env.PUBLIC_URL + cvHref} download='CV'>CV</a>
+                <a href={process.env.PUBLIC_URL + cvHref} download='CV-Adrian-Litewski'><img src={process.env.PUBLIC_URL + '/assets/icons/cv-icon.svg'} alt='cv icon' /></a>
               </div>
             </div>
           </div>

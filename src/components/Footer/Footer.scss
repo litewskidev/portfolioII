@@ -71,8 +71,7 @@
 
   img {
     display: flex;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
     cursor: crosshair;
     transition: all .2s ease-in-out;
     filter: invert(1);
@@ -126,7 +125,7 @@
   }
 
   .footer__end__socials {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .footer__copy {

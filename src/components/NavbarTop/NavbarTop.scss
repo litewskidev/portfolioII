@@ -27,12 +27,11 @@
 
 .navbar__links {
   width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
+  height: 1.5rem;
+  overflow: hidden;
 
   button {
     background-color: transparent;
@@ -40,9 +39,18 @@
     font-family: $font-text;
     font-size: 1rem;
     cursor: crosshair;
-    transition: all .2s ease-in-out;
+  }
+}
 
-    &:hover {
+.navbar__links__el {
+  display: flex;
+  flex-direction: column;
+  transition: all .2s ease-out;
+
+  &:hover {
+    transform: translateY(50%);
+
+    button {
       color: $jasper;
     }
   }
@@ -127,7 +135,7 @@
     height: 100vh;
     width: 18%;
     transform: translateX(-101%);
-    transition: transform .5s ease;
+    transition: all .4s ease-in-out;
   }
 
   .dropdown__container.show {

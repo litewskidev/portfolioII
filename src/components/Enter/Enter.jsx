@@ -1,21 +1,19 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './Enter.scss';
 
 const Enter = () => {
   const enterWrapperRef = useRef(null);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+  useLayoutEffect(() => {
     const enterWrapper = enterWrapperRef.current;
 
-    tl.to(enterWrapper, {y: '100%', duration: 1.5, delay: .1, ease: "sine.in"
-    });
-
-    setTimeout(() => {
-    enterWrapper.classList.add('enter__off');
-    }, 1600);
+    gsap.to(enterWrapper, {y: '100%', duration: 1.5, delay: .1, ease: "sine.in"});
   }, []);
+
+  setTimeout(() => {
+    enterWrapperRef.current.classList.add('enter__off');
+    }, 1600);
 
   return(
     <div id='enter' className='enter__wrapper' ref={enterWrapperRef}>
