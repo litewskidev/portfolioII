@@ -27,7 +27,8 @@ app.get("/api/language/pl", (req, res) => {
       "about": {
         "title": "O MNIE",
         "one": "Cześć! Nazywam się Adrian Litewski.",
-        "two" : "Zawsze myślałem o wszystkim pod kątem tego, jak to działa. Co sprawia, że coś dzieje się w ten, a nie inny sposób? Chciałbym częściej zadawać to pytanie, szukać odpowiedzi i rozwijać krytyczne myślenie. Pracując z grupą osób równie pasjonujących się tematem, budować profesjonalne projekty. Zaspokajając potrzebę tworzenia, brać odpowiedzialność za powierzone zadania i osiągać cele. Stając się specjalistą w danej dziedzinie, udowodnić sobie i innym, ile jestem wart."
+        "two" : "Zawsze myślałem o wszystkim pod kątem tego, jak to działa. Co sprawia, że coś dzieje się w ten, a nie inny sposób? Chciałbym częściej zadawać to pytanie, szukać odpowiedzi i rozwijać krytyczne myślenie. Pracując z grupą osób równie pasjonujących się tematem, budować profesjonalne projekty. Zaspokajając potrzebę tworzenia, brać odpowiedzialność za powierzone zadania i osiągać cele. Stając się specjalistą w danej dziedzinie, udowodnić sobie i innym, ile jestem wart.",
+        "quote": "Lepiej jest coś zrobić niż nie robić nic, czekając aż zrobi się wszystko."
       },
       "skills": {
         "title": "pracuję z",
@@ -65,28 +66,28 @@ app.get("/api/language/pl", (req, res) => {
       },
       "descriptions" : [
         {
-          "id": 5,
+          "id": 6,
           "desc": "Broń miasta i niszcz kosmitów! Strzelaj do obcych statków i zbieraj kapsuły, aby zwabić statek-matkę. Wygraj w jak najkrótszym czasie i dodaj swój wynik do tabeli liderów."
         },
         {
           "id": 2,
-          "desc": "Oglądaj więcej! Serwis streamingowy z logowaniem, rejestracją, listą odtwarzania, filmami, programami telewizyjnymi, kolekcjami, hubami i wyszukiwarką."
+          "desc": "Oglądaj więcej! Serwis streamingowy z filmami, serialami, kolekcjami, hubami i wyszukiwarką. Uwierzytelnianie użytkownika i zapisywanie listy obserwowanych w bazie danych."
         },
         {
-          "id": 4,
+          "id": 5,
           "desc": "Znajdź najlepszą ścieżkę! Narysuj dostępne trasy na siatce, a Pathfinder znajdzie dla Ciebie najkrótszą drogę."
         },
         {
-          "id": 1,
+          "id": 3,
           "desc": "Sklep dla audiofilów. Podstrony kategorii i produktów. Koszyk z wprowadzaniem ilości sztuk. Podsumowanie zamówienia, lista zamówionych produktów i moduł potwierdzający."
         },
         {
-          "id": 3,
+          "id": 4,
           "desc": "Spróbuj dopasować pary! Gra solo lub dla wielu graczy (do 4 graczy). Ustaw motyw, aby używać liczb lub ikon w kafelkach. Wybierz grę na siatce 6x6 lub 4x4."
         },
         {
-          "id": 6,
-          "desc": "Projekt z Bootcampa. Miau Ma Mia! Witryna restauracji z podstronami. Dodaj produkty do koszyka lub zarezerwuj stolik!"
+          "id": 1,
+          "desc": "Aplikacja MERN. Twórz, czytaj, aktualizuj i usuwaj linki. Profil: zdjęcie, imię, nazwisko i adres e-mail. Uwierzytelnianie użytkownika i zapisywanie danych w bazie danych."
         }
       ],
       "modal": "ZOBACZ",
@@ -110,7 +111,8 @@ app.get("/api/language/eng", (req, res) => {
       "about": {
         "title": "ABOUT ME",
         "one": "Hi! My name is Adrian Litewski.",
-        "two" : "I have always thought about everything in terms of how it works. What makes something happen this way and not otherwise? I would like to ask this question more often, look for answers and develop critical thinking. By working with a group of people who are equally passionate about the topic, build professional projects. By satisfying the need to create, take responsibility for assigned tasks and achieve goals. By becoming a specialist in a given field, prove to myself and others how much I am worth."
+        "two" : "I have always thought about everything in terms of how it works. What makes something happen this way and not otherwise? I would like to ask this question more often, look for answers and develop critical thinking. By working with a group of people who are equally passionate about the topic, build professional projects. By satisfying the need to create, take responsibility for assigned tasks and achieve goals. By becoming a specialist in a given field, prove to myself and others how much I am worth.",
+        "quote": "It is better to do something than to do nothing while waiting to do everything."
       },
       "skills": {
         "title": "I work with",
@@ -148,28 +150,28 @@ app.get("/api/language/eng", (req, res) => {
       },
       "descriptions" : [
         {
-          "id": 5,
+          "id": 6,
           "desc": "Defend town and destroy aliens! Shoot alien ships and collect capsules to lure The Mothership. Win in the shortest possible time and add your score to leaderboard."
         },
         {
           "id": 2,
-          "desc": "Watch more! Streaming service with login, registration, playlist, movies, TV shows, collections, hubs and search."
+          "desc": "Watch more! Streaming service with movies, TV shows, collections, hubs and search. User authentication and saving watchlist to a database."
         },
         {
-          "id": 4,
+          "id": 5,
           "desc": "Find the best path! Draw available routes on a grid and Pathfinder will find the shortest route for you."
         },
         {
-          "id": 1,
+          "id": 3,
           "desc": "Multi-page E-commerce website for audiophiles. Category and product pages. Cart with quantity input. Checkout page, ordered products dropdown and confirming order modal with order ID."
         },
         {
-          "id": 3,
+          "id": 4,
           "desc": "Try to match pairs! Solo or multiplayer (up to 4 Players) game. Set the theme to use numbers or icons within the tiles. Choose to play on either a 6x6 or 4x4 grid."
         },
         {
-          "id": 6,
-          "desc": "Bootcamp project. Miau Ma Mia! Multi-page restaurant website. Add products to cart or book a table!"
+          "id": 1,
+          "desc": "MERN stack application. Create, read, update and delete links. Profile details: profile picture, first name, last name, and email. User authentication and saving details to a database."
         }
       ],
       "modal": "TAKE A LOOK",

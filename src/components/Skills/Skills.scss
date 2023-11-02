@@ -36,7 +36,6 @@
   text-transform: uppercase;
   cursor: crosshair;
 
-
   &:last-of-type {
     border-bottom: 1px solid $eerie-black;
   }
@@ -78,7 +77,6 @@
   .skills__wrapper {
     align-items: center;
     padding: 3rem 0;
-    gap: 1rem;
   }
 
   .skills__title {
@@ -98,10 +96,6 @@
 
     p {
       font-size: .9rem;
-    }
-
-    p:last-of-type {
-      font-size: .5rem;
     }
   }
 }

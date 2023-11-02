@@ -29,7 +29,7 @@ const Footer = ({ data }) => {
         <div className='footer__container'>
           <div className='footer__start'>
             <div className='footer__start__logo'>
-              <a href="mailto:litewskidev@gmail.com">litewskidev@gmail.com</a>
+              <a href="mailto:contact@litewskidev.usermd.net">contact@litewskidev.usermd.net</a>
             </div>
           </div>
           <div className='footer__end'>

@@ -13,6 +13,7 @@ const MockupOverlay = ({ id }) => {
       <div className='mockupoverlay__container'>
         <div className='mockupoverlay__title'>
           <p>{project[0].title}</p>
+          <p>( {project[0].tech} )</p>
         </div>
         <div className='mockupoverlay__desc'>
           {projectDesc?.map(desc => (

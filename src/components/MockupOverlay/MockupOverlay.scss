@@ -19,11 +19,21 @@
 }
 
 .mockupoverlay__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
   p {
     font-family: $font-head;
     font-size: 2rem;
     text-transform: uppercase;
   }
+
+  p:last-of-type {
+    font-size: 1rem;
+    color: $jasper;
+  }
+
 }
 
 .mockupoverlay__links {
@@ -77,7 +87,7 @@
 
   .mockupoverlay__desc {
     p {
-      font-size: .9rem;
+      font-size: .8rem;
     }
   }
 

@@ -5,6 +5,7 @@
   flex-direction: column;
   background-color: $raven;
   padding: 3rem 10%;
+  padding-bottom: 1rem;
 }
 
 .footer__container {
@@ -108,8 +109,9 @@
 
   .footer__start__logo {
     border-top: 2px solid $jasper;
-    width: 10rem;
+    width: 75%;
     align-items: center;
+    text-align: center;
   }
 
   .footer__end {
