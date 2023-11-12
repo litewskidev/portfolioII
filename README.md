@@ -1,21 +1,14 @@
-## Portfolio ##
-Check out my Portfolio.
+# Portfolio
+Check out my portfolio.
+
+# Live View:
+- https://portfolio.litewskidev.usermd.net
 
 # Build with:
-- HTML5
-- JavaScript
-- React
-- React Router
-- Redux
-- GSAP
-- Node
-- Express
-- Sass
+HTML5 ∙ JavaScript ∙ React ∙ React Router ∙ Redux ∙ Node ∙ Express ∙ EmailJS ∙ GSAP ∙ SASS ∙ RWD
 
 # Layouts:
-- Mobile
-- Tablet
-- Desktop
+Mobile ∙ Desktop
 
-# Links:
-- Live Site URL: https://portfolio.litewskidev.usermd.net
+# Preview:
+![portfolio](portfolio.png)

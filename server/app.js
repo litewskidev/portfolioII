@@ -87,7 +87,7 @@ app.get("/api/language/pl", (req, res) => {
         },
         {
           "id": 1,
-          "desc": "Aplikacja MERN. Twórz, czytaj, aktualizuj i usuwaj linki. Profil: zdjęcie, imię, nazwisko i adres e-mail. Uwierzytelnianie użytkownika i zapisywanie danych w bazie danych."
+          "desc": "Aplikacja MERN. Twórz, odczytuj, aktualizuj i usuwaj linki. Profil: zdjęcie, imię, nazwisko i adres e-mail. Uwierzytelnianie użytkownika i zapisywanie danych w bazie danych."
         }
       ],
       "modal": "ZOBACZ",
