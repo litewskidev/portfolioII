@@ -15,6 +15,10 @@ const Skills = ({ data }) => {
             <p>JavaScript</p>
           </div>
           <div className='skills__box'>
+            <img src={process.env.PUBLIC_URL + '/assets/icons/typescript.svg'} alt="TypeScript" />
+            <p>TYPESCRIPT</p>
+          </div>
+          <div className='skills__box'>
             <img src={process.env.PUBLIC_URL + '/assets/icons/react.svg'} alt="React" />
             <p>React</p>
           </div>

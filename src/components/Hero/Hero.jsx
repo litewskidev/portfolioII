@@ -69,7 +69,7 @@ const Hero = ({ data }) => {
           </div>
           <div className='hero2__desc' ref={heroDescRef}>
             <div className='hero2__desc__prof'>
-              <h2><span>ウェブ開発者</span> web developer</h2>
+              <h2><span>full stack developer</span></h2>
             </div>
             <div className='hero2__desc__button'>
               <button onClick={handleGetToKnow}>{data.home?.button}</button>

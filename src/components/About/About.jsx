@@ -4,9 +4,6 @@ const About = ({ data }) => {
   return(
     <section id='about'>
       <div className='about__wrapper'>
-        <div className='about__title'>
-          <h1>者</h1>
-        </div>
         <div className='about__info__container'>
           <div className='about__info'>
             <p>{data.about?.one}</p>

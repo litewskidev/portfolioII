@@ -56,7 +56,7 @@ const Footer = ({ data }) => {
           </div>
         </div>
         <div className='footer__copy'>
-          <p>著作権 2023</p>
+          <p>&#169; 2023</p>
         </div>
       </div>
     </footer>

@@ -26,9 +26,14 @@
   padding: 6rem;
 
   img {
+    transition: all .4s ease-in-out;
     width: 100%;
     filter: saturate(0) sepia(.1) contrast(.9) brightness(.9);
     transform: scaleX(-1);
+
+    &:hover {
+      filter: saturate(0.4);
+    }
   }
 }
 
